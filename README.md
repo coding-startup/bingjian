@@ -16,9 +16,9 @@ animate__fadeOut 延迟出现
 
 reset **样式重置的css文件 勿修改  直接引入**
 
-normallize **样式重置的css文件 勿修改 直接引入**
+normallize **样式重置的css文件 勿修改 直接引入  删除  BootStrap里边有**
 
-Jquery **全局JQ文件 勿修改 直接引入**
+Jquery **全局JQ文件 勿修改 直接引入  lazy有1.多版本 看情况删除**
 
 bootstrap.min.css  **bootstrap的样式文件  勿修改 直接引入**
 

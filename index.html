@@ -1,5 +1,14 @@
+<!--
+ * @Author: zhang
+ * @Date: 2020-11-26 18:56:25
+ * @LastEditTime: 2020-11-27 11:49:29
+ * @LastEditors: zhang
+ * @Description: Dot not edit
+ * @FilePath: \bingjian\index.html
+-->
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,12 +18,50 @@
     <link rel="stylesheet" href="common/animate.compat.min.css">
     <link rel="stylesheet" href="common/bootstrap.min.css">
     <link rel="stylesheet" href="common/reset.css">
+    <link rel="stylesheet" href="styles/index.css">
 </head>
+
 <body>
-    
+    <div class="indexContainer">
+        <div class="container-fluid">
+            <Nav class="row">
+                <div class="col-sm-12 col-md-12 clearfix">
+                    <div class="pull-left col-sm-3 col-md-3"></div>
+                    <div class="pull-right col-md-4  col-sm-2">
+                        <div class="phase-one hidden-sr-sm ">
+                            <ul class="nav-right-flex layui-nav " lay-filter="">
+                                <li class="layui-nav-item">
+                                    <a href="#">首页</a>
+                                </li>
+                                <li class="layui-nav-item">
+                                    <a href="#">首页</a>
+                                </li>
+                                <li class="layui-nav-item">
+                                    <a href="#">首页</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </Nav>
+        </div>
+    </div>
 </body>
 
 <script src="common/jQuery v3.3.0.js"></script>
 <script src="common/bootstrap.min.js"></script>
-<script src="layui/layui.js"></script>
+<script src="layui/layui.all.js"></script>
+<script>
+    //由于模块都一次性加载，因此不用执行 layui.use() 来加载对应模块，直接使用即可：
+
+    (function () {
+        var layer = layui.layer,
+            form = layui.form;
+    })();
+</script>
+<style>
+ 
+</style>
+
 </html>
