@@ -150,6 +150,18 @@
 	.button-nr:hover{
 		background: rgb(7,140,191);
 	}
+	@media (max-width: 768px){
+		.znp-content {
+			width: 650px;
+			overflow: hidden;
+		}
+		.body-container{
+			clear: both;
+		}
+		img{
+			width: 100%;
+		}
+	}
 </style>
 <body>
     <div class="znp-top">
@@ -247,7 +259,7 @@
 		},{
 			name:'央行征信报告模型',
 			js:'该产品是基于央行简版征信报告以及不同类型客户在风控数据中的不同特征，配合冰鉴领先的模型算法，推出的冰鉴自有模型，帮助商户实现快速准确审批。',
-			img:'./tu16.jpg'
+			img:'./img/tu16.jpg'
 		}
 	]
 	for(var i=0;i<znpnr.length;i++){
