@@ -1,0 +1,343 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.indexContainer {
+  width: 100%;
+  height: 100%;
+}
+.indexContainer a {
+  text-decoration: none;
+}
+.indexContainer * {
+  padding-left: 0;
+  padding-right: 0;
+}
+.indexContainer .container-fluid {
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.indexContainer .nav-right-flex .nav-right-item {
+  margin: 0 20px;
+}
+.indexContainer .nav-right-flex .nav-right-item > a {
+  display: block;
+  position: relative;
+  font-weight: bold;
+  text-align: center;
+  padding-left: 0;
+  padding-right: 0;
+}
+.indexContainer .nav-right-flex .nav-right-item > a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background: #38d1ff;
+  bottom: 0;
+  left: 0;
+  transform: rotateY(90deg);
+  transition: transform 0.6s;
+  transform-origin: center center;
+}
+.indexContainer .nav-right-flex .nav-right-item > a:hover {
+  background: #fff;
+  color: #38d1ff;
+}
+.indexContainer .nav-right-flex .nav-right-item > a:hover .menu {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.indexContainer .nav-right-flex .nav-right-item > a.active::before {
+  transform: rotateY(0deg);
+}
+.indexContainer .carousel-item {
+  width: 100%;
+  height: 100%;
+}
+.indexContainer .carousel-item > div {
+  width: 100%;
+  height: 100%;
+}
+.indexContainer #swiper1 {
+  height: 100%;
+  width: 100%;
+}
+.indexContainer #swiper1 .exterior-pagination {
+  position: absolute;
+  right: 2%;
+  top: 45%;
+  transform: translateX(-50%);
+  z-index: 999;
+  width: 2rem;
+}
+.indexContainer #swiper1 .exterior-pagination span {
+  background: pink;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #d9dcdf;
+}
+.indexContainer #swiper1 .exterior-pagination span:hover {
+  transform: scale(1.2);
+}
+.indexContainer #swiper1 .exterior-pagination .swiper-pagination-bullet-active {
+  background: #00b4ed;
+}
+.indexContainer #swiper1 .exterior-pagination .swiper-pagination-bullet-active:hover {
+  transform: scale(1);
+}
+.indexContainer #swiper1 .font {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+}
+.indexContainer #swiper1 .swiper-container {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+.indexContainer #swiper1 .swiper-container .swiper-slide-active .bgContainer {
+  animation: bgBig 10s linear;
+  animation-fill-mode: forwards;
+}
+.indexContainer #swiper1 .swiper-container .swiper-slide {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+}
+.indexContainer #swiper1 .swiper-container .bgContainer {
+  margin-top: -100px;
+  height: 120%;
+  width: 100%;
+  transform-origin: center center;
+  background: url(../image/icekredit-banner-01.jpg) no-repeat 0 0;
+}
+.indexContainer #swiper1 .swiper-container .menu2 .bgContainer {
+  background: url(../image/campus2018.jpg) no-repeat 0 0;
+}
+.indexContainer #swiper1 .swiper-container .menu3 .content {
+  margin-top: 300px;
+}
+.indexContainer #swiper1 .swiper-container .menu3 .bgColor {
+  margin-top: -100px;
+  height: 120%;
+  width: 120%;
+  background: #0e98ef url(../image/home_3_pic.png) no-repeat 80% 50%;
+}
+.indexContainer #swiper1 .swiper-container .menu4 .bgContainer {
+  background: url(../image/bg4.jpg) no-repeat 0 0;
+}
+.indexContainer #swiper1 .swiper-container .menu5 .bgContainer {
+  background: url(../image/beijing.jpg) no-repeat 0 0;
+}
+.indexContainer #swiper1 .swiper-container .swiper-pagination span {
+  transition: width 0.3s;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.9);
+}
+.indexContainer #swiper1 .swiper-container .swiper-pagination .swiper-pagination-bullet-active {
+  width: 25px;
+  height: 8px;
+  border-radius: 6px;
+  background: #fff;
+}
+.indexContainer #swiper1 .swiper-container .base {
+  opacity: 0;
+}
+.indexContainer #swiper1 .swiper-container .contentContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 6;
+}
+.indexContainer #swiper1 .swiper-container h2 {
+  color: #fff;
+  --animate-duration: 1s;
+  text-align: center;
+}
+.indexContainer #swiper1 .swiper-container h4 {
+  width: 125%;
+  transform: translateX(-10%);
+  margin: 50px 0;
+  color: #b4bec5;
+  font-size: 18px;
+  line-height: 30px;
+}
+.indexContainer #swiper1 .swiper-container a.text {
+  margin-top: 75px;
+  width: 200px;
+  height: 60px;
+  display: inline-block;
+  border-radius: 30px;
+  color: #fff;
+  border: 1px solid #fff;
+  line-height: 60px;
+  text-align: center;
+}
+.indexContainer #swiper1 .swiper-container a.text:hover {
+  background: rgba(255, 255, 255, 0.9);
+  color: #38d1ff;
+}
+.indexContainer #swiper1 .swiper-container .swiper-button-prev {
+  background: url(../image/aw.png) 0 0 no-repeat;
+  margin-left: 5%;
+}
+.indexContainer #swiper1 .swiper-container .swiper-button-next {
+  background: url(../image/aw.png) 0 -44px no-repeat;
+  margin-right: 5%;
+}
+.indexContainer #swiper1 .core {
+  background: #f2f5f8;
+  width: 100%;
+  height: 100%;
+}
+.indexContainer #swiper1 .core .inUp,
+.indexContainer #swiper1 .core .inDown {
+  opacity: 0;
+}
+.indexContainer #swiper1 .core .row.clearfix {
+  padding-top: 140px;
+}
+.indexContainer #swiper1 .core .row.clearfix > div {
+  height: 100%;
+  position: relative;
+}
+.indexContainer #swiper1 .core .row.clearfix > div img {
+  width: 100%;
+  height: 100%;
+}
+.indexContainer #swiper1 .core .row.clearfix > div .imgBg2 {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-right: 1px solid #38d1ff;
+  overflow: hidden;
+}
+.indexContainer #swiper1 .core .row.clearfix > div .imgBg2 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.indexContainer #swiper1 .core .row.clearfix > div h2 {
+  font-size: 42px;
+  color: #586975;
+  margin: 40px 0;
+}
+.indexContainer #swiper1 .core .row.clearfix > div p {
+  font-size: 16px;
+  line-height: 25px;
+}
+.indexContainer #swiper1 .core .row.clearfix > div ul {
+  padding-left: 20px;
+}
+.indexContainer #swiper1 .core .row.clearfix > div ul li {
+  list-style-type: disc;
+  line-height: 25px;
+  font-size: 16px;
+}
+.indexContainer #swiper1 .product {
+  position: relative;
+  text-align: center;
+}
+.indexContainer #swiper1 .product .contentWrapper {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 15%;
+  transform: translateY(-50%);
+}
+.indexContainer #swiper1 .product .bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../image/bk-hp5.jpg) no-repeat 0 0;
+  background-size: 100% 100%;
+}
+.indexContainer #swiper1 .product h2 {
+  margin: 5rem 0;
+}
+.indexContainer #swiper1 .product h2 + p {
+  margin: 3rem 0;
+}
+.indexContainer #swiper1 .product .productSwiper-pagination .swiper-pagination-bullet-active {
+  width: 30px;
+  height: 8px;
+  border-radius: 6px;
+  background: #fff;
+}
+.indexContainer #swiper1 .product .productSwiper-pagination .swiper-slide {
+  width: 78px;
+  height: 78px;
+}
+.indexContainer #swiper1 .product .productSwiper-pagination span {
+  background: #a7a7a7;
+  transition: width 0.3s;
+}
+.indexContainer #swiper1 .us {
+  background: #0d7fc8;
+}
+.indexContainer #swiper1 .us .contentContainer {
+  margin-top: 10%;
+}
+.indexContainer #swiper1 .us .contentContainer h2 {
+  margin: 5rem 0;
+  text-align: center;
+}
+.indexContainer #swiper1 .us .contentContainer .detailsList {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.indexContainer #swiper1 .us .contentContainer .detailsList li {
+  height: 100%;
+  box-sizing: border-box;
+}
+.indexContainer #swiper1 .us .contentContainer .detailsList li .iconWrapper .icon {
+  width: 100%;
+  height: 100%;
+  background: url("../image/s6icb (2).png") no-repeat 0 0;
+}
+.indexContainer #swiper1 .us .contentContainer .detailsList li .iconWrapper.icon2 .icon {
+  background-position: -100px 0;
+}
+.indexContainer #swiper1 .us .contentContainer .detailsList li .iconWrapper.icon3 .icon {
+  background-position: -200px 0;
+}
+.indexContainer #swiper1 .us .contentContainer .detailsList li .iconWrapper.icon4 .icon {
+  background-position: -300px 0;
+}
+.indexContainer #swiper1 .us .contentContainer .detailsList li .iconWrapper.icon5 .icon {
+  background-position: -400px 0;
+}
+.indexContainer #swiper1 .us .contentContainer .detailsList li .iconWrapper.icon6 .icon {
+  background-position: -500px 0;
+}
+@keyframes bgBig {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
+@media screen and (max-width: 768px) {
+  .text-align-center {
+    text-align: center;
+  }
+  .indexContainer #swiper1 .us .contentContainer .detailsList li {
+    width: 80px;
+    height: 80px;
+    background-size: 480px 160px;
+  }
+}

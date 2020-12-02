@@ -1,7 +1,7 @@
 <!--
  * @Author: zhang
  * @Date: 2020-11-26 18:56:25
- * @LastEditTime: 2020-11-27 11:49:29
+ * @LastEditTime: 2020-12-02 20:35:46
  * @LastEditors: zhang
  * @Description: Dot not edit
  * @FilePath: \bingjian\index.html
@@ -14,54 +14,309 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="common/normallize.css">
-    <link rel="stylesheet" href="./layui/css/layui.css">
     <link rel="stylesheet" href="common/animate.compat.min.css">
-    <link rel="stylesheet" href="common/bootstrap.min.css">
+
     <link rel="stylesheet" href="common/reset.css">
+    <link rel="stylesheet" href="common/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
     <div class="indexContainer">
         <div class="container-fluid">
-            <Nav class="row">
-                <div class="col-sm-12 col-md-12 clearfix">
-                    <div class="pull-left col-sm-3 col-md-3"></div>
-                    <div class="pull-right col-md-4  col-sm-2">
-                        <div class="phase-one hidden-sr-sm ">
-                            <ul class="nav-right-flex layui-nav " lay-filter="">
-                                <li class="layui-nav-item">
-                                    <a href="#">首页</a>
+            <Nav class="navbar  navbar-static-top row">
+                <div class="navbar-left col-sm-3 col-xs-3">
+                    <a href="index.html" class="navbar-brand">
+                        <img src="image/logo.png" alt="">
+                    </a>
+                </div>
+                <ul class="nav-right-flex navbar-right nav navbar-nav col-sm-5 hidden-xs row">
+                    <li class="nav-right-item col-sm-1 ">
+                        <a href="void(0)">首页</a>
+                    </li>
+                    <li class="nav-right-item col-sm-2 col-sm-offset-1">
+                        <a href="void(0)">核心优势</a>
+                    </li>
+                    <li class="nav-right-item col-sm-2 product-container col-sm-offset-1">
+                        <a class="product">
+                            <div class="top">
+                                冰鉴产品
+                                <span class="caret"></span>
+                            </div>
+                            <ul class="menu nav-stacked">
+                                <li><a href="#">个人与企业风控产品</a></li>
+                                <li><a href="#">银行与新金融风控产品</a></li>
+                                <li><a href="#">标准与定制化产品</a></li>
+                                <li><a href="#">智能风控平台产品</a></li>
+                                <li><a href="#">模型系统产品</a></li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li class="nav-right-item col-sm-2 col-sm-offset-1"></li>
+                </ul>
+            </Nav>
+            <div class="swiper-container" id="swiper1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide index">
+                        <div class="swiper-container" id="interior">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide menu1">
+                                    <div class="contentContainer">
+                                        <h2 class="font animate__animated  base">
+                                            冰鉴科技完成3.35亿元Pre C轮融资</h2>
+                                        <h4 class="text animate__animated  animate__delay-1s base">
+                                            本轮融资由上海国际集团旗下的国和投资领投，云启资本等其他老股东继续跟投。本轮融资金额超过冰鉴之前3.15亿元的融资总和。</h4>
+                                        <a href="#" class="text animate__animated  animate__delay-2s base">查看详情</a>
+                                    </div>
+                                    <div class="bgContainer">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide menu2">
+                                    <div class="contentContainer">
+                                        <h2 class="font animate__animated  base">
+                                            冰鉴科技2020校园招聘开始啦！</h2>
+                                        <h4 class="text animate__animated  animate__delay-1s base">
+                                            我们将在南京大学、西安交大、电子科技大学举办校园宣讲会，也欢迎线上简历投递！有AI有梦想，有你有未来。我们在这里，等你一起鉴证未来！</h4>
+                                        <a href="#" class="text animate__animated  animate__delay-2s base">查看详情</a>
+                                    </div>
+                                    <div class="bgContainer">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide menu3 clearfix row">
+                                    <div class="content pull-left col-sm-4 col-sm-push-1">
+                                        <h2 class="font animate__animated  base">
+                                            冰鉴科技完成3.35亿元Pre C轮融资</h2>
+                                        <h4 class="text animate__animated  animate__delay-1s base">
+                                            本轮融资由上海国际集团旗下的国和投资领投，云启资本等其他老股东继续跟投。本轮融资金额超过冰鉴之前3.15亿元的融资总和。</h4>
+                                        <a href="#" class="text animate__animated  animate__delay-2s base">查看详情</a>
+                                    </div>
+                                    <div class="bgColor">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide menu4">
+                                    <div class="contentContainer">
+                                        <h2 class="font animate__animated  base">
+                                            冰鉴科技亮相人工智能国际顶级峰会IJCAI</h2>
+                                        <h4 class="text animate__animated  animate__delay-1s base">
+                                            作为人工智能领域顶级的人工智能学术会议，2019
+                                            IJCAI在澳门隆重举行。适逢IJCAI50周年与中国人工智能发展40周年，今年的IJCAI备受瞩目，超过3000名AI学者与业界领袖云集中国澳门，共同探讨人工智能的现状和未来。冰鉴科技创始人、董事长兼CEO顾凌云博士受邀发表演讲，分享了冰鉴科技在AI领域的探索与实践。
+                                        </h4>
+                                        <a href="#" class="text animate__animated  animate__delay-2s base">查看详情</a>
+                                    </div>
+                                    <div class="bgContainer">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide menu5">
+                                    <div class="contentContainer">
+                                        <h2 class="font animate__animated  base">
+                                            冰鉴科技荣登世界人工智能大会“中国AI商业落地初创企业100强”</h2>
+                                        <h4 class="text animate__animated  animate__delay-1s base">
+                                            近日，由国家发改委、科技部、工信部、网信办、中国科学院、中国工程院和上海市人民政府共同主办的2019世界人工智能大会在上海召开。经过激烈角逐，人工智能风控专家——冰鉴科技脱颖而出，登上中国AI商业落地初创企业百强榜。
+                                        </h4>
+                                        <a href="#" class="text animate__animated  animate__delay-2s base">查看详情</a>
+                                    </div>
+                                    <div class="bgContainer">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 如果需要分页器 -->
+                            <div class="swiper-pagination"></div>
+
+                            <!-- 如果需要导航按钮 -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide core animate">
+                        <div class="row clearfix">
+                            <div class="col-sm-3 col-sm-pull-2 col-xs-8 col-xs-push-2 pull-left text">
+                                <h2 class="text-align-center animate__animated inDown">核心优势</h2>
+                                <div class="bottomText animate__animated inDown animate__delay-1s">
+                                    <p>
+                                        冰鉴拥有优秀的机器学习建模算法，我们对机器学习和深度学习在金融科技领域的应用展开不断探索与追求。目前在机器学习方面的技术储备（指我司模型团队自主开发的核心算法的代码）包括：
+                                    </p>
+                                    <ul>
+                                        <li>随机森林，神经网络，支持向量机，决策树类的单个模型以及上述单个模型的bagging算法</li>
+                                        <li>适用于机器学习的cross validation算法</li>
+                                        <li>各种基础算法的stacking方法实现</li>
+                                        <li>决策树的gradient boosting machine 算法</li>
+                                        <li>基于SVM的半监督学习等。
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div
+                                class="col-sm-5 col-sm-pull-2 col-sm-offset-1 col-xs-8 pull-left graph  col-xs-push-2 row animate__animated  animate__delay-1s inUp">
+                                <!-- <div class="rightBg"></div> -->
+                                <img src="image/s201-1.png" alt="" class="col-sm-12 col-xs-12 img-responsive">
+                                <div class="imgBg2" class="col-sm-12 col-xs-12">
+                                    <img src="image/s201.png" alt="" cclass="col-sm-12 col-xs-12 img-responsive">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide product">
+                        <div class="bgImage animate__animated"></div>
+                        <div class="contentWrapper col-sm-5 col-xs-5 row col-sm-push-3 col-xs-push-3">
+                            <h2 class="text-align-center">冰鉴产品</h2>
+                            <p class="text-align-center">独立第三方的风控模型&解决方案。</p>
+                            <div>
+                                <div class="swiper-container" id="productSwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <svg id="icon-xinyongqia" viewBox="0 0 1024 1024">
+                                                <path d="M512 512m-480 0a480 480 0 1 0 960 0 480 480 0 1 0-960 0Z"
+                                                    fill="#FFE8CD"></path>
+                                                <path
+                                                    d="M224 364.8c0-25.6 19.2-44.8 51.2-44.8h480c25.6 0 51.2 19.2 51.2 44.8v288c0 25.6-19.2 44.8-51.2 44.8H275.2c-25.6 0-51.2-19.2-51.2-44.8V364.8z"
+                                                    fill="#FF9D1C"></path>
+                                                <path d="M224 390.4h576v70.4h-576z" fill="#FFCA83"></path>
+                                                <path
+                                                    d="M633.6 608c0-12.8 12.8-25.6 25.6-25.6h70.4c12.8 0 25.6 12.8 25.6 25.6v25.6c0 12.8-12.8 25.6-25.6 25.6h-70.4c-12.8 0-25.6-12.8-25.6-25.6v-25.6z"
+                                                    fill="#FFFFFF"></path>
+                                            </svg>
+                                            <p>个人与企业风控产品</p>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <svg id="icon-daikuan" viewBox="0 0 1024 1024">
+                                                <path d="M512 512m-480 0a480 480 0 1 0 960 0 480 480 0 1 0-960 0Z"
+                                                    fill="#E5F1FF"></path>
+                                                <path
+                                                    d="M512 435.2m-211.2 0a211.2 211.2 0 1 0 422.4 0 211.2 211.2 0 1 0-422.4 0Z"
+                                                    fill="#A9D2FF"></path>
+                                                <path
+                                                    d="M512 435.2c-6.4 0-6.4 0-12.8-6.4l-64-89.6c-6.4-6.4 0-12.8 0-19.2 6.4-6.4 12.8 0 19.2 0l64 89.6c6.4 6.4 0 12.8 0 19.2 0 6.4-6.4 6.4-6.4 6.4z"
+                                                    fill="#FFFFFF"></path>
+                                                <path
+                                                    d="M512 556.8c-6.4 0-12.8-6.4-12.8-12.8v-128l70.4-89.6c0-6.4 12.8-6.4 12.8 0 6.4 6.4 6.4 12.8 0 19.2l-64 83.2v115.2c6.4 6.4 0 12.8-6.4 12.8z"
+                                                    fill="#FFFFFF"></path>
+                                                <path
+                                                    d="M556.8 435.2H467.2c-6.4 0-12.8-6.4-12.8-12.8s6.4-12.8 12.8-12.8h89.6c6.4 0 12.8 6.4 12.8 12.8s-6.4 12.8-12.8 12.8zM556.8 480H467.2c-6.4 0-12.8-6.4-12.8-12.8s6.4-12.8 12.8-12.8h89.6c6.4 0 12.8 6.4 12.8 12.8s-6.4 12.8-12.8 12.8z"
+                                                    fill="#FFFFFF"></path>
+                                                <path
+                                                    d="M793.6 595.2c-12.8-25.6-44.8-25.6-64-19.2l-57.6 12.8c0 19.2-6.4 32-25.6 51.2-38.4 32-108.8 38.4-160 38.4h-57.6c-12.8 0-19.2-12.8-12.8-19.2 0-12.8 12.8-19.2 19.2-12.8 38.4 6.4 147.2 6.4 185.6-25.6 12.8-19.2 19.2-25.6 19.2-38.4-12.8-12.8-32-19.2-44.8-19.2H236.8c-6.4 0-12.8 6.4-12.8 12.8v134.4c0 6.4 6.4 12.8 12.8 12.8 96 32 217.6 70.4 288 70.4h25.6c44.8-6.4 198.4-108.8 230.4-134.4 12.8-12.8 19.2-38.4 12.8-64z"
+                                                    fill="#72AEFD"></path>
+                                            </svg>
+                                            <p>银行与新金融风控产品</p>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <svg id="icon-gengduo" viewBox="0 0 1024 1024">
+                                                <path d="M512 512m-480 0a480 480 0 1 0 960 0 480 480 0 1 0-960 0Z"
+                                                    fill="#F6F6F6"></path>
+                                                <path
+                                                    d="M249.6 294.4c0-25.6 19.2-44.8 44.8-44.8h166.4c32 0 51.2 19.2 51.2 44.8v166.4c0 32-19.2 51.2-44.8 51.2H294.4c-25.6 0-44.8-19.2-44.8-44.8V294.4zM556.8 345.6c0-25.6 19.2-51.2 44.8-51.2h121.6c25.6 0 51.2 19.2 51.2 51.2v121.6c0 25.6-19.2 51.2-51.2 51.2H601.6c-25.6 0-44.8-25.6-44.8-51.2V345.6zM556.8 608c0-25.6 19.2-51.2 51.2-51.2h121.6c25.6 0 51.2 19.2 51.2 44.8v64l-108.8 108.8h-64c-25.6 0-44.8-19.2-44.8-51.2V608z"
+                                                    fill="#BFBFBF"></path>
+                                                <path d="M665.6 716.8c0-25.6 19.2-44.8 44.8-44.8h64l-108.8 108.8v-64z"
+                                                    fill="#FFFFFF"></path>
+                                                <path
+                                                    d="M294.4 601.6c0-25.6 19.2-51.2 51.2-51.2h121.6c25.6 6.4 44.8 25.6 44.8 51.2v121.6c0 25.6-19.2 51.2-51.2 51.2H339.2c-25.6 0-51.2-19.2-51.2-51.2V601.6z"
+                                                    fill="#BFBFBF"></path>
+                                                <path d="M294.4 294.4h166.4V320H294.4zM294.4 345.6h96v25.6H294.4z"
+                                                    fill="#FFFFFF"></path>
+                                            </svg>
+                                            <p>标准与定制化产品</p>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <svg id="icon-shoujichongzhi" viewBox="0 0 1024 1024">
+                                                <path d="M512 512m-480 0a480 480 0 1 0 960 0 480 480 0 1 0-960 0Z"
+                                                    fill="#FFE8CD"></path>
+                                                <path
+                                                    d="M678.4 780.8H345.6c-25.6 0-44.8-19.2-44.8-44.8V249.6c0-25.6 19.2-44.8 44.8-44.8h332.8c25.6 0 44.8 19.2 44.8 44.8v486.4c0 25.6-19.2 44.8-44.8 44.8z"
+                                                    fill="#FF9D1C"></path>
+                                                <path
+                                                    d="M633.6 608H390.4c-19.2 0-32-12.8-32-32V294.4c0-19.2 12.8-32 32-32H640c19.2 0 32 12.8 32 32V576c-6.4 19.2-19.2 32-38.4 32z"
+                                                    fill="#FFCA83"></path>
+                                                <path
+                                                    d="M512 697.6m-38.4 0a38.4 38.4 0 1 0 76.8 0 38.4 38.4 0 1 0-76.8 0Z"
+                                                    fill="#FFFFFF"></path>
+                                            </svg>
+                                            <p>模型系统产品</p>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <svg id="icon-suiyicun" viewBox="0 0 1024 1024">
+                                                <path d="M512 512m-480 0a480 480 0 1 0 960 0 480 480 0 1 0-960 0Z"
+                                                    fill="#E9E8FF"></path>
+                                                <path
+                                                    d="M467.2 332.8l230.4-83.2 44.8 83.2zM384 332.8l96-83.2 38.4 51.2-64 32z"
+                                                    fill="#C6C9FF"></path>
+                                                <path
+                                                    d="M300.8 755.2c-25.6 0-51.2-25.6-51.2-51.2V384c0-25.6 25.6-51.2 51.2-51.2h428.8c25.6 0 51.2 25.6 51.2 51.2v313.6c0 25.6-25.6 51.2-51.2 51.2l-428.8 6.4z"
+                                                    fill="#8880FE"></path>
+                                                <path
+                                                    d="M761.6 608H704c-25.6 0-51.2-19.2-51.2-51.2v-19.2c0-25.6 25.6-51.2 51.2-51.2h57.6c25.6 0 51.2 19.2 51.2 51.2v25.6c0 25.6-19.2 44.8-51.2 44.8z"
+                                                    fill="#C6C9FF"></path>
+                                            </svg>
+                                            <p>IT系统产品</p>
+                                        </div>
+                                    </div>
+                                    <!-- 如果需要分页器 -->
+                                    <div class="productSwiper-pagination"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide us row">
+                        <div class="contentContainer col-sm-6 col-xs-6  col-xs-offset-3 col-sm-offset-3">
+                            <h2>关于我们</h2>
+                            <ul class="detailsList row">
+                                <li class="col-sm-2 col-xs-6">
+                                    <div class="iconWrapper icon1">
+                                        <div class="icon"></div>
+                                    </div>
+                                    <h4>冰鉴简介</h4>
                                 </li>
-                                <li class="layui-nav-item">
-                                    <a href="#">首页</a>
+                                <li class="col-sm-2 col-xs-6">
+                                    <div class="iconWrapper icon2">
+                                        <div class="icon"></div>
+                                    </div>
+                                    <h4>冰鉴简介</h4>
                                 </li>
-                                <li class="layui-nav-item">
-                                    <a href="#">首页</a>
+                                <li class="col-sm-2 col-xs-6">
+                                    <div class="iconWrapper icon3">
+                                        <div class="icon"></div>
+                                    </div>
+                                    <h4>冰鉴简介</h4>
+                                </li>
+                                <li class="col-sm-2 col-xs-6">
+                                    <div class="iconWrapper icon4">
+                                        <div class="icon"></div>
+                                    </div>
+                                    <h4>冰鉴简介</h4>
+                                </li>
+                                <li class="col-sm-2 col-xs-6">
+                                    <div class="iconWrapper icon5">
+                                        <div class="icon"></div>
+                                    </div>
+                                    <h4>冰鉴简介</h4>
+                                </li>
+                                <li class="col-sm-2 col-xs-6">
+                                    <div class="iconWrapper icon6">
+                                        <div class="icon"></div>
+                                    </div>
+                                    <h4>冰鉴简介</h4>
                                 </li>
                             </ul>
-                        </div>
+                            <ul class="telMap">
 
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </Nav>
+                <div class="exterior-pagination"></div>
+            </div>
         </div>
     </div>
 </body>
-
 <script src="common/jQuery v3.3.0.js"></script>
 <script src="common/bootstrap.min.js"></script>
-<script src="layui/layui.all.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
 <script>
     //由于模块都一次性加载，因此不用执行 layui.use() 来加载对应模块，直接使用即可：
-
-    (function () {
-        var layer = layui.layer,
-            form = layui.form;
-    })();
 </script>
-<style>
- 
-</style>
+
+<script src="js/index.js"></script>
 
 </html>
