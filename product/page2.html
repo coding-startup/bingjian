@@ -63,7 +63,7 @@
 		color: #666;
 		border: none;
 		border-radius: 0;
-		font-size: 18px;
+		font-size: 14px;
 		padding: 15px 30px;
 		transition:all 0.4s;
 	}
@@ -73,8 +73,6 @@
 		background-color: #00b4ed;
 		border: 0;
 		border-bottom-color: transparent;
-		font-size: 18px;
-		padding: 15px 30px;
 	}
 	table{
 		overflow: hidden;
@@ -165,12 +163,15 @@
 			padding-left: 0;
 		}
 	}
+	.top-pd{
+		display: none;
+	}
 </style>
 <body>
     <div class="znp-top">
 		<div class="znp-content">
 			<div class="znp-nr">
-				<ul class="nav">
+				<ul class="nav nav1">
 					<li class="znp-tab active">
 						<a href="javascript:;">
 							银行风控产品
@@ -182,8 +183,27 @@
 						</a>
 					</li>
 				</ul>
+				<ul class="nav nav2 top-pd">
+					<li class="znp-tab active">
+						<a href="javascript:;">
+							Bank risk control products
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							New financial risk control products
+						</a>
+					</li>
+				</ul>
+				<a href="javascript:;" class="sss">中/英文翻译</a>
 				<div class="nav-list">
-					<div class="yinhuang">
+					<div class="yinhuang hhh">
+						<div class="zhong zhong1">
+							
+						</div>
+						<div class="ying ying1 top-pd">
+							
+						</div>
 						<!-- <p>
 							<b>精准营销产品</b>
 						</p>
@@ -221,18 +241,33 @@
 							<a href="" class="button-nr">立即申请适用</a>
 						</p> -->
 					</div>
-					<div class="xinjinrong yc">
-						<p>
-							<b>精准营销产品</b>
-						</p>
-						<p>
-							覆盖500-5000元小额消费贷场景及5000-50000元大额消费贷场景。目前，通过冰鉴强大的人工智能算法，冰鉴推出了火眸分、慧眼分等产品，助力金融机构做出更精准的决策。
-							
-							该产品现在已拥有百家客户每月超过3000万查询量，为客户提供更加规范安全、高效便捷、系统全面的服务。
-						</p>	
-						<p>
-							<a href="javascript:;" class="button-nr">立即申请适用</a>
-						</p>
+					<div class="xinjinrong yc hhh">
+						<div class="zhong1">
+							<p>
+								<b>精准营销产品</b>
+							</p>
+							<p>
+								覆盖500-5000元小额消费贷场景及5000-50000元大额消费贷场景。目前，通过冰鉴强大的人工智能算法，冰鉴推出了火眸分、慧眼分等产品，助力金融机构做出更精准的决策。
+								
+								该产品现在已拥有百家客户每月超过3000万查询量，为客户提供更加规范安全、高效便捷、系统全面的服务。
+							</p>	
+							<p>
+								<a href="javascript:;" class="button-nr">立即申请适用</a>
+							</p>
+						</div>
+						<div class="ying1 top-pd">
+							<p>
+								<b>Precision marketing products</b>
+							</p>
+							<p>
+								It covers 500-5000 yuan small consumer loan scenarios and 5000-50000 yuan large consumer loan scenarios. At present, with its powerful artificial intelligence algorithm, Bingjian has launched products such as huomou Fen and Huiyan Fen to help financial institutions make more accurate decisions.
+
+								The product now has 100 customers with more than 30 million queries per month, providing customers with more standardized, safe, efficient, convenient and comprehensive services.
+							</p>	
+							<p>
+								<a href="javascript:;" class="button-nr">Apply immediately</a>
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -274,57 +309,150 @@
 			js:'通过对社交媒体、网络新闻、网页上的关键词进行分析后，利用人工智能算法进行聚合后判断舆情态度，生成相应的冰鉴舆情得分，从而对小微企业进行实时舆情监控。该系统是针对小微企业风控提出的一个全新维度，是之前的小微企业风控产品从未涉及的风险评估角度。'
 		}
 	]
-	for(var i=0;i<znpnr.length;i++){
-		if (i==znpnr.length-1) {
-			console.log(2)
-			$('.yinhuang').append(`<p>
-							<b>`+znpnr[i].name+`</b>
-						</p>
-						<p>
-							`+znpnr[i].js+`
-						</p>
-						<p>
-							<a href="javascript:;" class="button-nr">立即申请适用</a>
-						</p>`)
+	var znpnryw=[
+		{
+			name:'Precision marketing model standard',
+			js:'This product can help banks quickly and accurately assess the risk of loans to small and micro enterprises, especially those not covered by the central bank credit report, and determine the amount of loans, loan interest and loan repayment cycle. At the same time, it can effectively reduce the moral hazard and subjective evaluation differences of credit officers, and make differentiated judgments on customers.',
+			cj:'Pre loan link',
+			sr:'Historical transaction records of stock customers',
+			cs:'High quality customer requirements',
+			sc:'Customer ranking and classification',
+			yt:'Eliminate high-risk groups, define high-quality customers, assist call centers and offline credit officers to filter a large number of unqualified applicants'
+		},{
+			name:'Post loan monitoring model for small and micro enterprises',
+			js:'The product can help banks quickly and accurately assess the risk of loans to small and micro enterprises, especially those not covered by the central bank credit report, and determine the amount of loans, loan interest and loan repayment cycle. At the same time, it can effectively reduce the moral hazard and subjective evaluation differences of credit officers, and make differentiated judgments on customers',
+			cj:'Pre loan link',
+			sr:'Basic enterprise information such as internal flow, PBC report, enterprise information, tax information, etc',
+			cs:'Expected rate of return and probability of default',
+			sc:'Loan ceiling and loan interest rate',
+			yt:'To evaluate the difference of credit and repayment period and reduce the subjective risk of loan repayment'
+		},{
+			name:'Post loan monitoring model for small and micro enterprises',
+			js:'Through the self-developed model, the product can effectively real-time monitor the loans that have been released, help the bank to intervene in the risk immediately, and at the same time, it can help the offline credit audit management personnel, effectively improve the number of enterprises supervised after loan per capita, and greatly improve the quality of manual intervention.',
+			cj:'During / after loan',
+			sr:'Internal flow, PBC report, enterprise information, tax information, etc',
+			cs:'Default probability and monitoring period',
+			sc:'Warning list and risk points',
+			yt:'Monitoring the issued loans, improving the number of post loan supervision enterprises per capita of credit examiners and improving the quality of manual intervention'
+		},
+		{
+			name:'Enterprise public opinion monitoring system',
+			js:'Through the analysis of keywords on social media, network news and web pages, the artificial intelligence algorithm is used to aggregate public opinion attitude and generate the corresponding ice review public opinion score, so as to monitor the real-time public opinion of small and micro enterprises. The system is a new dimension for risk control of small and micro enterprises, and it is a risk assessment angle that has never been involved in the risk control products of small and micro enterprises before.'
+		}
+	]
+	var kg=true
+	$('.sss').click(function(){
+		if(kg){
+			kg=!kg
+			$('.zhong1').addClass('top-pd').siblings().removeClass('top-pd')
+			$('.nav1').addClass('top-pd').siblings().removeClass('top-pd')
 		}else{
-			$('.yinhuang').append(`<p>
+			kg=!kg
+			$('.ying1').addClass('top-pd').siblings().removeClass('top-pd')
+			$('.nav2').addClass('top-pd').siblings().removeClass('top-pd')
+		}
+	})
+		for(var i=0;i<znpnr.length;i++){
+			if (i==znpnr.length-1) {
+				console.log(2)
+				$('.zhong').append(`<p>
 								<b>`+znpnr[i].name+`</b>
 							</p>
 							<p>
 								`+znpnr[i].js+`
 							</p>
-							<table style="font-size: 0.8em;">
-								<thead>
-									<tr>
-										<th class="bkh2" style="width: 25%;">产品名称</th>
-										<th class="bk1" style="width: 25%;">`+znpnr[i].name+`</th>
-										<th class="bkh2" style="width: 25%;">适用场景</th>
-										<th class="bk1" style="width: 25%;">`+znpnr[i].cj+`</th>
-									</tr>
-								</thead>
-								<tbody style="text-align: left;">
-									<tr>
-										<td class="bkh1">银行输入渠道信息</td>
-										<td class="bkh2">设定参数</td>
-										<td class="bkh1">冰鉴输出</td>
-										<td class="bkh2">主要用途</td>
-									</tr>
-									<tr>
-										<td class="bk2">`+znpnr[i].sr+`</td>
-										<td class="bk21">`+znpnr[i].cs+`</td>
-										<td class="bk2">`+znpnr[i].sc+`</td>
-										<td class="bk21">`+znpnr[i].yt+`</td>
-									</tr>
-								</tbody>
-							</table>
 							<p>
 								<a href="javascript:;" class="button-nr">立即申请适用</a>
 							</p>`)
-			}
-	}
+			}else{
+				$('.zhong').append(`<p>
+									<b>`+znpnr[i].name+`</b>
+								</p>
+								<p>
+									`+znpnr[i].js+`
+								</p>
+								<table style="font-size: 0.8em;">
+									<thead>
+										<tr>
+											<th class="bkh2" style="width: 25%;">产品名称</th>
+											<th class="bk1" style="width: 25%;">`+znpnr[i].name+`</th>
+											<th class="bkh2" style="width: 25%;">适用场景</th>
+											<th class="bk1" style="width: 25%;">`+znpnr[i].cj+`</th>
+										</tr>
+									</thead>
+									<tbody style="text-align: left;">
+										<tr>
+											<td class="bkh1">银行输入渠道信息</td>
+											<td class="bkh2">设定参数</td>
+											<td class="bkh1">冰鉴输出</td>
+											<td class="bkh2">主要用途</td>
+										</tr>
+										<tr>
+											<td class="bk2">`+znpnr[i].sr+`</td>
+											<td class="bk21">`+znpnr[i].cs+`</td>
+											<td class="bk2">`+znpnr[i].sc+`</td>
+											<td class="bk21">`+znpnr[i].yt+`</td>
+										</tr>
+									</tbody>
+								</table>
+								<p>
+									<a href="javascript:;" class="button-nr">立即申请适用</a>
+								</p>`)
+				}
+		}
+		for(var i=0;i<znpnryw.length;i++){
+			if (i==znpnryw.length-1) {
+				console.log(2)
+				$('.ying').append(`<p>
+								<b>`+znpnryw[i].name+`</b>
+							</p>
+							<p>
+								`+znpnryw[i].js+`
+							</p>
+							<p>
+								<a href="javascript:;" class="button-nr">Apply immediately</a>
+							</p>`)
+			}else{
+				$('.ying').append(`<p>
+									<b>`+znpnryw[i].name+`</b>
+								</p>
+								<p>
+									`+znpnryw[i].js+`
+								</p>
+								<table style="font-size: 0.8em;">
+									<thead>
+										<tr>
+											<th class="bkh2" style="width: 25%;">Product name</th>
+											<th class="bk1" style="width: 25%;">`+znpnryw[i].name+`</th>
+											<th class="bkh2" style="width: 25%;">Applicable scenarios</th>
+											<th class="bk1" style="width: 25%;">`+znpnryw[i].cj+`</th>
+										</tr>
+									</thead>
+									<tbody style="text-align: left;">
+										<tr>
+											<td class="bkh1">Bank input channel information</td>
+											<td class="bkh2">Setting parameters</td>
+											<td class="bkh1">Ice watch output</td>
+											<td class="bkh2">Main uses</td>
+										</tr>
+										<tr>
+											<td class="bk2">`+znpnryw[i].sr+`</td>
+											<td class="bk21">`+znpnryw[i].cs+`</td>
+											<td class="bk2">`+znpnryw[i].sc+`</td>
+											<td class="bk21">`+znpnryw[i].yt+`</td>
+										</tr>
+									</tbody>
+								</table>
+								<p>
+									<a href="javascript:;" class="button-nr">Apply immediately</a>
+								</p>`)
+				}
+		}
+	
+	
 	$('.nav li').click(function(){
 		$(this).addClass('active').siblings().removeClass('active')
-		$('.nav-list div').eq($(this).index()).removeClass('yc').siblings().addClass('yc')
+		$('.nav-list>.hhh').eq($(this).index()).removeClass('yc').siblings().addClass('yc')
 	})
 </script>
 </html>
