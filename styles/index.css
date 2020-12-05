@@ -21,10 +21,27 @@ body {
   height: 100%;
   overflow: hidden;
 }
-.indexContainer .nav-right-flex .nav-right-item {
-  margin: 0 20px;
+.indexContainer .container-fluid .navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 35px;
+  box-sizing: border-box;
 }
-.indexContainer .nav-right-flex .nav-right-item > a {
+.indexContainer .container-fluid .navbar .navbar-left img {
+  background: url(../image/logo-top2c.png) no-repeat 0 0;
+}
+.indexContainer .container-fluid .navbar .navbar-right .nav-right-item {
+  margin: 0 15px;
+}
+.indexContainer .container-fluid .navbar .navbar-right .nav-right-item a:hover {
+  background: none;
+}
+.indexContainer .container-fluid .navbar .navbar-right .nav-right-item.open > a {
+  background: none;
+}
+.indexContainer .container-fluid .navbar .navbar-right .nav-right-item > a {
   display: block;
   position: relative;
   font-weight: bold;
@@ -32,7 +49,7 @@ body {
   padding-left: 0;
   padding-right: 0;
 }
-.indexContainer .nav-right-flex .nav-right-item > a::before {
+.indexContainer .container-fluid .navbar .navbar-right .nav-right-item > a::before {
   content: "";
   display: block;
   position: absolute;
@@ -45,18 +62,35 @@ body {
   transition: transform 0.6s;
   transform-origin: center center;
 }
-.indexContainer .nav-right-flex .nav-right-item > a:hover {
-  background: #fff;
+.indexContainer .container-fluid .navbar .navbar-right .nav-right-item > a:hover {
   color: #38d1ff;
 }
-.indexContainer .nav-right-flex .nav-right-item > a:hover .menu {
+.indexContainer .container-fluid .navbar .navbar-right .nav-right-item > a:hover .menu {
   display: block;
   position: absolute;
   bottom: 0;
   left: 0;
 }
-.indexContainer .nav-right-flex .nav-right-item > a.active::before {
+.indexContainer .container-fluid .navbar .navbar-right .nav-right-item:hover a::before {
   transform: rotateY(0deg);
+}
+.indexContainer .container-fluid .navbar .navbar-right .nav-right-item .dropdown-menu {
+  background: #010a0f;
+  padding: 0;
+  border: none;
+}
+.indexContainer .container-fluid .navbar .navbar-right .nav-right-item .dropdown-menu li {
+  box-sizing: border-box;
+  padding: 5px 10px;
+}
+.indexContainer .container-fluid .navbar .navbar-right .nav-right-item .dropdown-menu li:hover {
+  background: #00b4ed;
+}
+.indexContainer .container-fluid .navbar .navbar-right .nav-right-item .dropdown-menu li a {
+  color: #fff;
+}
+.indexContainer .container-fluid .navbar .navbar-right .nav-right-item .dropdown-menu li a:hover {
+  background: none;
 }
 .indexContainer .carousel-item {
   width: 100%;
@@ -252,7 +286,6 @@ body {
   margin-left: 0;
   margin-right: 0;
   margin-top: 15%;
-  transform: translateY(-50%);
 }
 .indexContainer #swiper1 .product .bgImage {
   position: absolute;
@@ -323,6 +356,21 @@ body {
 .indexContainer #swiper1 .us .contentContainer .detailsList li .iconWrapper.icon6 .icon {
   background-position: -500px 0;
 }
+.indexContainer .odd > .navbar .navbar-right .nav-right-item > a:hover {
+  color: #fff;
+}
+.indexContainer .odd > .navbar .navbar-right .nav-right-item > a::before {
+  background: #fff;
+}
+.indexContainer .odd > .navbar .navbar-left img {
+  background: url(../image/logo-top2.png) no-repeat 0 0;
+}
+.indexContainer .odd .navbar a {
+  color: #fff;
+}
+.indexContainer .odd .navbar > .nav-right > .nav-right-item > a:hover {
+  color: #fff;
+}
 @keyframes bgBig {
   0% {
     transform: scale(1);
@@ -339,5 +387,22 @@ body {
     width: 80px;
     height: 80px;
     background-size: 480px 160px;
+  }
+  h2 {
+    margin: 55px 20px 5px !important;
+    font-size: 22px !important;
+    line-height: 32px !important;
+  }
+  h2 + p {
+    font-size: 10px !important;
+    line-height: 15px !important;
+  }
+}
+@media (max-width: 1919px) and (min-width: 768px) {
+  h2 {
+    font-size: 32px !important;
+  }
+  h2 + p {
+    font-size: 14px !important;
   }
 }

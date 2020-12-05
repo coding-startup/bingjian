@@ -1,7 +1,7 @@
 <!--
  * @Author: zhang
  * @Date: 2020-11-26 18:56:25
- * @LastEditTime: 2020-12-02 20:35:46
+ * @LastEditTime: 2020-12-03 20:39:49
  * @LastEditors: zhang
  * @Description: Dot not edit
  * @FilePath: \bingjian\index.html
@@ -25,27 +25,28 @@
 
 <body>
     <div class="indexContainer">
-        <div class="container-fluid">
-            <Nav class="navbar  navbar-static-top row">
-                <div class="navbar-left col-sm-3 col-xs-3">
+        <div class="container-fluid odd">
+            <Nav class="navbar navbar-static-top">
+                <div class="navbar-left">
                     <a href="index.html" class="navbar-brand">
                         <img src="image/logo.png" alt="">
                     </a>
                 </div>
-                <ul class="nav-right-flex navbar-right nav navbar-nav col-sm-5 hidden-xs row">
-                    <li class="nav-right-item col-sm-1 ">
+                <ul class="navbar-right nav navbar-nav hidden-xs row">
+                    <li class="nav-right-item">
                         <a href="void(0)">首页</a>
                     </li>
-                    <li class="nav-right-item col-sm-2 col-sm-offset-1">
+                    <li class="nav-right-item">
                         <a href="void(0)">核心优势</a>
                     </li>
-                    <li class="nav-right-item col-sm-2 product-container col-sm-offset-1">
-                        <a class="product">
+                    <li class="nav-right-item product-container  dropdown">
+                        <a class="product dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                            aria-expanded="false">
                             <div class="top">
                                 冰鉴产品
                                 <span class="caret"></span>
                             </div>
-                            <ul class="menu nav-stacked">
+                            <ul class="menu nav-stacked dropdown-menu">
                                 <li><a href="#">个人与企业风控产品</a></li>
                                 <li><a href="#">银行与新金融风控产品</a></li>
                                 <li><a href="#">标准与定制化产品</a></li>
@@ -54,7 +55,23 @@
                             </ul>
                         </a>
                     </li>
-                    <li class="nav-right-item col-sm-2 col-sm-offset-1"></li>
+                    <li class="nav-right-item product-container  dropdown">
+                        <a class="product dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                            aria-expanded="false">
+                            <div class="top">
+                                冰鉴产品
+                                <span class="caret"></span>
+                            </div>
+                            <ul class="menu nav-stacked dropdown-menu">
+                                <li><a href="#">个人与企业风控产品</a></li>
+                                <li><a href="#">银行与新金融风控产品</a></li>
+                                <li><a href="#">标准与定制化产品</a></li>
+                                <li><a href="#">智能风控平台产品</a></li>
+                                <li><a href="#">模型系统产品</a></li>
+                            </ul>
+                        </a>
+                    </li>
+
                 </ul>
             </Nav>
             <div class="swiper-container" id="swiper1">

@@ -127,3 +127,14 @@ new Swiper("#productSwiper", {
 		},
 	},
 });
+
+//导航栏 移出 出现下拉菜单
+
+$(".dropdown").on("mouseover",function(){
+	$(this).addClass("open").find(".aria-expanded").attr("aria-expanded",true)
+})
+$(".dropdown").on("mouseout",function(){
+	$(this).removeClass("open").find(".aria-expanded").attr("aria-expanded",false)
+})
+
+// $(".aria-expanded").attr("aria-expanded",false)

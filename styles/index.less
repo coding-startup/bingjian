@@ -25,48 +25,85 @@ body {
 		width: 100%;
 		height: 100%;
 		overflow: hidden;
-	}
-	.nav-right-flex {
-		.nav-right-item {
-			margin: 0 20px;
-			& > a {
-				display: block;
-				position: relative;
-				font-weight: bold;
-				text-align: center;
-				padding-left: 0;
-				padding-right: 0;
-				&::before {
-					content: "";
-					display: block;
-					position: absolute;
-					width: 100%;
-					height: 5px;
-					background: #38d1ff;
-					bottom: 0;
-					left: 0;
-					transform: rotateY(90deg);
-					transition: transform 0.6s;
-					transform-origin: center center;
+		.navbar {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			padding: 0 35px;
+			box-sizing: border-box;
+			.navbar-left {
+				img {
+					background: url(../image/logo-top2c.png) no-repeat 0 0;
 				}
-				&:hover {
-					background: #fff;
-					color: #38d1ff;
-					.menu {
-						display: block;
-						position: absolute;
-						bottom: 0;
-						left: 0;
+			}
+			.navbar-right {
+				.nav-right-item {
+					margin: 0 15px;
+					a:hover {
+						background: none;
 					}
-				}
-				&.active {
-					&::before {
-						transform: rotateY(0deg);
+					&.open > a {
+						background: none;
+					}
+					& > a {
+						display: block;
+						position: relative;
+						font-weight: bold;
+						text-align: center;
+						padding-left: 0;
+						padding-right: 0;
+						&::before {
+							content: "";
+							display: block;
+							position: absolute;
+							width: 100%;
+							height: 5px;
+							background: #38d1ff;
+							bottom: 0;
+							left: 0;
+							transform: rotateY(90deg);
+							transition: transform 0.6s;
+							transform-origin: center center;
+						}
+						&:hover {
+							color: #38d1ff;
+							.menu {
+								display: block;
+								position: absolute;
+								bottom: 0;
+								left: 0;
+							}
+						}
+					}
+					&:hover a {
+						&::before {
+							transform: rotateY(0deg);
+						}
+					}
+					.dropdown-menu {
+						background: rgb(1, 10, 15);
+						padding: 0;
+						border: none;
+						li {
+							box-sizing: border-box;
+							padding: 5px 10px;
+							&:hover {
+								background: rgb(0, 180, 237);
+							}
+							a {
+								color: #fff;
+								&:hover {
+									background: none;
+								}
+							}
+						}
 					}
 				}
 			}
 		}
 	}
+
 	.carousel-item {
 		width: 100%;
 		height: 100%;
@@ -277,7 +314,6 @@ body {
 				margin-left: 0;
 				margin-right: 0;
 				margin-top: 15%;
-				transform: translateY(-50%);
 			}
 			.bgImage {
 				position: absolute;
@@ -335,18 +371,44 @@ body {
 							&.icon2 .icon {
 								background-position: -100px 0;
 							}
-							&.icon3 .icon{
+							&.icon3 .icon {
 								background-position: -200px 0;
 							}
-							&.icon4 .icon{
+							&.icon4 .icon {
 								background-position: -300px 0;
 							}
-							&.icon5 .icon{
+							&.icon5 .icon {
 								background-position: -400px 0;
 							}
-							&.icon6 .icon{
+							&.icon6 .icon {
 								background-position: -500px 0;
 							}
+						}
+					}
+				}
+			}
+		}
+	}
+	//整屏 上下切换 奇数时候的变化
+	.odd {
+		& > .navbar .navbar-right .nav-right-item > a:hover {
+			color: #fff;
+		}
+		& > .navbar .navbar-right .nav-right-item > a::before {
+			background: #fff;
+		}
+		& > .navbar .navbar-left img {
+			background: url(../image/logo-top2.png) no-repeat 0 0;
+		}
+		.navbar {
+			a {
+				color: #fff;
+			}
+			& > .nav-right {
+				& > .nav-right-item {
+					& > a {
+						&:hover {
+							color: #fff;
 						}
 					}
 				}
@@ -372,5 +434,23 @@ body {
 		width: 80px;
 		height: 80px;
 		background-size: 480px 160px;
+	}
+	h2 {
+		margin: 55px 20px 5px !important;
+		font-size: 22px !important;
+		line-height: 32px !important;
+	}
+	h2 + p {
+		font-size: 10px !important;
+		line-height: 15px !important;
+	}
+}
+
+@media (max-width: 1919px) and (min-width: 768px) {
+	h2 {
+		font-size: 32px !important;
+	}
+	h2 + p {
+		font-size: 14px !important;
 	}
 }
