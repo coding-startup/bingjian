@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1696988_tmkil3xcuhq.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1696988_wpmqiy4p3xf.css">
     <link rel="stylesheet" href="../common/normallize.css">
     <link rel="stylesheet" href="../layui/css/layui.css">
     <link rel="stylesheet" href="../common/animate.compat.min.css">
@@ -26,10 +26,10 @@
             </div>
         </div>
         <div class="yqq-new-content">
-            <div class="container">
-                <div class="col-md-12 col-sm-12 col-xs-12 porent-content" >
-                    <div class="col-md-6 col-sm-6 col-xs-12 proent-item">
-                        <a href="" target="_blank">
+            <div class="container yqq-new-container">
+                <!-- <div class="col-md-12 col-sm-12 col-xs-12 porent-content" >
+                     <div class="col-md-6 col-sm-6 col-xs-12 proent-item">
+                        <a href="#" target="_blank" class="yqq-laypage">
                             <div class="col-md-5 col-sm-12 col-xs-12">
                                 <img src="" alt="">
                             </div>
@@ -42,36 +42,21 @@
                                 <p>内容</p>
                             </div>
                         </a>
-                    </div>
-                    <div class="col-md-6 col-sm-6 col-xs-12 proent-item">
-                        <a href="" target="_blank">
-                            <div class="col-md-5 col-sm-12 col-xs-12">
-                                <img src="" alt="">
-                            </div>
-                            <div class="col-md-7 col-sm-12 col-xs-12">
-                                <h3>标题</h3>
-                                <p class="yqq-news-time">
-                                    <i ></i>
-                                    2020年12月2日18:57:28
-                                </p>
-                                <p>内容</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
+                    </div> 
+                </div> -->
             </div>
             <nav aria-label="Page navigation">
                 <ul class="pagination">
                   <li>
-                    <a href="#" aria-label="Previous">
+                    <a href="javascript:;" aria-label="Previous">
                       <span aria-hidden="true">&laquo;</span>
                     </a>
                   </li>
-                  <li><a href="#">1</a></li>
-                  <li><a href="#">2</a></li>
-                  <li><a href="#">3</a></li>
+                  <li class="previous-one"><a href="javascript:;">1</a></li>
+                  <li class="previous-two"><a href="javascript:;">2</a></li>
+                  <li class="previous-three"><a href="javascript:;">3</a></li>
                   <li>
-                    <a href="#" aria-label="Next">
+                    <a href="javascript:;" aria-label="Next">
                       <span aria-hidden="true">&raquo;</span>
                     </a>
                   </li>
@@ -83,207 +68,244 @@
     </div>
 </body>
 <script>
-    let test = {
-        "code":200,
-        "data":{
-            "total":30,   //总数量
-            "pages":3,    // 总页数
-            "current":1,
-            "records":[
-                {
-                    "img":"../img/IMG_2187-530x353.jpg",
+    let yqqTest = [{
+                    "img":"./img/IMG_2187-530x353.jpg",
                     "title":"上海国资经营公司第六党支部赴冰鉴科技举办主题党日活动",
                     "time":"2020年9月27日",
                     "content":"上海国资经营公司党委委员、常务副总裁陈华，上海国资经营公司各兄弟支部代表，第六党支部全体党员、光大证券信息科技部第二支部代表走进冰鉴科技。"
                 },
                 {
                     
-                    "img":"../img/tp_20200911115127-1-530x254.jpg",
+                    "img":"./img/ooooo.jpg",
                     "title":"民间借贷利率的司法保护上限大幅降低，金融机构如何科技赋能？",
                     "time":"2020年9月4日",
                     "content":"冰鉴科技为为金融机构支招"
                 },
                 {
-                    "img":"../tp_20200911115127-1-530x254.jpg",
+                    "img":"./img/IMG_2187-530x353.jpg",
                     "title":"冰鉴科技入选“2020 IDC 中国 Fintech 50榜单”",
                     "time":"2020年9月3日",
                     "content":"冰鉴科技此番获奖，意味着权威机构对于冰鉴综合实力和业界领先地位的认可与肯定。"
                 },
                 {
-                    "img":"../img/sf-530x398.jpg",
+                    "img":"./img/sf-530x398.jpg",
                     "title":"科创硬核力量，冰鉴科技获评“2020中国科创之星”",
                     "time":"2020年7月24日",
                     "content":"科技创新发力，方能托起国之重器。"
                 },
                 {
-                    "img":"../img/sf-530x398.jpg",
+                    "img":"./img/sf-530x398.jpg",
                     "title":"人工智能创新发展浦东方案出炉，冰鉴科技作为人工智能重点项目签约",
                     "time":"2020年7月14日",
                     "content":"上海市和浦东新区遴选出一批人工智能顶尖领军企业，在上海市委常委、浦东新区区委书记翁祖亮等领导的见证下进行重点项目签约，冰鉴科技荣列其中。"
                 },
                 {
-                    "img":"../img/sf-530x398.jpg",
+                    "img":"./img/sf-530x398.jpg",
                     "title":"冰鉴科技成为“移动应用程序安全委员会”示范会员单位",
                     "time":"2020年7月10日",
                     "content":"该联盟由中国信息通信研究院牵头成立，准入门槛高，旨在与业内外各成员单位一起，共建安全、可信、自律合规的移动应用程序安全生态环境。"
                 },
                 {
-                    "img":"../img/CB-Insihgts-中国-Fintech-530x375.jpg",
+                    "img":"./img/CB-Insihgts-中国-Fintech-530x375.jpg",
                     "title":"冰鉴科技入选CB Insights中国金融科技50强",
                     "time":"2020年7月1日",
                     "content":"凭借突破性的技术创新、杰出的行业影响力以及卓越的市场表现和发展潜力，冰鉴科技成功入围。"
                 },
                 {
-                    "img":"../img/o-530x398.jpg",
+                    "img":"./img/o-530x398.jpg",
                     "title":"冰鉴五周年｜有幸遇鉴，笃行致远",
                     "time":"2020年6月4日",
                     "content":"五年来，我们不忘初心坚守底线，不断探索和突破技术的边界，以科技赋能金融，以智能提升价值，让普惠触手可及！"
                 },
                 {
-                    "img":"../img/uu_20200616171154-530x352.jpg",
+                    "img":"./img/uu_20200616171154-530x352.jpg",
                     "title":"冰鉴科技CEO顾凌云：AI金融产品是「鸡肋」还是「鸡腿」？",
                     "time":"2020年5月26日",
                     "content":"冰鉴科技CEO顾凌云讲述他眼中AI和金融之间的关系。"
                 },
                 {
-                    "img":"../img/ooooo.jpg",
+                    "img":"./img/ooooo.jpg",
                     "title":"冰鉴科技联合发起上海金融科技产业联盟，加速人工智能应用转化",
                     "time":"2020年5月17日",
                     "content":"冰鉴科技作为联合发起单位入选首届联盟理事单位，冰鉴科技创始人、董事长兼CEO顾凌云博士当选首届联盟理事。"
                 },
                 {
-                    "img":"../img/timg-3-1.jpeg",
+                    "img":"./img/timg-3-1.jpeg",
                     "title":"冰鉴科技CEO顾凌云荣登全球科学企业家G200人物榜单",
                     "time":"2020年4月8日",
                     "content":"《2020全球科学企业家研究报告暨200人物榜单》从全球视角出发，基于学术背景、创新能力、所在企业实力、社会贡献四大维度评选而出，顾凌云博士荣耀登榜。"
                 },
                 {
-                    "img":"../img/wx_20200318155757-530x274.png",
+                    "img":"./img/wx_20200318155757-530x274.png",
                     "title":"“零接触”贷款和它背后的“秘密武器”丨最前沿",
                     "time":"2020年3月4日",
                     "content":"冰鉴科技接受第一财经采访，畅谈如何应用AI技术助力银行小微企业贷款"
                 },
                 {
-                    "img":"../img/_20190107102255-e1547013752924-530x295.jpg",
+                    "img":"./img/_20190107102255-e1547013752924-530x295.jpg",
                     "title":"冰鉴科技荣获“2019中国银行业金融科技服务商TOP30”",
                     "time":"2019年9月10日",
                     "content":"冰鉴科技凭借其智能风控解决方案对于银行降低业务风险、提升审核效率、优化客户体验等方面的技术优势和显著成效，斩获大奖。"
                 },
                 {
-                    "img":"../img/u24535608311544901689fm23gp0.jpg",
+                    "img":"./img/u24535608311544901689fm23gp0.jpg",
                     "title":"冰鉴科技完成3.35亿元Pre-C轮融资，超此前融资金额总和",
                     "time":"2019年9月6日",
                     "content":"本轮融资将主要用于：扩展研发团队，完善人工智能研究院、商务智能分析、大数据工程等团队；大力扩展海外业务；对上下游进行投资并购，完善生态建设和业务。"
                 },
                 {
-                    "img":"../img/hb-back-08-530x375.jpg",
+                    "img":"./img/hb-back-08-530x375.jpg",
                     "title":"重磅！冰鉴科技获3.35亿元Pre-C轮融资，国和投资领投",
                     "time":"2019年9月6日",
                     "content":"近日，冰鉴科技宣布一则亿级数额的融资消息。"
                 },
                 {
-                    "img":"../img/26mmkuikclfv2qdf-530x330.jpg",
+                    "img":"./img/26mmkuikclfv2qdf-530x330.jpg",
                     "title":"36氪首发 |「冰鉴科技」获3.35亿元Pre-C轮融资，做基于AI的独立第三方风控平台",
                     "time":"2019年9月6日",
                     "content":"本轮融资金额超过冰鉴此前3.15亿元的融资总和。"
                 },
                 {
-                    "img":"../img/dfd3e6e6ef799076c50ef520fbc32055-530x298.jpg",
+                    "img":"./img/dfd3e6e6ef799076c50ef520fbc32055-530x298.jpg",
                     "title":"冰鉴科技荣登世界人工智能大会“中国AI商业落地初创企业100强”榜单",
                     "time":"2019年9月1日",
                     "content":"经过激烈角逐，人工智能风控专家——冰鉴科技脱颖而出，登上中国AI商业落地初创企业百强榜。"
                 },
                 {
-                    "img":"../img/ss_20200318160348-530x338.png",
+                    "img":"./img/ss_20200318160348-530x338.png",
                     "title":"冰鉴科技顾凌云：增信社会，平等金融",
                     "time":"2019年8月30日",
                     "content":"随着《金融科技（FinTech）发展规划（2019-2021年）》的印发，亿欧金融近日对冰鉴科技创始人顾凌云进行了专访"
                 },
                 {
-                    "img":"../img/timg-3-1.jpeg",
+                    "img":"./img/timg-3-1.jpeg",
                     "title":"冰鉴科技顾凌云：放眼中国，称得上“科技公司”的企业并不多 | IJCAI 2019",
                     "time":"2019年8月19日",
                     "content":"今年 IJCAI 大会特别邀请了冰鉴科技CEO顾凌云作题为《AI Meets Risk》的大会演讲。"
                 },
                 {
-                    "img":"../img/bangdan-wim-530x398.jpg",
+                    "img":"./img/bangdan-wim-530x398.jpg",
                     "title":"“中国海归科技创业者100人”榜单正式发布！",
                     "time":"2019年8月14日",
                     "content":"冰鉴科技创始人、董事长&#038;CEO顾凌云荣登榜单"
                 },  
                 {
-                    "img":"../img/2-530x353.jpg",
+                    "img":"./img/2-530x353.jpg",
                     "title":"冰鉴科技战略合作部总经理管琯：AI落地金融，引领智能风控 | 2019 WISE 超级进化者大会",
                     "time":"2019年7月11日",
                     "content":"冰鉴科技坚持独立第三方风控服务商的定位，深耕机器学习、自然语言处理、知识图谱等前沿AI技术，引领小微企业及个人的智能风控。"
                 },
                 {
-                    "img":"../img/xlb-530x353.jpg",
+                    "img":"./img/xlb-530x353.jpg",
                     "title":"冰鉴科技荣获Visa“创无限”创新挑战赛冠军",
                     "time":"2019年7月10日",
                     "content":"在赢得奖金的同时，冰鉴也将与Visa合作，结合Visa的全球化资源，落实创新计划，共同推动科技创新，加速行业发展。"
                 },
                 {
-                    "img":"../img/_20190528142201-e1559024573900-530x361.jpg",
+                    "img":"./img/_20190528142201-e1559024573900-530x361.jpg",
                     "title":"群贤毕至话金融，冰鉴科技受邀参加清华五道口全球金融论坛",
                     "time":"2019年5月27日",
                     "content":"冰鉴科技作为中国小微企业信用评估赛道的主力部队，立志用最好最强的AI算法解决小微企业融资难、融资贵、融资长的三大难题"
                 },
                 {
-                    "img":"../img/1-e1559024748962-530x358.jpg",
+                    "img":"./img/1-e1559024748962-530x358.jpg",
                     "title":"冰鉴科技受邀参加江苏发展大会，为江苏发展建言献策",
                     "time":"2019年5月23日",
                     "content":"受江苏省委省政府、南京市委市政府邀请，冰鉴继2017年受邀参加首届江苏发展大会后，再次受邀共襄第二届江苏发展大会盛举。"
                 },
                 {
-                    "img":"../img/12-530x344.jpg",
+                    "img":"./img/12-530x344.jpg",
                     "title":"AI赋能金融，冰鉴科技贡献突出受表彰",
                     "time":"2019年4月3日",
                     "content":"冰鉴科技受到浦东新区人民政府的表彰，并荣耀登榜创新创业20强"
                 },
                 {
-                    "img":"../img/3f9f69148f964adf9c784cc6bc4aec24_th-530x265.jpg",
+                    "img":"./img/3f9f69148f964adf9c784cc6bc4aec24_th-530x265.jpg",
                     "title":"冰鉴科技顾凌云：寒冬已至，B、C轮以后的金融科技公司更有机会 | 兵器谱访谈录",
                     "time":"2019年1月26日",
                     "content":"Fintech正越来越深刻地改变着传统金融行业的生态，各家机构都在数字化转型中快速迈进。"
                 },
                 {
-                    "img":"../img/_20190128165125-e1548665666495.png",
+                    "img":"./img/_20190128165125-e1548665666495.png",
                     "title":"Quasi-unicorn IceKredit aims to leverage AI in becoming China&#8217;s FICO",
                     "time":"2019年1月24日",
                     "content":"冰鉴科技创始人、董事长&#038;CEO接受国际媒体中金投X采访"
                 },
                 {
-                    "img":"../img/_20190107102255-e1547013752924-530x295.jpg",
+                    "img":"./img/_20190107102255-e1547013752924-530x295.jpg",
                     "title":"重磅｜冰鉴科技连续三年荣膺KPMG中国领先金融科技公司50强",
                     "time":"2019年1月2日",
                     "content":"冰鉴科技连续三年荣膺榜单之列，其强大的企业实力和影响力，以及业界的认可度毋庸置疑。"
                 },
                 {
-                    "img":"../img/mission-530x298.jpeg",
+                    "img":"./img/mission-530x298.jpeg",
                     "title":"人物 | 从华尔街到陆家嘴,他为小微企业解决融资之惑",
                     "time":"2018年12月28日",
                     "content":"上海电视台改革开放40周年专题纪录片，冰鉴创始人顾凌云成为12个入选人之一"
                 },
                 {
-                    "img":"../img/_20181219173439-e1545212163911-530x319.jpg",
+                    "img":"./img/_20181219173439-e1545212163911-530x319.jpg",
                     "title":"喜报｜冰鉴科技签约富民银行，打造银行与金融科技合作标杆",
                     "time":"2018年12月18日",
                     "content":"冰鉴科技与民营银行的领军代表富民银行共同签署全面战略合作协议"
-                }
-            ]
-        }
-        
-    }
-    function data(curr,mit){
-        totalCount = test.data.total;
-        dataList = test.data.records;  
-    }
+                }]
 
     $(function(){
+        render( yqqTest.slice(0,10))
         var $yqqnewcontent = $(".yqq-new-content")
-        
+        var clickNumber = ['.previous-one','.previous-two',".previous-three"]
+            clickNumber.forEach((item,index)=>{
+                $(item).on('click',()=>{
+                    render(yqqTest.slice((index%2*10),(index%2+1)*10));
+                })
+            })
 
+
+
+        function render(res){
+            $('.yqq-new-container').html("")
+            let yqqdifficulty = "";
+            console.log(res);
+            
+            for(var i=0;i<5;i++){
+                yqqdifficulty += `<div class="col-md-12 col-sm-12 col-xs-12 porent-content" >
+                                <div class="col-md-6 col-sm-6 col-xs-12 proent-item">
+                                    <a href="#" target="_blank" class="yqq-laypage">
+                                        <div class="col-md-5 col-sm-12 col-xs-12">
+                                            <img src="${res[i*2].img}" alt="" class="laypage-pic">
+                                        </div>
+                                        <div class="col-md-7 col-sm-12 col-xs-12 yqq-laypage-recommend">
+                                            <h3 class="yqq-laypage-recommend-h3">${res[i*2].title}}</h3>
+                                            <p class="yqq-news-time">
+                                                <i class="iconfont icon-17shijian"></i>
+                                                ${res[i*2].time}
+                                            </p>
+                                            <p class="yqq-laypage-paragraph">${res[i*2].content}</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-xs-12 proent-item">
+                                    <a href="#" target="_blank" class="yqq-laypage">
+                                        <div class="col-md-5 col-sm-12 col-xs-12">
+                                            <img src="${res[i*2+1].img}" alt="" class="laypage-pic">
+                                        </div>
+                                        <div class="col-md-7 col-sm-12 col-xs-12 yqq-laypage-recommend">
+                                            <h3 class="yqq-laypage-recommend-h3">${res[i*2+1].title}}</h3>
+                                            <p class="yqq-news-time">
+                                                <i class="iconfont icon-17shijian"></i>
+                                                ${res[i*2+1].time}
+                                            </p>
+                                            <p class="yqq-laypage-paragraph">${res[i*2+1].content}</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>`
+            }
+            $(".yqq-new-container").append(yqqdifficulty)
+            
+        }
+
+        
     });
 </script>
 </html>

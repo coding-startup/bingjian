@@ -39,6 +39,10 @@
     .yqq-join-us h3 {
         font-size:22px;
     }
+    .popover-introduce .popover-model .model-content{
+        padding:30px;
+    }
+
     //第五个页面
     .yqq-Cooperative {
         height:420px;
@@ -90,6 +94,7 @@
     .yqq-join-us h3 {
         font-size:16px;
     }
+
     //第五个页面
     .yqq-Cooperative {
         height:280px;
@@ -100,7 +105,18 @@
     .yqq-Cooperative h3 {
         font-size:16px;
     }
-}
+    .yqq-recruit .container .intention>form{
+        margin: 40px 0 !important;
+        padding:20px !important;
+    }
+    // .yqq-recruit .container .intention>form .form-group label{
+    //     font-size:14px !important;
+    // }
+    // .intention .yqq-mkt div span{
+    //     font-size:12px !important;
+    // }
+
+    }
 @media screen and (max-width: 991px) and (min-width: 768px) {
     .team-one>.photo{
         width:200px !important;
@@ -113,6 +129,9 @@
         height:auto !important;
         padding:10px ;
         margin-top: 20px;
+    }
+    .yqq-recruit .container .intention>form{
+        margin: 40px !important;
     }
 }
 @media screen and (max-width: 767px) and (min-width: 540px) {
@@ -137,7 +156,18 @@
         margin-top: 20px;
     }
 }
+@media screen and (min-width:992px){
+    .yqq-recruit .container .intention>form{
+        width:800px ;
+        margin: 40px auto !important;
+    }
+}
 #yqq{
+    .clearfix:after{
+        content:"";
+        display:block;
+        clear:both;
+    }
     .yqq-header{
         width: 100%;
         background:url('../img/bk-about.jpeg');
@@ -308,6 +338,43 @@
         }
     }
     .yqq-new-content{
+        margin: 100px 0 50px 0;
+        .yqq-new-container{
+            .porent-content{
+                .proent-item{
+                    .yqq-laypage:hover{
+                        border:1px solid #65dff5;
+                    }
+                    .yqq-laypage{
+                        display:inline-block;
+                        padding:10px;
+                        border:1px solid transparent;
+                        margin:10px;
+                        .yqq-laypage-recommend{
+                            .yqq-laypage-recommend-h3{
+                                font-size:18px;
+                                color:#666;
+                                margin:10px 0;
+                            }
+                            .yqq-news-time{
+                                font-size:12px;
+                                color:#666;
+                                margin:10px 0;
+                            }
+                            .yqq-laypage-paragraph{
+                                font-size:12px;
+                                color:#666;
+                                margin:10px 0;
+                            }
+                        }
+                        .laypage-pic{
+                            max-width:100%;
+                            height:auto;
+                        }
+                    }
+                }
+            }
+        }
         .pagination {
             margin-left: 50%;
             transform: translate(-50%);
@@ -338,8 +405,369 @@
             }
         }
     }
-    .yqq-recruit{
+    .yqq-employment{
+        padding: 50px 0 100px 0 ;
+        .container{
+            .yqq-join-mark{
+                .yqq-nav-tabs{
+                    margin: 30px 0;
+                    padding: 0 20px;
+                    border-bottom:1px solid #eaeaea;
+                    li{
+                        float: left;
+                        margin-right: 2px;  
+                        
+                        a{
+                            color:#666;
+                            display:inline-block;
+                            padding:15px 30px;
+                            font-size:18px;
+                            font-weight:bold;
+                            text-decoration: none;
+                        }
+                       
+                    }
+                    
+                }
+                .yqq-mark{
+                    padding: 30px 50px;
+                    margin: 15px 0 35px 0;
+                    position:relative;
+                    background:#F8F8F9;
+                    .bg-success:nth-child(3){
+                        margin-bottom:0;
+                    }
+                    .bg-success{
+                        background:#F8F8F9;
+                        font-size:18px;
+                        line-height: 32px;
+                        color:rgb(153, 149, 149);
+                        margin-bottom: 30px;
+                        text-align: left;
+                        font-weight: 100;
+                        &:after{
+                            content:"";
+                            width: 16px;
+                            height:14px;
+                            display:block;
+                            position:absolute;
+                            left:20px;
+                            top:20px;
+                            background: url('../img/blockquote.png') no-repeat 0 0;
+                        }
+                        &:before{
+                            content:"";
+                            width: 16px;
+                            height:14px;
+                            display:block;
+                            position:absolute;
+                            right:20px;
+                            bottom:20px;
+                            background: url('../img/blockquote.png') no-repeat right 0;
+                        }
+                        
+                        a{
+                            color:rgb(77, 158, 235);
+                        }
+                    }
+                }
+            }
+            .yqq-process{
+                h2{
+                    margin: 10px 0 20px 0;
+                    padding:10px 30px 0 30px;
+                    border-bottom: 1px solid #eaeaea;
+                    span{
+                        display:inline-block;
+                        font-size:26px;
+                        color: #666;
+                        padding-bottom:10px;
+                        border-bottom:1px solid #00b4ed;
+                        margin-bottom: -1;
+                    }
+                }
+                .yqq-process-pic{
+                    margin-bottom:10px;
+                    height:auto;
+                    width:100%;
+                }
+            }
+            .yqq-Jobs{
+                h2{
+                    margin: 10px 0 20px 0;
+                    padding:10px 30px 0 30px;
+                    border-bottom: 1px solid #eaeaea;
+                    span{
+                        display:inline-block;
+                        font-size:26px;
+                        color: #666;
+                        padding-bottom:10px;
+                        border-bottom:1px solid #00b4ed;
+                        margin-bottom: -1;
+                    }
+                }
+            }
 
+            .society-station{
+                .yqq-technology{
+                    .yqq-technology-title{
+                        padding-left:15px;
+                        h3{
+                            font-size: 20px;
+                            color: #666;
+                            padding: 10px 0 10px 15px;
+                            margin-bottom: 20px;
+                            margin-top: 50px;
+                            text-align: left;
+                            span{
+                                display: inline-block;
+                                padding-bottom: 10px;
+                                margin-bottom: -1px;
+                                border-bottom: 1px solid #c3c3c3;
+                            }
+                        }
+                    }
+                    .yqq-technology-content:hover{
+                        cursor: pointer;  
+                    }
+                    .yqq-technology-content:hover .job-show{
+                        border-color:rgb(94, 204, 238);
+                    }
+                    .yqq-technology-content{
+                        padding:10px;
+                        .job-show{
+                            display:flex;
+                            padding: 10px;
+                            border: 1px solid #efefef;
+                            transition: all .5s;
+                            min-height:102px;
+                            .head-pic{
+                                width: 80px;
+                                height: 80px;
+                                padding: 0;
+                                .yqq-pic-kttx{
+                                    width:100%;
+                                    height:100%;
+                                }
+                            }
+                            .yqq-jobs-address{
+                                .yqq-jobs-address-h3{
+                                    margin:10px 0;
+                                    span{
+                                        display:inline-block;
+                                        font-size:16px;
+                                        color:#666;
+                                    }
+                                }
+                                .yqq-intro{
+                                    margin:5px 0;
+                                    b{
+                                        margin-left: 5px;
+                                        color:#666;
+                                        font-size:12px;
+                                        font-weight:normal;
+                                    }   
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+    .modal-dialog{
+        .modal-content{
+            background:rgba(0, 180, 237, 0.9);
+            color:#fff;
+            .model-header{
+                padding:15px;
+                border-bottom:1px solid #fff;
+                display:flex;
+                justify-content: space-between;
+                h4{
+                    font-size:24px;
+                }
+            }
+            .model-body{
+                .popover-show-dt{
+                    padding:5px;
+                    h3{
+                        margin: 10px 0 20px;
+                        width:100%;
+                        padding:0 10px;
+                        font-size:20px;
+                        display:flex;
+                        justify-content: space-between;
+                        .yqq-popover-post{
+                            padding-bottom: 10px;
+                            border-bottom:2px solid #fff;
+                        }
+                        span{
+                            b{
+                                font-size:12px;
+                                padding:5px 10px;
+                                font-weight:normal;
+                                border:1px solid rgba(243, 238, 238,0.8);
+                            }
+                        }
+                    }
+                    .popover-jobdt{
+                        padding-left:15px;
+                        h4{
+                            margin-bottom:10px;
+                        }
+                        p{
+                            line-height:20px;
+                            margin-bottom:30px;
+                        }
+                        .yqq-apply{
+                            border:1px solid #fff;
+                            margin-left: 15px;
+                            border-radius:30px;
+                            background:none;
+                            margin-bottom:30px;
+    
+                            a{
+                                display:inline-block;
+                                padding:10px 30px;
+                                color:#fff;
+                                font-size:16px;
+                                font-weight:bold;
+
+                                i{
+                                    display:inline-block;
+                                    padding-right: 5px;
+                                }
+                            }
+                        }
+                        .yqq-apply:hover{
+                            border:none;  
+                            background:#fff;
+                        }
+                        .yqq-apply:hover a{
+                            color:rgb(90, 90, 236);
+                        }
+                    }
+    
+                }
+            }
+            
+        }
+        
+    }
+    //第五个页面
+    .yqq-recruit{
+        .yqq-teamwork{
+            .yqq-partner-item{
+                .partner-masked{
+                    width:100%;
+                    height:100%;
+                    text-align:center;
+                    background:rgb(87, 190, 238);
+                    color:#fff;
+                    position:absolute;
+                    left:0;
+                    top:0;
+                    font-size:16px;
+                    padding-top: 20%;
+                    display:none;
+                    font-weight: bold;
+                }
+            } 
+        }
+        .partner-aisle{
+            h2{
+                margin: 10px 0 20px 0;
+                padding:10px 30px 0 30px;
+                border-bottom: 1px solid #eaeaea;
+                span{
+                    display:inline-block;
+                    font-size:26px;
+                    color: #666;
+                    padding-bottom:10px;
+                    border-bottom:1px solid #00b4ed;
+                    margin-bottom: -1;
+                }
+            }
+        }
+        .intention{
+            form{
+                padding:40px;
+                margin:40px 155px;
+                border:1px solid #eaeaea;
+                background-color: #fdfdfd;
+                #partner-cust{
+                    display:none;
+                }
+                .partner-pan{
+                   .form-group{
+                       margin-bottom: 15px;
+                   }
+                   button{
+                       margin-left: 50%;
+                       transform: translate(-50%);
+                       margin-top: 30px;
+                       padding:15px 60px;
+                       border:none;
+                       border-radius:30px;
+                       background:rgb(13, 141, 180);
+                       a{
+                           display: inline-block;
+                           color:#fff;
+                           font-size:20px;
+                       }
+                   }
+                   button:hover{
+                       background:#342e8f;
+                       cursor: pointer;
+                   }
+                }
+                input{
+                    width:100%;
+                    height:auto;
+                    font-size:14px;
+                    border:1px solid rgb(192, 187, 187);
+                    padding:10px; 
+                }
+                textarea{
+                    width:100%;
+                    padding:10px;
+                    font-size:14px;
+                    border:1px solid rgb(192, 187, 187);
+                }
+                .yqq-mkt{
+                    div{
+                        float: left;
+                        text-align: center;
+                        span{
+                            display:inline-block;
+                            width:95%;
+                            font-size:16px;
+                            color:#666;
+                            padding:10px 20px;
+                            border:1px solid transparent;
+                            cursor: pointer;
+                            font-weight: 100;
+                            background: #f4f4f4;
+                        }
+                    }
+                    div:hover span{
+                        transition: all .5s;
+                        color:rgb(30, 192, 233) !important;
+                    }
+                }
+                label{
+                    width:100%;
+                    text-align: left;
+                    font-size:16px;
+                    font-weight:100;
+                    padding:10px 20px;
+                    color:#666;
+                }
+            }
+            
+        }
     }
     //第五个页面
     .yqq-Cooperative{
@@ -363,8 +791,7 @@
         }
     }
     .Cooperative{
-
+        color:#333;
     }
-
 }
 
