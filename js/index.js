@@ -81,11 +81,16 @@ $(".swiper-slide.core .graph").on("mousemove", function (e) {
 //确定宽高
 let fn2 = function () {
 	$(".swiper-slide.core .graph").height(
-		$(".swiper-slide.core .text").height()
+		$(".swiper-slide.core .text").height()>362?362+"px":$(".swiper-slide.core .text").height()
 	);
 	$(".swiper-slide.core .graph .imgBg2 img").width(
 		$(".swiper-slide.core .graph").width()
 	);
+	if($(window).width()<=768){
+		$(".container-fluid").addClass("small")
+	}else{
+		$(".container-fluid").removeClass("small")
+	}
 };
 fn2();
 $(window).on("resize", fn2);
@@ -128,13 +133,24 @@ new Swiper("#productSwiper", {
 	},
 });
 
-//导航栏 移出 出现下拉菜单
 
-$(".dropdown").on("mouseover",function(){
-	$(this).addClass("open").find(".aria-expanded").attr("aria-expanded",true)
-})
-$(".dropdown").on("mouseout",function(){
-	$(this).removeClass("open").find(".aria-expanded").attr("aria-expanded",false)
+
+
+
+
+//三道杠的点击下拉效果
+
+$(".navbar .btn-group .btn").click(()=>{
+	//获取现在的状态
+	let isBlock=$(".navbar .btn-group .dropdown-select").css("display")
+	if(isBlock=="block"){
+		$(".navbar .btn-group .dropdown-select").css({
+			display:'none'
+		})
+	}else{
+		$(".navbar .btn-group .dropdown-select").css({
+			display:'block'
+		})
+	}
 })
 
-// $(".aria-expanded").attr("aria-expanded",false)

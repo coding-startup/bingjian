@@ -13,6 +13,7 @@ body {
 .indexContainer {
 	width: 100%;
 	height: 100%;
+	min-width: 380px;
 	a {
 		text-decoration: none;
 	}
@@ -30,7 +31,7 @@ body {
 			top: 0;
 			left: 0;
 			width: 100%;
-			padding: 0 35px;
+			padding: 0 20px;
 			box-sizing: border-box;
 			.navbar-left {
 				img {
@@ -101,9 +102,67 @@ body {
 					}
 				}
 			}
+			.btn-group {
+				float: right;
+				position: static;
+				.row {
+					margin: 0;
+				}
+				.btn {
+					background: none;
+					width: 25px;
+					border: none;
+					margin-top: 50%;
+					span {
+						display: block;
+						width: 20px;
+						height: 3px;
+						background: #ccc;
+						margin: 2px 0;
+					}
+				}
+				.dropdown-select {
+					display: none;
+					position: absolute;
+					top: 100%;
+					left: 0;
+					width: 100%;
+					background: rgb(34, 42, 43);
+					& > li {
+						padding: 0 0.8rem;
+						margin: 1rem 0;
+						div {
+							line-height: 30px;
+							display: flex;
+							justify-content: flex-start;
+							span {
+								width: 4%;
+								height: auto;
+								color: #fff;
+							}
+							div {
+								color: #fff;
+							}
+						}
+						ul {
+							li {
+								margin: 0.5rem 0;
+							}
+						}
+					}
+				}
+			}
 		}
 	}
-
+	//.small小屏幕时候的变化
+	.small {
+		.navbar {
+			.navbar-left {
+				img {
+				}
+			}
+		}
+	}
 	.carousel-item {
 		width: 100%;
 		height: 100%;
@@ -115,6 +174,9 @@ body {
 	#swiper1 {
 		height: 100%;
 		width: 100%;
+		.swiper-slide {
+			overflow: hidden;
+		}
 		.exterior-pagination {
 			position: absolute;
 			right: 2%;
@@ -264,7 +326,6 @@ body {
 			width: 100%;
 			height: 100%;
 			.row.clearfix {
-				padding-top: 140px;
 				& > div {
 					height: 100%;
 					position: relative;
@@ -349,11 +410,13 @@ body {
 		}
 		.us {
 			background: rgb(13, 127, 200);
+			margin: 0;
 			.contentContainer {
 				margin-top: 10%;
 				h2 {
 					margin: 5rem 0;
 					text-align: center;
+					color: #fff;
 				}
 				.detailsList {
 					.flex-r();
@@ -361,28 +424,29 @@ body {
 					li {
 						height: 100%;
 						box-sizing: border-box;
-						.iconWrapper {
-							.icon {
-								width: 100%;
-								height: 100%;
-								background: url("../image/s6icb (2).png")
-									no-repeat 0 0;
-							}
-							&.icon2 .icon {
-								background-position: -100px 0;
-							}
-							&.icon3 .icon {
-								background-position: -200px 0;
-							}
-							&.icon4 .icon {
-								background-position: -300px 0;
-							}
-							&.icon5 .icon {
-								background-position: -400px 0;
-							}
-							&.icon6 .icon {
-								background-position: -500px 0;
-							}
+						border: 1px solid transparent;
+						text-align: center;
+						padding: 5% 0;
+						&:hover {
+							border: 1px solid rgb(180, 190, 197);
+						}
+						h4 {
+							color: #fff;
+						}
+					}
+				}
+				.telMap {
+					padding: 1.5rem 0;
+					border-top: 1px solid #ccc;
+					border-bottom: 1px solid #ccc;
+					b {
+						margin: 0 0.5rem;
+						color: rgb(165, 226, 255);
+					}
+					li {
+						display: flex;
+						a {
+							color: rgb(165, 226, 255);
 						}
 					}
 				}
@@ -394,11 +458,11 @@ body {
 		& > .navbar .navbar-right .nav-right-item > a:hover {
 			color: #fff;
 		}
-		& > .navbar .navbar-right .nav-right-item > a::before {
-			background: #fff;
-		}
 		& > .navbar .navbar-left img {
 			background: url(../image/logo-top2.png) no-repeat 0 0;
+		}
+		& > .navbar .navbar-right .nav-right-item > a::before {
+			background: #fff;
 		}
 		.navbar {
 			a {
@@ -415,6 +479,12 @@ body {
 			}
 		}
 	}
+	//小屏幕时候的效果
+	.small {
+		& > .navbar .navbar-left img {
+			background-size: 153px 30px;
+		}
+	}
 }
 
 @keyframes bgBig {
@@ -427,30 +497,201 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-	.text-align-center {
-		text-align: center;
+	//顶部导航栏的效果
+	.indexContainer {
+		.container-fluid {
+			.navbar {
+				background: rgb(46, 46, 46);
+				.nav-left {
+					.iconLogo {
+						background: url(../image/logo-top2c.png) no-repeat 0 0;
+					}
+				}
+			}
+		}
 	}
-	.indexContainer #swiper1 .us .contentContainer .detailsList li {
-		width: 80px;
-		height: 80px;
-		background-size: 480px 160px;
+	//尾页的效果
+	.us {
+		.telMap {
+			li {
+				padding: 0.5rem 0;
+			}
+		}
+	}
+	.indexContainer #swiper1 .core .row.clearfix {
+		padding-top: 5rem;
 	}
 	h2 {
 		margin: 55px 20px 5px !important;
 		font-size: 22px !important;
 		line-height: 32px !important;
 	}
-	h2 + p {
-		font-size: 10px !important;
-		line-height: 15px !important;
+	//尾部的背景图更换
+	li {
+		h4 {
+			line-height: 22px;
+		}
+		.iconWrapper {
+			margin: 0 auto;
+			width: 80px;
+			height: 80px;
+			.icon {
+				width: 80px;
+				height: 80px;
+				background: url("../image/s6icb (2).png") no-repeat 0 0;
+				background-size: 480px 160px;
+			}
+			&.icon2 .icon {
+				background-size: 480px 160px;
+				background-position: -80px 0;
+			}
+			&.icon3 .icon {
+				background-size: 480px 160px;
+				background-position: -160px 0;
+			}
+			&.icon4 .icon {
+				background-size: 480px 160px;
+				background-position: -240px 0;
+			}
+			&.icon5 .icon {
+				background-size: 480px 160px;
+				background-position: -320px 0;
+			}
+			&.icon6 .icon {
+				background-size: 480px 160px;
+				background-position: -400px 0;
+			}
+		}
+		&:nth-child(1):hover {
+			.icon1 {
+				.icon {
+					background-position: 0px -80px;
+				}
+			}
+		}
+		&:nth-child(2):hover {
+			.icon2 {
+				.icon {
+					background-position: -80px -80px;
+				}
+			}
+		}
+		&:nth-child(3):hover {
+			.icon3 {
+				.icon {
+					background-position: -160px -80px;
+				}
+			}
+		}
+		&:nth-child(4):hover {
+			.icon4 {
+				.icon {
+					background-position: -240px -80px;
+				}
+			}
+		}
+		&:nth-child(5):hover {
+			.icon5 {
+				.icon {
+					background-position: -320px -80px;
+				}
+			}
+		}
+		&:nth-child(6):hover {
+			.icon6 {
+				.icon {
+					background-position: -400px -80px;
+				}
+			}
+		}
 	}
 }
 
-@media (max-width: 1919px) and (min-width: 768px) {
+@media screen and (min-width: 768px) {
 	h2 {
 		font-size: 32px !important;
 	}
-	h2 + p {
-		font-size: 14px !important;
+	.indexContainer #swiper1 .core .row.clearfix {
+		padding-top: 10rem;
+	}
+	h2 + .bottomText {
+		p {
+			font-size: 14px !important;
+			line-height: 16px !important;
+		}
+	}
+	//尾部的背景图更换
+	li {
+		h4 {
+			line-height: 27px;
+		}
+		&:nth-child(1):hover {
+			.icon {
+				width: 100px;
+				height: 100px;
+				background: url("../image/s6icb (2).png") no-repeat 0 -100px;
+			}
+		}
+
+		.iconWrapper {
+			margin: 0 auto;
+			width: 100px;
+			height: 100px;
+			.icon {
+				width: 100px;
+				height: 100px;
+				background: url("../image/s6icb (2).png") no-repeat 0 0;
+			}
+			&.icon2 .icon {
+				background-position: -100px 0px;
+			}
+			&.icon3 .icon {
+				background-position: -200px 0;
+			}
+			&.icon4 .icon {
+				background-position: -300px 0;
+			}
+			&.icon5 .icon {
+				background-position: -400px 0;
+			}
+			&.icon6 .icon {
+				background-position: -500px 0;
+			}
+		}
+		&:nth-child(2):hover {
+			.icon2 {
+				.icon {
+					background-position: -100px -100px;
+				}
+			}
+		}
+		&:nth-child(3):hover {
+			.icon3 {
+				.icon {
+					background-position: -200px -100px;
+				}
+			}
+		}
+		&:nth-child(4):hover {
+			.icon4 {
+				.icon {
+					background-position: -300px -100px;
+				}
+			}
+		}
+		&:nth-child(5):hover {
+			.icon5 {
+				.icon {
+					background-position: -400px -100px;
+				}
+			}
+		}
+		&:nth-child(6):hover {
+			.icon6 {
+				.icon {
+					background-position: -500px -100px;
+				}
+			}
+		}
 	}
 }

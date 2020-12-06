@@ -7,6 +7,7 @@ body {
 .indexContainer {
   width: 100%;
   height: 100%;
+  min-width: 380px;
 }
 .indexContainer a {
   text-decoration: none;
@@ -26,7 +27,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 0 35px;
+  padding: 0 20px;
   box-sizing: border-box;
 }
 .indexContainer .container-fluid .navbar .navbar-left img {
@@ -92,6 +93,54 @@ body {
 .indexContainer .container-fluid .navbar .navbar-right .nav-right-item .dropdown-menu li a:hover {
   background: none;
 }
+.indexContainer .container-fluid .navbar .btn-group {
+  float: right;
+  position: static;
+}
+.indexContainer .container-fluid .navbar .btn-group .row {
+  margin: 0;
+}
+.indexContainer .container-fluid .navbar .btn-group .btn {
+  background: none;
+  width: 25px;
+  border: none;
+  margin-top: 50%;
+}
+.indexContainer .container-fluid .navbar .btn-group .btn span {
+  display: block;
+  width: 20px;
+  height: 3px;
+  background: #ccc;
+  margin: 2px 0;
+}
+.indexContainer .container-fluid .navbar .btn-group .dropdown-select {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: #222a2b;
+}
+.indexContainer .container-fluid .navbar .btn-group .dropdown-select > li {
+  padding: 0 0.8rem;
+  margin: 1rem 0;
+}
+.indexContainer .container-fluid .navbar .btn-group .dropdown-select > li div {
+  line-height: 30px;
+  display: flex;
+  justify-content: flex-start;
+}
+.indexContainer .container-fluid .navbar .btn-group .dropdown-select > li div span {
+  width: 4%;
+  height: auto;
+  color: #fff;
+}
+.indexContainer .container-fluid .navbar .btn-group .dropdown-select > li div div {
+  color: #fff;
+}
+.indexContainer .container-fluid .navbar .btn-group .dropdown-select > li ul li {
+  margin: 0.5rem 0;
+}
 .indexContainer .carousel-item {
   width: 100%;
   height: 100%;
@@ -103,6 +152,9 @@ body {
 .indexContainer #swiper1 {
   height: 100%;
   width: 100%;
+}
+.indexContainer #swiper1 .swiper-slide {
+  overflow: hidden;
 }
 .indexContainer #swiper1 .exterior-pagination {
   position: absolute;
@@ -237,9 +289,6 @@ body {
 .indexContainer #swiper1 .core .inDown {
   opacity: 0;
 }
-.indexContainer #swiper1 .core .row.clearfix {
-  padding-top: 140px;
-}
 .indexContainer #swiper1 .core .row.clearfix > div {
   height: 100%;
   position: relative;
@@ -318,6 +367,7 @@ body {
 }
 .indexContainer #swiper1 .us {
   background: #0d7fc8;
+  margin: 0;
 }
 .indexContainer #swiper1 .us .contentContainer {
   margin-top: 10%;
@@ -325,6 +375,7 @@ body {
 .indexContainer #swiper1 .us .contentContainer h2 {
   margin: 5rem 0;
   text-align: center;
+  color: #fff;
 }
 .indexContainer #swiper1 .us .contentContainer .detailsList {
   display: flex;
@@ -335,41 +386,48 @@ body {
 .indexContainer #swiper1 .us .contentContainer .detailsList li {
   height: 100%;
   box-sizing: border-box;
+  border: 1px solid transparent;
+  text-align: center;
+  padding: 5% 0;
 }
-.indexContainer #swiper1 .us .contentContainer .detailsList li .iconWrapper .icon {
-  width: 100%;
-  height: 100%;
-  background: url("../image/s6icb (2).png") no-repeat 0 0;
+.indexContainer #swiper1 .us .contentContainer .detailsList li:hover {
+  border: 1px solid #b4bec5;
 }
-.indexContainer #swiper1 .us .contentContainer .detailsList li .iconWrapper.icon2 .icon {
-  background-position: -100px 0;
+.indexContainer #swiper1 .us .contentContainer .detailsList li h4 {
+  color: #fff;
 }
-.indexContainer #swiper1 .us .contentContainer .detailsList li .iconWrapper.icon3 .icon {
-  background-position: -200px 0;
+.indexContainer #swiper1 .us .contentContainer .telMap {
+  padding: 1.5rem 0;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
 }
-.indexContainer #swiper1 .us .contentContainer .detailsList li .iconWrapper.icon4 .icon {
-  background-position: -300px 0;
+.indexContainer #swiper1 .us .contentContainer .telMap b {
+  margin: 0 0.5rem;
+  color: #a5e2ff;
 }
-.indexContainer #swiper1 .us .contentContainer .detailsList li .iconWrapper.icon5 .icon {
-  background-position: -400px 0;
+.indexContainer #swiper1 .us .contentContainer .telMap li {
+  display: flex;
 }
-.indexContainer #swiper1 .us .contentContainer .detailsList li .iconWrapper.icon6 .icon {
-  background-position: -500px 0;
+.indexContainer #swiper1 .us .contentContainer .telMap li a {
+  color: #a5e2ff;
 }
 .indexContainer .odd > .navbar .navbar-right .nav-right-item > a:hover {
   color: #fff;
 }
-.indexContainer .odd > .navbar .navbar-right .nav-right-item > a::before {
-  background: #fff;
-}
 .indexContainer .odd > .navbar .navbar-left img {
   background: url(../image/logo-top2.png) no-repeat 0 0;
+}
+.indexContainer .odd > .navbar .navbar-right .nav-right-item > a::before {
+  background: #fff;
 }
 .indexContainer .odd .navbar a {
   color: #fff;
 }
 .indexContainer .odd .navbar > .nav-right > .nav-right-item > a:hover {
   color: #fff;
+}
+.indexContainer .small > .navbar .navbar-left img {
+  background-size: 153px 30px;
 }
 @keyframes bgBig {
   0% {
@@ -380,29 +438,133 @@ body {
   }
 }
 @media screen and (max-width: 768px) {
-  .text-align-center {
-    text-align: center;
+  .indexContainer .container-fluid .navbar {
+    background: #2e2e2e;
   }
-  .indexContainer #swiper1 .us .contentContainer .detailsList li {
-    width: 80px;
-    height: 80px;
-    background-size: 480px 160px;
+  .indexContainer .container-fluid .navbar .nav-left .iconLogo {
+    background: url(../image/logo-top2c.png) no-repeat 0 0;
+  }
+  .us .telMap li {
+    padding: 0.5rem 0;
+  }
+  .indexContainer #swiper1 .core .row.clearfix {
+    padding-top: 5rem;
   }
   h2 {
     margin: 55px 20px 5px !important;
     font-size: 22px !important;
     line-height: 32px !important;
   }
-  h2 + p {
-    font-size: 10px !important;
-    line-height: 15px !important;
+  li h4 {
+    line-height: 22px;
+  }
+  li .iconWrapper {
+    margin: 0 auto;
+    width: 80px;
+    height: 80px;
+  }
+  li .iconWrapper .icon {
+    width: 80px;
+    height: 80px;
+    background: url("../image/s6icb (2).png") no-repeat 0 0;
+    background-size: 480px 160px;
+  }
+  li .iconWrapper.icon2 .icon {
+    background-size: 480px 160px;
+    background-position: -80px 0;
+  }
+  li .iconWrapper.icon3 .icon {
+    background-size: 480px 160px;
+    background-position: -160px 0;
+  }
+  li .iconWrapper.icon4 .icon {
+    background-size: 480px 160px;
+    background-position: -240px 0;
+  }
+  li .iconWrapper.icon5 .icon {
+    background-size: 480px 160px;
+    background-position: -320px 0;
+  }
+  li .iconWrapper.icon6 .icon {
+    background-size: 480px 160px;
+    background-position: -400px 0;
+  }
+  li:nth-child(1):hover .icon1 .icon {
+    background-position: 0px -80px;
+  }
+  li:nth-child(2):hover .icon2 .icon {
+    background-position: -80px -80px;
+  }
+  li:nth-child(3):hover .icon3 .icon {
+    background-position: -160px -80px;
+  }
+  li:nth-child(4):hover .icon4 .icon {
+    background-position: -240px -80px;
+  }
+  li:nth-child(5):hover .icon5 .icon {
+    background-position: -320px -80px;
+  }
+  li:nth-child(6):hover .icon6 .icon {
+    background-position: -400px -80px;
   }
 }
-@media (max-width: 1919px) and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   h2 {
     font-size: 32px !important;
   }
-  h2 + p {
+  .indexContainer #swiper1 .core .row.clearfix {
+    padding-top: 10rem;
+  }
+  h2 + .bottomText p {
     font-size: 14px !important;
+    line-height: 16px !important;
+  }
+  li h4 {
+    line-height: 27px;
+  }
+  li:nth-child(1):hover .icon {
+    width: 100px;
+    height: 100px;
+    background: url("../image/s6icb (2).png") no-repeat 0 -100px;
+  }
+  li .iconWrapper {
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+  }
+  li .iconWrapper .icon {
+    width: 100px;
+    height: 100px;
+    background: url("../image/s6icb (2).png") no-repeat 0 0;
+  }
+  li .iconWrapper.icon2 .icon {
+    background-position: -100px 0px;
+  }
+  li .iconWrapper.icon3 .icon {
+    background-position: -200px 0;
+  }
+  li .iconWrapper.icon4 .icon {
+    background-position: -300px 0;
+  }
+  li .iconWrapper.icon5 .icon {
+    background-position: -400px 0;
+  }
+  li .iconWrapper.icon6 .icon {
+    background-position: -500px 0;
+  }
+  li:nth-child(2):hover .icon2 .icon {
+    background-position: -100px -100px;
+  }
+  li:nth-child(3):hover .icon3 .icon {
+    background-position: -200px -100px;
+  }
+  li:nth-child(4):hover .icon4 .icon {
+    background-position: -300px -100px;
+  }
+  li:nth-child(5):hover .icon5 .icon {
+    background-position: -400px -100px;
+  }
+  li:nth-child(6):hover .icon6 .icon {
+    background-position: -500px -100px;
   }
 }
