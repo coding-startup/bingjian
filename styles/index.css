@@ -93,6 +93,9 @@ body {
 .indexContainer .container-fluid .navbar .navbar-right .nav-right-item .dropdown-menu li a:hover {
   background: none;
 }
+.indexContainer .container-fluid .navbar .navbar-right .nav-right-item.show > a::before {
+  transform: rotateY(0deg);
+}
 .indexContainer .container-fluid .navbar .btn-group {
   float: right;
   position: static;
@@ -105,6 +108,7 @@ body {
   width: 25px;
   border: none;
   margin-top: 50%;
+  position: relative;
 }
 .indexContainer .container-fluid .navbar .btn-group .btn span {
   display: block;
@@ -112,6 +116,23 @@ body {
   height: 3px;
   background: #ccc;
   margin: 2px 0;
+  transform-origin: center center;
+}
+.indexContainer .container-fluid .navbar .btn-group .btn.click span {
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+.indexContainer .container-fluid .navbar .btn-group .btn.click span:nth-child(2) {
+  display: none;
+}
+.indexContainer .container-fluid .navbar .btn-group .btn.click span.animation1 {
+  animation: an1 0.2s linear;
+  animation-fill-mode: forwards;
+}
+.indexContainer .container-fluid .navbar .btn-group .btn.click span.animation2 {
+  animation: an2 0.2s linear;
+  animation-fill-mode: forwards;
 }
 .indexContainer .container-fluid .navbar .btn-group .dropdown-select {
   display: none;
@@ -125,6 +146,9 @@ body {
   padding: 0 0.8rem;
   margin: 1rem 0;
 }
+.indexContainer .container-fluid .navbar .btn-group .dropdown-select > li.show > div > div {
+  color: #00b4ed;
+}
 .indexContainer .container-fluid .navbar .btn-group .dropdown-select > li div {
   line-height: 30px;
   display: flex;
@@ -134,12 +158,43 @@ body {
   width: 4%;
   height: auto;
   color: #fff;
+  margin: 0 5px;
 }
 .indexContainer .container-fluid .navbar .btn-group .dropdown-select > li div div {
   color: #fff;
 }
+.indexContainer .container-fluid .navbar .btn-group .dropdown-select > li div b {
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-top-color: #fff;
+  transform: translateY(120%);
+  margin-left: 5px;
+}
+.indexContainer .container-fluid .navbar .btn-group .dropdown-select > li.false ul {
+  display: block;
+}
+.indexContainer .container-fluid .navbar .btn-group .dropdown-select > li ul {
+  display: none;
+}
 .indexContainer .container-fluid .navbar .btn-group .dropdown-select > li ul li {
   margin: 0.5rem 0;
+}
+.indexContainer .container-fluid .navbar .btn-group .dropdown-select > li ul li a {
+  color: #fff;
+}
+.indexContainer .small h4 {
+  font-size: 10px !important;
+}
+.indexContainer .small p {
+  font-size: 10px !important;
+}
+.indexContainer .small h2 {
+  font-size: 28px !important;
+  text-align: center !important;
+}
+.indexContainer .small #swiper1 .core .row.clearfix > div ul li {
+  font-size: 10px !important;
 }
 .indexContainer .carousel-item {
   width: 100%;
@@ -450,8 +505,13 @@ body {
   .indexContainer #swiper1 .core .row.clearfix {
     padding-top: 5rem;
   }
+  .indexContainer #swiper1 .us .contentContainer .detailsList li {
+    padding: 0 0;
+  }
+  .indexContainer #swiper1 .us .contentContainer h2 {
+    margin: 20px 0;
+  }
   h2 {
-    margin: 55px 20px 5px !important;
     font-size: 22px !important;
     line-height: 32px !important;
   }
@@ -566,5 +626,21 @@ body {
   }
   li:nth-child(6):hover .icon6 .icon {
     background-position: -500px -100px;
+  }
+}
+@keyframes an1 {
+  form {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(45deg);
+  }
+}
+@keyframes an2 {
+  form {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-45deg);
   }
 }
