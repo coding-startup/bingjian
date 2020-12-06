@@ -1,43 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="common/normallize.css">
-    <link rel="stylesheet" href="./layui/css/layui.css">
-    <link rel="stylesheet" href="common/animate.compat.min.css">
-    <link rel="stylesheet" href="common/bootstrap.min.css">
-    <link rel="stylesheet" href="common/reset.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="../common/normallize.css">
+	<link rel="stylesheet" href="./layui/css/layui.css">
+	<link rel="stylesheet" href="../common/animate.compat.min.css">
+	<link rel="stylesheet" href="../common/bootstrap.min.css">
+	<link rel="stylesheet" href="../common/reset.css">
 </head>
 <style type="text/css">
-	ul,li{
+	p {
+		word-wrap: break-word;
+		margin-bottom: 0px;
+		width: 100%;
+		box-sizing: border-box;
+		padding: 0 1px;
+	}
+
+	ul,
+	li {
 		list-style: none;
 	}
-	a{text-decoration: none;}
-	.znp-top{
+
+	a {
+		text-decoration: none;
+	}
+
+	.znp-top {
 		background-color: #fff;
 		padding-top: 50px;
 		padding-bottom: 100px;
 		width: 100%;
 		min-height: 600px;
 	}
-	.znp-content{
+
+	.znp-content {
 		padding-right: 15px;
 		padding-left: 15px;
 		margin-right: auto;
 		margin-left: auto;
 		width: 1170px;
 	}
-	.znp-nr{
+
+	.znp-nr {
 		font-size: 16px;
 		line-height: 28px;
 	}
-	.znp-nr p{
+
+	.znp-nr p {
 		text-align: left;
 		margin-bottom: 30px;
 	}
-	.nav{
+
+	.nav {
 		border-bottom: 1px solid #eaeaea;
 		margin-top: 30px;
 		margin-bottom: 30px;
@@ -46,18 +64,22 @@
 		float: left;
 		width: 100%;
 	}
-	.nav li{
+
+	.nav li {
 		float: left;
-		margin-bottom: -1px;	
+		margin-bottom: -1px;
 		position: relative;
 		display: block;
 		text-align: left;
 	}
-	.znp-content::before,.nav::before{
+
+	.znp-content::before,
+	.nav::before {
 		display: table;
 		content: "";
 	}
-	.nav li a{
+
+	.nav li a {
 		position: relative;
 		display: block;
 		color: #666;
@@ -65,16 +87,18 @@
 		border-radius: 0;
 		font-size: 14px;
 		padding: 15px 30px;
-		transition:all 0.4s;
+		transition: all 0.4s;
 	}
-	.nav li.active a{
+
+	.nav li.active a {
 		color: #fff;
 		cursor: default;
 		background-color: #00b4ed;
 		border: 0;
 		border-bottom-color: transparent;
 	}
-	table{
+
+	table {
 		overflow: hidden;
 		text-overflow: ellipsis;
 		table-layout: auto;
@@ -83,79 +107,96 @@
 		border-spacing: 0;
 		border-collapse: collapse;
 	}
-	td{
+
+	td {
 		padding: 10px;
 		text-align: center;
 	}
-	th{
+
+	th {
 		border: 1px solid #eaeaea;
 		padding: 10px;
 		text-align: center;
 		font-weight: 700;
 	}
-	.bkh1{
+
+	.bkh1 {
 		background-color: #f3f6f7;
 		border: none;
 	}
-	.bkh2{
+
+	.bkh2 {
 		background-color: #e3e6e6;
 		border: none;
 	}
-	.bk1{
+
+	.bk1 {
 		background-color: #bf591f;
 		border: none;
 		color: #ffffff;
 	}
-	.bk2{
+
+	.bk2 {
 		background-color: #e4bc6c;
 		border: none;
 		color: #ffffff;
 	}
-	.bk21{
+
+	.bk21 {
 		background-color: #dcb15c;
 		border: none;
 		color: #ffffff;
 	}
-	b{
+
+	b {
 		font-weight: 700;
 		color: #00b4ed;
 	}
-	.button-nr{
+
+	.button-nr {
 		padding: 15px 60px;
 		border-radius: 26px;
 		font-size: 16px;
 		background-color: #00b4ed;
 		color: #FFF;
 		display: inline-block;
-		transition:all 0.2s ease-in-out;
+		transition: all 0.2s ease-in-out;
 	}
-	.yc{
+
+	.yc {
 		display: none;
 	}
-	li a:hover{
-		background-color: rgb(238,238,238);
+
+	li a:hover {
+		background-color: rgb(238, 238, 238);
 	}
-	.button-nr:hover{
-		background: rgb(7,140,191);
+
+	.button-nr:hover {
+		background: rgb(7, 140, 191);
 	}
-	@media (max-width: 768px){
+
+	@media (max-width: 768px) {
 		.znp-content {
 			width: 100%;
 			overflow: hidden;
 			padding-right: 0;
 			padding-left: 0;
 		}
-		.body-container{
+
+		.body-container {
 			clear: both;
 		}
-		img{
+
+		img {
 			width: 100%;
 		}
 	}
-	@media (max-width: 375px){
-		.znp-top{
-			width:100%;
+
+	@media (max-width: 375px) {
+		.znp-top {
+			width: 100%;
 		}
+
 		.znp-content {
 			width: 100%;
 			margin-left: 0;
@@ -163,12 +204,14 @@
 			padding-left: 0;
 		}
 	}
-	.top-pd{
+
+	.top-pd {
 		display: none;
 	}
 </style>
+
 <body>
-    <div class="znp-top">
+	<div class="znp-top">
 		<div class="znp-content">
 			<div class="znp-nr">
 				<ul class="nav nav1">
@@ -199,10 +242,10 @@
 				<div class="nav-list">
 					<div class="yinhuang hhh">
 						<div class="zhong zhong1">
-							
+
 						</div>
 						<div class="ying ying1 top-pd">
-							
+
 						</div>
 						<!-- <p>
 							<b>精准营销产品</b>
@@ -248,9 +291,9 @@
 							</p>
 							<p>
 								覆盖500-5000元小额消费贷场景及5000-50000元大额消费贷场景。目前，通过冰鉴强大的人工智能算法，冰鉴推出了火眸分、慧眼分等产品，助力金融机构做出更精准的决策。
-								
+
 								该产品现在已拥有百家客户每月超过3000万查询量，为客户提供更加规范安全、高效便捷、系统全面的服务。
-							</p>	
+							</p>
 							<p>
 								<a href="javascript:;" class="button-nr">立即申请适用</a>
 							</p>
@@ -260,10 +303,15 @@
 								<b>Precision marketing products</b>
 							</p>
 							<p>
-								It covers 500-5000 yuan small consumer loan scenarios and 5000-50000 yuan large consumer loan scenarios. At present, with its powerful artificial intelligence algorithm, Bingjian has launched products such as huomou Fen and Huiyan Fen to help financial institutions make more accurate decisions.
+								It covers 500-5000 yuan small consumer loan scenarios and 5000-50000 yuan large consumer
+								loan scenarios. At present, with its powerful artificial intelligence algorithm,
+								Bingjian has launched products such as huomou Fen and Huiyan Fen to help financial
+								institutions make more accurate decisions.
 
-								The product now has 100 customers with more than 30 million queries per month, providing customers with more standardized, safe, efficient, convenient and comprehensive services.
-							</p>	
+								The product now has 100 customers with more than 30 million queries per month, providing
+								customers with more standardized, safe, efficient, convenient and comprehensive
+								services.
+							</p>
 							<p>
 								<a href="javascript:;" class="button-nr">Apply immediately</a>
 							</p>
@@ -274,110 +322,108 @@
 		</div>
 	</div>
 
-</body>	
+</body>
 
 <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
 <script type="text/javascript">
-	var znpnr = [
-		{
-			name:'精准营销标准模型',
-			js:'该产品可以帮助银行快速准确对小微企业贷款，尤其是未被央行信用报告覆盖的小微企业贷款，进行风险评估，决定借贷额度、还贷利息以及还贷周期的同时，还能有效减少信贷员的道德风险和主观评估差异，并对客户进行差异化判断。',
-			cj:'贷前环节',
-			sr:'存量客户历史交易记录',
-			cs:'优质客户要求',
-			sc:'客户排名与归类',
-			yt:'剔除高危人群定义优质客户协助呼叫中心和线下信贷人员过滤大量不符合申请资质的申请人'
-		},{
-			name:'小微企业贷后监控模型',
-			js:'该产品可以帮助银行快速准确对小微企业贷款，尤其是未被央行信用报告覆盖的小微企业贷款，进行风险评估，决定借贷额度、还贷利息以及还贷周期的同时，还能有效减少信贷员的道德风险和主观评估差异，并对客户进行差异化判断',
-			cj:'贷前环节',
-			sr:'行内流水、人行报告、企业信息、纳税信息等企业基本信息',
-			cs:'预期收益率及违约概率',
-			sc:'贷款上限和贷款利率',
-			yt:'决定借贷额度、还贷利息以及还贷周期减少信贷员的道德风险和主观评估差异对客户进行差异化判断'
-		},{
-			name:'小微企业贷后监控模型',
-			js:'产品通过自主研发的模型，可以对已经放出的贷款进行有效实时监控，帮助银行立即对风险做出干预的同时，能够帮助线下信审管理人员，有效提高人均贷后监管企业数量，大幅度提升人工干预质量。',
-			cj:'贷中/后环节',
-			sr:'行内流水、人行报告、企业信息、纳税信息等',
-			cs:'违约概率及监控周期',
-			sc:'预警名单及风险点',
-			yt:'监控已发贷款提高信审人员人均贷后监管企业数量提升人工干预质量'
+	var znpnr = [{
+			name: '精准营销标准模型',
+			js: '该产品可以帮助银行快速准确对小微企业贷款，尤其是未被央行信用报告覆盖的小微企业贷款，进行风险评估，决定借贷额度、还贷利息以及还贷周期的同时，还能有效减少信贷员的道德风险和主观评估差异，并对客户进行差异化判断。',
+			cj: '贷前环节',
+			sr: '存量客户历史交易记录',
+			cs: '优质客户要求',
+			sc: '客户排名与归类',
+			yt: '剔除高危人群定义优质客户协助呼叫中心和线下信贷人员过滤大量不符合申请资质的申请人'
+		}, {
+			name: '小微企业贷后监控模型',
+			js: '该产品可以帮助银行快速准确对小微企业贷款，尤其是未被央行信用报告覆盖的小微企业贷款，进行风险评估，决定借贷额度、还贷利息以及还贷周期的同时，还能有效减少信贷员的道德风险和主观评估差异，并对客户进行差异化判断',
+			cj: '贷前环节',
+			sr: '行内流水、人行报告、企业信息、纳税信息等企业基本信息',
+			cs: '预期收益率及违约概率',
+			sc: '贷款上限和贷款利率',
+			yt: '决定借贷额度、还贷利息以及还贷周期减少信贷员的道德风险和主观评估差异对客户进行差异化判断'
+		}, {
+			name: '小微企业贷后监控模型',
+			js: '产品通过自主研发的模型，可以对已经放出的贷款进行有效实时监控，帮助银行立即对风险做出干预的同时，能够帮助线下信审管理人员，有效提高人均贷后监管企业数量，大幅度提升人工干预质量。',
+			cj: '贷中/后环节',
+			sr: '行内流水、人行报告、企业信息、纳税信息等',
+			cs: '违约概率及监控周期',
+			sc: '预警名单及风险点',
+			yt: '监控已发贷款提高信审人员人均贷后监管企业数量提升人工干预质量'
 		},
 		{
-			name:'企业舆情监控系统',
-			js:'通过对社交媒体、网络新闻、网页上的关键词进行分析后，利用人工智能算法进行聚合后判断舆情态度，生成相应的冰鉴舆情得分，从而对小微企业进行实时舆情监控。该系统是针对小微企业风控提出的一个全新维度，是之前的小微企业风控产品从未涉及的风险评估角度。'
+			name: '企业舆情监控系统',
+			js: '通过对社交媒体、网络新闻、网页上的关键词进行分析后，利用人工智能算法进行聚合后判断舆情态度，生成相应的冰鉴舆情得分，从而对小微企业进行实时舆情监控。该系统是针对小微企业风控提出的一个全新维度，是之前的小微企业风控产品从未涉及的风险评估角度。'
 		}
 	]
-	var znpnryw=[
-		{
-			name:'Precision marketing model standard',
-			js:'This product can help banks quickly and accurately assess the risk of loans to small and micro enterprises, especially those not covered by the central bank credit report, and determine the amount of loans, loan interest and loan repayment cycle. At the same time, it can effectively reduce the moral hazard and subjective evaluation differences of credit officers, and make differentiated judgments on customers.',
-			cj:'Pre loan link',
-			sr:'Historical transaction records of stock customers',
-			cs:'High quality customer requirements',
-			sc:'Customer ranking and classification',
-			yt:'Eliminate high-risk groups, define high-quality customers, assist call centers and offline credit officers to filter a large number of unqualified applicants'
-		},{
-			name:'Post loan monitoring model for small and micro enterprises',
-			js:'The product can help banks quickly and accurately assess the risk of loans to small and micro enterprises, especially those not covered by the central bank credit report, and determine the amount of loans, loan interest and loan repayment cycle. At the same time, it can effectively reduce the moral hazard and subjective evaluation differences of credit officers, and make differentiated judgments on customers',
-			cj:'Pre loan link',
-			sr:'Basic enterprise information such as internal flow, PBC report, enterprise information, tax information, etc',
-			cs:'Expected rate of return and probability of default',
-			sc:'Loan ceiling and loan interest rate',
-			yt:'To evaluate the difference of credit and repayment period and reduce the subjective risk of loan repayment'
-		},{
-			name:'Post loan monitoring model for small and micro enterprises',
-			js:'Through the self-developed model, the product can effectively real-time monitor the loans that have been released, help the bank to intervene in the risk immediately, and at the same time, it can help the offline credit audit management personnel, effectively improve the number of enterprises supervised after loan per capita, and greatly improve the quality of manual intervention.',
-			cj:'During / after loan',
-			sr:'Internal flow, PBC report, enterprise information, tax information, etc',
-			cs:'Default probability and monitoring period',
-			sc:'Warning list and risk points',
-			yt:'Monitoring the issued loans, improving the number of post loan supervision enterprises per capita of credit examiners and improving the quality of manual intervention'
+	var znpnryw = [{
+			name: 'Precision marketing model standard',
+			js: 'This product can help banks quickly and accurately assess the risk of loans to small and micro enterprises, especially those not covered by the central bank credit report, and determine the amount of loans, loan interest and loan repayment cycle. At the same time, it can effectively reduce the moral hazard and subjective evaluation differences of credit officers, and make differentiated judgments on customers.',
+			cj: 'Pre loan link',
+			sr: 'Historical transaction records of stock customers',
+			cs: 'High quality customer requirements',
+			sc: 'Customer ranking and classification',
+			yt: 'Eliminate high-risk groups, define high-quality customers, assist call centers and offline credit officers to filter a large number of unqualified applicants'
+		}, {
+			name: 'Post loan monitoring model for small and micro enterprises',
+			js: 'The product can help banks quickly and accurately assess the risk of loans to small and micro enterprises, especially those not covered by the central bank credit report, and determine the amount of loans, loan interest and loan repayment cycle. At the same time, it can effectively reduce the moral hazard and subjective evaluation differences of credit officers, and make differentiated judgments on customers',
+			cj: 'Pre loan link',
+			sr: 'Basic enterprise information such as internal flow, PBC report, enterprise information, tax information, etc',
+			cs: 'Expected rate of return and probability of default',
+			sc: 'Loan ceiling and loan interest rate',
+			yt: 'To evaluate the difference of credit and repayment period and reduce the subjective risk of loan repayment'
+		}, {
+			name: 'Post loan monitoring model for small and micro enterprises',
+			js: 'Through the self-developed model, the product can effectively real-time monitor the loans that have been released, help the bank to intervene in the risk immediately, and at the same time, it can help the offline credit audit management personnel, effectively improve the number of enterprises supervised after loan per capita, and greatly improve the quality of manual intervention.',
+			cj: 'During / after loan',
+			sr: 'Internal flow, PBC report, enterprise information, tax information, etc',
+			cs: 'Default probability and monitoring period',
+			sc: 'Warning list and risk points',
+			yt: 'Monitoring the issued loans, improving the number of post loan supervision enterprises per capita of credit examiners and improving the quality of manual intervention'
 		},
 		{
-			name:'Enterprise public opinion monitoring system',
-			js:'Through the analysis of keywords on social media, network news and web pages, the artificial intelligence algorithm is used to aggregate public opinion attitude and generate the corresponding ice review public opinion score, so as to monitor the real-time public opinion of small and micro enterprises. The system is a new dimension for risk control of small and micro enterprises, and it is a risk assessment angle that has never been involved in the risk control products of small and micro enterprises before.'
+			name: 'Enterprise public opinion monitoring system',
+			js: 'Through the analysis of keywords on social media, network news and web pages, the artificial intelligence algorithm is used to aggregate public opinion attitude and generate the corresponding ice review public opinion score, so as to monitor the real-time public opinion of small and micro enterprises. The system is a new dimension for risk control of small and micro enterprises, and it is a risk assessment angle that has never been involved in the risk control products of small and micro enterprises before.'
 		}
 	]
-	var kg=true
-	$('.sss').click(function(){
-		if(kg){
-			kg=!kg
+	var kg = true
+	$('.sss').click(function () {
+		if (kg) {
+			kg = !kg
 			$('.zhong1').addClass('top-pd').siblings().removeClass('top-pd')
 			$('.nav1').addClass('top-pd').siblings().removeClass('top-pd')
-		}else{
-			kg=!kg
+		} else {
+			kg = !kg
 			$('.ying1').addClass('top-pd').siblings().removeClass('top-pd')
 			$('.nav2').addClass('top-pd').siblings().removeClass('top-pd')
 		}
 	})
-		for(var i=0;i<znpnr.length;i++){
-			if (i==znpnr.length-1) {
-				console.log(2)
-				$('.zhong').append(`<p>
-								<b>`+znpnr[i].name+`</b>
+	for (var i = 0; i < znpnr.length; i++) {
+		if (i == znpnr.length - 1) {
+			console.log(2)
+			$('.zhong').append(`<p>
+								<b>` + znpnr[i].name + `</b>
 							</p>
 							<p>
-								`+znpnr[i].js+`
+								` + znpnr[i].js + `
 							</p>
 							<p>
 								<a href="javascript:;" class="button-nr">立即申请适用</a>
 							</p>`)
-			}else{
-				$('.zhong').append(`<p>
-									<b>`+znpnr[i].name+`</b>
+		} else {
+			$('.zhong').append(`<p>
+									<b>` + znpnr[i].name + `</b>
 								</p>
 								<p>
-									`+znpnr[i].js+`
+									` + znpnr[i].js + `
 								</p>
 								<table style="font-size: 0.8em;">
 									<thead>
 										<tr>
 											<th class="bkh2" style="width: 25%;">产品名称</th>
-											<th class="bk1" style="width: 25%;">`+znpnr[i].name+`</th>
+											<th class="bk1" style="width: 25%;">` + znpnr[i].name + `</th>
 											<th class="bkh2" style="width: 25%;">适用场景</th>
-											<th class="bk1" style="width: 25%;">`+znpnr[i].cj+`</th>
+											<th class="bk1" style="width: 25%;">` + znpnr[i].cj + `</th>
 										</tr>
 									</thead>
 									<tbody style="text-align: left;">
@@ -388,44 +434,44 @@
 											<td class="bkh2">主要用途</td>
 										</tr>
 										<tr>
-											<td class="bk2">`+znpnr[i].sr+`</td>
-											<td class="bk21">`+znpnr[i].cs+`</td>
-											<td class="bk2">`+znpnr[i].sc+`</td>
-											<td class="bk21">`+znpnr[i].yt+`</td>
+											<td class="bk2">` + znpnr[i].sr + `</td>
+											<td class="bk21">` + znpnr[i].cs + `</td>
+											<td class="bk2">` + znpnr[i].sc + `</td>
+											<td class="bk21">` + znpnr[i].yt + `</td>
 										</tr>
 									</tbody>
 								</table>
 								<p>
 									<a href="javascript:;" class="button-nr">立即申请适用</a>
 								</p>`)
-				}
 		}
-		for(var i=0;i<znpnryw.length;i++){
-			if (i==znpnryw.length-1) {
-				console.log(2)
-				$('.ying').append(`<p>
-								<b>`+znpnryw[i].name+`</b>
+	}
+	for (var i = 0; i < znpnryw.length; i++) {
+		if (i == znpnryw.length - 1) {
+			console.log(2)
+			$('.ying').append(`<p>
+								<b>` + znpnryw[i].name + `</b>
 							</p>
 							<p>
-								`+znpnryw[i].js+`
+								` + znpnryw[i].js + `
 							</p>
 							<p>
 								<a href="javascript:;" class="button-nr">Apply immediately</a>
 							</p>`)
-			}else{
-				$('.ying').append(`<p>
-									<b>`+znpnryw[i].name+`</b>
+		} else {
+			$('.ying').append(`<p>
+									<b>` + znpnryw[i].name + `</b>
 								</p>
 								<p>
-									`+znpnryw[i].js+`
+									` + znpnryw[i].js + `
 								</p>
 								<table style="font-size: 0.8em;">
 									<thead>
 										<tr>
 											<th class="bkh2" style="width: 25%;">Product name</th>
-											<th class="bk1" style="width: 25%;">`+znpnryw[i].name+`</th>
+											<th class="bk1" style="width: 25%;">` + znpnryw[i].name + `</th>
 											<th class="bkh2" style="width: 25%;">Applicable scenarios</th>
-											<th class="bk1" style="width: 25%;">`+znpnryw[i].cj+`</th>
+											<th class="bk1" style="width: 25%;">` + znpnryw[i].cj + `</th>
 										</tr>
 									</thead>
 									<tbody style="text-align: left;">
@@ -436,23 +482,24 @@
 											<td class="bkh2">Main uses</td>
 										</tr>
 										<tr>
-											<td class="bk2">`+znpnryw[i].sr+`</td>
-											<td class="bk21">`+znpnryw[i].cs+`</td>
-											<td class="bk2">`+znpnryw[i].sc+`</td>
-											<td class="bk21">`+znpnryw[i].yt+`</td>
+											<td class="bk2">` + znpnryw[i].sr + `</td>
+											<td class="bk21">` + znpnryw[i].cs + `</td>
+											<td class="bk2">` + znpnryw[i].sc + `</td>
+											<td class="bk21">` + znpnryw[i].yt + `</td>
 										</tr>
 									</tbody>
 								</table>
 								<p>
 									<a href="javascript:;" class="button-nr">Apply immediately</a>
 								</p>`)
-				}
 		}
-	
-	
-	$('.nav li').click(function(){
+	}
+
+
+	$('.nav li').click(function () {
 		$(this).addClass('active').siblings().removeClass('active')
 		$('.nav-list>.hhh').eq($(this).index()).removeClass('yc').siblings().addClass('yc')
 	})
 </script>
+
 </html>

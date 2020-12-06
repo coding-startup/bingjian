@@ -466,6 +466,28 @@ body {
 .indexContainer #swiper1 .us .contentContainer .telMap li a {
   color: #a5e2ff;
 }
+.indexContainer #swiper1 .us .contentContainer .put {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+  align-items: center;
+  color: #fff;
+}
+.indexContainer #swiper1 .us .contentContainer .put span {
+  margin: 0 5px;
+}
+.indexContainer #swiper1 .us .contentContainer .put p {
+  margin: 0;
+}
+.indexContainer #swiper1 .us .contentContainer .copy {
+  margin: 30px 0;
+  text-align: center;
+  color: #fff;
+}
+.indexContainer #swiper1 .us .contentContainer .smallShow {
+  text-align: center;
+  color: #A5E2FF;
+}
 .indexContainer .odd > .navbar .navbar-right .nav-right-item > a:hover {
   color: #fff;
 }

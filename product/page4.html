@@ -1,62 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="common/normallize.css">
-    <link rel="stylesheet" href="./layui/css/layui.css">
-    <link rel="stylesheet" href="common/animate.compat.min.css">
-    <link rel="stylesheet" href="common/bootstrap.min.css">
-    <link rel="stylesheet" href="common/reset.css">
-	<link rel="stylesheet" type="text/css" href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap-grid.css"/>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="../common/normallize.css">
+	<link rel="stylesheet" href="./layui/css/layui.css">
+	<link rel="stylesheet" href="../common/animate.compat.min.css">
+	<link rel="stylesheet" href="../common/bootstrap.min.css">
+	<link rel="stylesheet" href="../common/reset.css">
 </head>
 <style type="text/css">
-	ul,li{
+	p {
+		word-wrap: break-word;
+		margin-bottom: 0px;
+		width: 100%;
+		box-sizing: border-box;
+		padding: 0 1px;
+	}
+
+	ul,
+	li {
 		list-style: none;
 	}
-	a{text-decoration: none;}
-	.znp-top{
+
+	a {
+		text-decoration: none;
+	}
+
+	.znp-top {
 		background-color: #fff;
 		padding-top: 50px;
 		padding-bottom: 100px;
 		width: 100%;
 		min-height: 600px;
 	}
-	.znp-content{
+
+	.znp-content {
 		padding-right: 15px;
 		padding-left: 15px;
 		margin-right: auto;
 		margin-left: auto;
 		width: 1170px;
 	}
-	.znp-nr{
+
+	.znp-nr {
 		font-size: 16px;
 		line-height: 28px;
 	}
-	.znp-nr p{
+
+	.znp-nr p {
 		text-align: left;
 		margin-bottom: 30px;
 	}
-	.nav{
+
+	.nav {
 		margin-top: 30px;
 		margin-bottom: 30px;
 		padding-left: 20px;
 		padding-right: 20px;
 		width: 100%;
 	}
-	.nav li{
+
+	.nav li {
 		float: left;
-		margin-bottom: -1px;	
+		margin-bottom: -1px;
 		position: relative;
 		display: block;
 		text-align: left;
 	}
-	.znp-content::before,.nav::before{
+
+	.znp-content::before,
+	.nav::before {
 		display: table;
 		content: "";
 	}
-	.nav li a{
+
+	.nav li a {
 		position: relative;
 		display: block;
 		color: #666;
@@ -64,9 +85,10 @@
 		border-radius: 0;
 		font-size: 18px;
 		padding: 15px 30px;
-		transition:all 0.4s;
+		transition: all 0.4s;
 	}
-	.nav li.active a{
+
+	.nav li.active a {
 		color: #fff;
 		cursor: default;
 		background-color: #00b4ed;
@@ -75,7 +97,8 @@
 		font-size: 18px;
 		padding: 15px 30px;
 	}
-	table{
+
+	table {
 		overflow: hidden;
 		text-overflow: ellipsis;
 		table-layout: auto;
@@ -84,44 +107,53 @@
 		border-spacing: 0;
 		border-collapse: collapse;
 	}
-	td{
+
+	td {
 		padding: 10px;
 		text-align: center;
 	}
-	th{
+
+	th {
 		border: 1px solid #eaeaea;
 		padding: 10px;
 		text-align: center;
 		font-weight: 700;
 	}
-	.bkh1{
+
+	.bkh1 {
 		background-color: #f3f6f7;
 		border: none;
 	}
-	.bkh2{
+
+	.bkh2 {
 		background-color: #e3e6e6;
 		border: none;
 	}
-	.bk1{
+
+	.bk1 {
 		background-color: #bf591f;
 		border: none;
 		color: #ffffff;
 	}
-	.bk2{
+
+	.bk2 {
 		background-color: #e4bc6c;
 		border: none;
 		color: #ffffff;
 	}
-	.bk21{
+
+	.bk21 {
 		background-color: #dcb15c;
 		border: none;
 		color: #ffffff;
 	}
-	b{
+
+	b {
 		font-weight: 700;
 		color: #00b4ed;
 	}
-	.button-nr{
+
+	.button-nr {
 		width: 110px;
 		height: 32px;
 		float: left;
@@ -135,35 +167,41 @@
 		cursor: pointer;
 		text-align: center;
 	}
-	.yc{
+
+	.yc {
 		display: none;
 	}
-	li a:hover{
-		background-color: rgb(238,238,238);
+
+	li a:hover {
+		background-color: rgb(238, 238, 238);
 	}
-	.button-nr:hover{
-		background: rgb(7,140,191);
+
+	.button-nr:hover {
+		background: rgb(7, 140, 191);
 	}
-	.body-title{
+
+	.body-title {
 		display: table;
-	    margin: 0 auto;
-	    position: relative;
-	    color: #333333;
-	    font-size: 22px;
-	    font-weight: bold;
-	    padding-top: 30px;
+		margin: 0 auto;
+		position: relative;
+		color: #333333;
+		font-size: 22px;
+		font-weight: bold;
+		padding-top: 30px;
 	}
-	.body-title span::after{
-		    content: ' ';
-		    position: absolute;
-		    bottom: 0;
-		    left: -8px;
-		    width: 100%;
-		    height: 10px;
-		    opacity: 0.8;
-		    background: linear-gradient(90deg,rgba(0,140,237,1) 0%,rgba(0,140,237,0) 100%);
+
+	.body-title span::after {
+		content: ' ';
+		position: absolute;
+		bottom: 0;
+		left: -8px;
+		width: 100%;
+		height: 10px;
+		opacity: 0.8;
+		background: linear-gradient(90deg, rgba(0, 140, 237, 1) 0%, rgba(0, 140, 237, 0) 100%);
 	}
-	.body-container{
+
+	.body-container {
 		justify-content: center;
 		width: 24%;
 		margin-right: 10px;
@@ -171,57 +209,67 @@
 		float: left;
 		height: 265px;
 	}
-	.body-ul1{
-		
+
+	.body-ul1 {
+
 		background-image: url('./img/tu6.png');
 		background-repeat: no-repeat;
 		background-size: 100%;
 	}
-	.body-ul2{
+
+	.body-ul2 {
 		background-image: url('./img/tu7.png');
 		background-repeat: no-repeat;
-		background-size: 100%;		
+		background-size: 100%;
 	}
-	.body-ul3{
+
+	.body-ul3 {
 		background-image: url('./img/tu8.png');
 		background-repeat: no-repeat;
-		background-size: 100%;		
+		background-size: 100%;
 	}
-	.body-ul4{
+
+	.body-ul4 {
 		background-image: url('./img/t9.png');
 		background-repeat: no-repeat;
-		background-size: 100%;		
+		background-size: 100%;
 	}
-	.body-tu{
+
+	.body-tu {
 		position: relative;
 		width: 270px;
 		height: 160px;
 		margin-bottom: 10px;
 		text-align: left;
 	}
-	.tab-text{
+
+	.tab-text {
 		top: 0;
 		bottom: 0;
 		height: 52px;
 		margin: auto 0 auto 15px;
 	}
-	.no-text{
+
+	.no-text {
 		display: block;
 		font-size: 18px;
 		color: #ffffff;
 		font-weight: bold;
 		margin-bottom: 15px;
 	}
-	.tab-text a{
+
+	.tab-text a {
 		display: block;
 		font-size: 14px;
 		color: #fff;
 		text-decoration: none;
 	}
-	.body-ul{
+
+	.body-ul {
 		margin-top: 30px;
 	}
-	.body-text{
+
+	.body-text {
 		height: 65px;
 		margin-left: 10px;
 		margin-bottom: 15px;
@@ -230,13 +278,15 @@
 		text-align: left;
 		line-height: 20px;
 	}
-	.nav-2{
+
+	.nav-2 {
 		/* position: relative; */
 		background-color: #f7f7f7;
 		float: left;
 		width: 100%;
 	}
-	.img-middle{
+
+	.img-middle {
 		padding-top: 40px;
 		padding-bottom: 30px;
 		width: 100%;
@@ -245,7 +295,8 @@
 		max-height: 545px;
 		padding: 30px;
 	}
-	.nav-3{
+
+	.nav-3 {
 		float: left;
 		width: 100%;
 		padding-bottom: 30px;
@@ -254,10 +305,12 @@
 		background-size: cover;
 		background-repeat: no-repeat;
 	}
-	.img-middle-small{
+
+	.img-middle-small {
 		display: none;
 	}
-	.bottom-bk1{
+
+	.bottom-bk1 {
 		width: 500px;
 		height: 210px;
 		margin: 10px 35px;
@@ -267,7 +320,8 @@
 		float: left;
 		margin-top: 20px;
 	}
-	.bottom-bk2{
+
+	.bottom-bk2 {
 		width: 500px;
 		height: 210px;
 		margin: 10px 35px;
@@ -277,7 +331,8 @@
 		float: left;
 		margin-top: 20px;
 	}
-	.bottom-bk3{
+
+	.bottom-bk3 {
 		width: 500px;
 		height: 210px;
 		margin: 10px 35px;
@@ -287,7 +342,8 @@
 		float: left;
 		margin-top: 20px;
 	}
-	.bottom-bk4{
+
+	.bottom-bk4 {
 		width: 500px;
 		height: 210px;
 		margin: 10px 35px;
@@ -297,84 +353,102 @@
 		float: left;
 		margin-top: 20px;
 	}
-	.bottom-wrap{
+
+	.bottom-wrap {
 		padding: 20px 35px;
 	}
-	.bottom-title{
+
+	.bottom-title {
 		display: block;
 		font-size: 18px;
 		font-weight: bold;
 		text-align: left;
 		margin: 10px 0;
 	}
-	.bottom-description{
+
+	.bottom-description {
 		display: block;
 		font-size: 14px;
 		text-align: left;
 	}
-	@media (max-width: 768px){
+
+	@media (max-width: 768px) {
 		.znp-content {
 			width: 100%;
 			overflow: hidden;
 		}
-		.body-container{
+
+		.body-container {
 			clear: both;
 			width: 100%;
 			text-align: center;
-			padding-left:25%;
+			padding-left: 25%;
 		}
-		img{
+
+		img {
 			width: 100%;
 		}
-		.nav-3-body div{
+
+		.nav-3-body div {
 			width: 80%;
 		}
-		.nav-3-body div .bottom-wrap{
+
+		.nav-3-body div .bottom-wrap {
 			margin-top: -15px;
 			width: 111%;
 			height: 50%;
 		}
-		.bottom-description{
+
+		.bottom-description {
 			margin-top: -15px;
 			font-size: 12px;
 		}
 	}
-	@media (max-width: 375px){
-		.znp-top{
-			width:100%;
+
+	@media (max-width: 375px) {
+		.znp-top {
+			width: 100%;
 		}
+
 		.znp-content {
 			width: 100%;
 			margin-left: 0;
 			padding-right: 0;
 			padding-left: 0;
 		}
-		.body-container{
-			width: 100%;	
+
+		.body-container {
+			width: 100%;
 			text-align: center;
 			padding-left: 27px;
 		}
-		.nav-3{
+
+		.nav-3 {
 			width: 100%;
 		}
-		.nav-3-body div{
+
+		.nav-3-body div {
 			width: 80%;
 		}
-		.nav-3-body div .bottom-wrap{
+
+		.nav-3-body div .bottom-wrap {
 			width: 100%;
-			padding:20px;
+			padding: 20px;
 		}
-		.bottom-description{
+
+		.bottom-description {
 			font-size: 12px;
 			margin-top: -25px;
 		}
-		.bottom-title{
+
+		.bottom-title {
 			margin-top: -10px;
 		}
 	}
 </style>
+
 <body>
-    <div class="znp-top">
+	<div class="znp-top">
 		<div class="znp-content">
 			<div class="znp-nr">
 				<div class="nav">
@@ -427,54 +501,51 @@
 		</div>
 	</div>
 
-</body>	
+</body>
 
 <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
 <script type="text/javascript">
-	var znpnr = [
+	var znpnr = [{
+		name: '智能决策引擎',
+		js: '信贷业务解决方案的核心系统，提供多场景全流程的智能风控决策服务。'
+	}, {
+		name: '决策指标管理平台',
+		js: '对接机构内外部多源数据，整合加工成标准指标，为决策引擎或其他上层业务系统提供指标支撑。'
+	}, {
+		name: '知识图谱计算平台',
+		js: '基于云计算、机器学习、大数据和图数据库等技术，构建图计算指标和可视化关联网络图谱。'
+	}, {
+		name: '智能分析优化平台',
+		js: '以数据为驱动，利用机器学习等技术评估决策表现，提供对规则、策略、模型和流程等各决策节点的智能调优参考。'
+	}]
+	var znpnr2 = [{
+			name: '反欺诈',
+			nr: '辅助金融业机构有效整合其内外部合法数据，辅以专家决策，为信贷产品量身打造规则和反欺诈模型等各类方案，为业务人员提供操作便捷、功能丰富的人机交互界面，大幅降低反欺诈运营成本。'
+		},
 		{
-			name:'智能决策引擎',
-			js:'信贷业务解决方案的核心系统，提供多场景全流程的智能风控决策服务。'
-		},{
-			name:'决策指标管理平台',
-			js:'对接机构内外部多源数据，整合加工成标准指标，为决策引擎或其他上层业务系统提供指标支撑。'
-		},{
-			name:'知识图谱计算平台',
-			js:'基于云计算、机器学习、大数据和图数据库等技术，构建图计算指标和可视化关联网络图谱。'
-		},{
-			name:'智能分析优化平台',
-			js:'以数据为驱动，利用机器学习等技术评估决策表现，提供对规则、策略、模型和流程等各决策节点的智能调优参考。'
+			name: '精准营销',
+			nr: '协助金融机构精准定位目标客户，对潜在客户和存量客户经过反欺诈规则、预授信审批、定额定价等决策流程筛选，生成营销白名单，搭载营销模型方案，提升客群响应率，助力线上和线下营销。'
+		},
+		{
+			name: '贷前审核',
+			nr: '针对不同的业务场景和客群，运用AI人工智能算法，选取样本、提炼特征变量、精准定位风险，制定差异化的动态定价策略，以衡量借款人的还款能力和还款意愿，精准甄别不同业务场景下的客户风险。'
+		},
+		{
+			name: '贷中监控',
+			nr: '在信贷业务贷中监控环节，通过智能分析技术持续关注申请人的新增风险，深挖关联风险，预设规则、评分、策略及定制化内容的管理，协助金融机构及时发现并化解潜在风险，避免损失。'
 		}
 	]
-	var znpnr2 = [
-		{
-			name:'反欺诈',
-			nr:'辅助金融业机构有效整合其内外部合法数据，辅以专家决策，为信贷产品量身打造规则和反欺诈模型等各类方案，为业务人员提供操作便捷、功能丰富的人机交互界面，大幅降低反欺诈运营成本。'
-		},
-		{
-			name:'精准营销',
-			nr:'协助金融机构精准定位目标客户，对潜在客户和存量客户经过反欺诈规则、预授信审批、定额定价等决策流程筛选，生成营销白名单，搭载营销模型方案，提升客群响应率，助力线上和线下营销。'
-		},
-		{
-			name:'贷前审核',
-			nr:'针对不同的业务场景和客群，运用AI人工智能算法，选取样本、提炼特征变量、精准定位风险，制定差异化的动态定价策略，以衡量借款人的还款能力和还款意愿，精准甄别不同业务场景下的客户风险。'
-		},
-		{
-			name:'贷中监控',
-			nr:'在信贷业务贷中监控环节，通过智能分析技术持续关注申请人的新增风险，深挖关联风险，预设规则、评分、策略及定制化内容的管理，协助金融机构及时发现并化解潜在风险，避免损失。'
-		}
-	]
-	for(var i=0;i<znpnr.length;i++){
+	for (var i = 0; i < znpnr.length; i++) {
 		$('.body-ul').append(`<div class="body-container">
-							<div class="body-tu body-ul`+(i+1)+`">
+							<div class="body-tu body-ul` + (i + 1) + `">
 								<div class="tab-text">
-									<span class="no-text">`+znpnr[i].name+`</span>
+									<span class="no-text">` + znpnr[i].name + `</span>
 									<a href="" class="no-text">了解更多》</a>
 								</div>
 							</div>
 							<div class="body-text">
 								<span class="no-text" style="color: #000;font-size: 12px;">
-									`+znpnr[i].js+`
+									` + znpnr[i].js + `
 								</span>
 							</div>
 							<p>
@@ -482,15 +553,16 @@
 							</p>
 						</div>`)
 	}
-	for (var j=0;j<znpnr2.length;j++) {
-		$('.nav-3-body').append(`<div class="bottom-bk`+(j+1)+`">
+	for (var j = 0; j < znpnr2.length; j++) {
+		$('.nav-3-body').append(`<div class="bottom-bk` + (j + 1) + `">
 							<div class="bottom-wrap">
-							<p class="bottom-title no-text">`+znpnr2[j].name+`</p>
+							<p class="bottom-title no-text">` + znpnr2[j].name + `</p>
 							<p class="bottom-description no-select" style="color: #ffffff;">
-							`+znpnr2[j].nr+`
+							` + znpnr2[j].nr + `
 							</p>
 							</div>
 						</div>`)
 	}
 </script>
+
 </html>
