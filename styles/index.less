@@ -7,15 +7,16 @@ html,
 body {
 	width: 100%;
 	height: 100%;
-	overflow: hidden;
+	
 }
-.navbar {
+Nav.navbar {
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
-	padding: 0 20px;
 	box-sizing: border-box;
+	padding-left: 20px;
+	padding-right: 20px;
 	.navbar-left {
 		img {
 			background: url(../image/logo-top2c.png) no-repeat 0 0;
@@ -103,31 +104,31 @@ body {
 			width: 25px;
 			border: none;
 			margin-top: 50%;
-			position:relative;
+			position: relative;
 			span {
 				display: block;
 				width: 20px;
 				height: 3px;
 				background: #ccc;
 				margin: 2px 0;
-				transform-origin:center center;
+				transform-origin: center center;
 			}
 			//控制动画的
-			&.click{
-				span{
-					position:absolute;
-					top:50%;
-					left:0;
-					&:nth-child(2){
-						display:none;
+			&.click {
+				span {
+					position: absolute;
+					top: 50%;
+					left: 0;
+					&:nth-child(2) {
+						display: none;
 					}
-					&.animation1{
-						animation:an1 0.2s linear;
-						animation-fill-mode : forwards;
+					&.animation1 {
+						animation: an1 0.2s linear;
+						animation-fill-mode: forwards;
 					}
-					&.animation2{
-						animation:an2 0.2s  linear;
-						animation-fill-mode : forwards;
+					&.animation2 {
+						animation: an2 0.2s linear;
+						animation-fill-mode: forwards;
 					}
 				}
 			}
@@ -142,9 +143,9 @@ body {
 			& > li {
 				padding: 0 0.8rem;
 				margin: 1rem 0;
-				&.show>div{
-					&>div{
-						color:rgb(0, 180, 237);
+				&.show > div {
+					& > div {
+						color: rgb(0, 180, 237);
 					}
 				}
 				div {
@@ -155,7 +156,7 @@ body {
 						width: 4%;
 						height: auto;
 						color: #fff;
-						margin:0 5px;
+						margin: 0 5px;
 					}
 					div {
 						color: #fff;
@@ -178,8 +179,8 @@ body {
 					display: none;
 					li {
 						margin: 0.5rem 0;
-						a{
-							color:#fff;
+						a {
+							color: #fff;
 						}
 					}
 				}
@@ -190,6 +191,7 @@ body {
 .indexContainer {
 	width: 100%;
 	height: 100%;
+	overflow: hidden;
 	min-width: 380px;
 	a {
 		text-decoration: none;
@@ -203,7 +205,6 @@ body {
 		width: 100%;
 		height: 100%;
 		overflow: hidden;
-		
 	}
 	//.small小屏幕时候的变化
 	.small {
@@ -509,33 +510,31 @@ body {
 						}
 					}
 				}
-				.put{
-					display:flex;
-					justify-content:center;
-					margin:30px 0;
-					align-items:center;
-					color:#fff;
-					span{
-						margin:0 5px;
+				.put {
+					display: flex;
+					justify-content: center;
+					margin: 30px 0;
+					align-items: center;
+					color: #fff;
+					span {
+						margin: 0 5px;
 					}
-					p{
-						margin:0;
+					p {
+						margin: 0;
 					}
 				}
-				.copy{
-					margin:30px 0;
-					text-align:center;
-					color:#fff;
+				.copy {
+					margin: 30px 0;
+					text-align: center;
+					color: #fff;
 				}
-				.smallShow{
-					text-align:center;
-					color:#A5E2FF;
+				.smallShow {
+					text-align: center;
+					color: #a5e2ff;
 				}
 			}
 		}
 	}
-	
-	
 }
 //整屏 上下切换 奇数时候的变化
 .odd {
@@ -607,8 +606,8 @@ body {
 	.indexContainer #swiper1 .us .contentContainer .detailsList li {
 		padding: 0 0;
 	}
-	.indexContainer #swiper1 .us .contentContainer h2{
-		margin:20px 0;
+	.indexContainer #swiper1 .us .contentContainer h2 {
+		margin: 20px 0;
 	}
 	h2 {
 		font-size: 22px !important;
@@ -784,11 +783,19 @@ body {
 	}
 }
 // 打开关闭的 三条的效果
-@keyframes an1{
-	form{transform:rotate(0deg);}
-	to{transform:rotate(45deg);}
+@keyframes an1 {
+	form {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(45deg);
+	}
 }
-@keyframes an2{
-	form{transform:rotate(0deg);}
-	to{transform:rotate(-45deg);}
+@keyframes an2 {
+	form {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(-45deg);
+	}
 }

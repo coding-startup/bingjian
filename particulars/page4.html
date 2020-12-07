@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,8 +17,122 @@
     <script src="js/yqqindex.js"></script>
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/footergeneral.css">
+    <link rel="stylesheet" href="../styles/index.css">
 </head>
+
 <body>
+    <Nav class="navbar navbar-static-top">
+		<div class="navbar-left">
+			<a href="index.html" class="navbar-brand">
+				<img src="../image/logo.png" alt="">
+			</a>
+		</div>
+		<ul class="navbar-right nav navbar-nav hidden-xs  row">
+			<li class="nav-right-item">
+				<a href="../index.html">首页</a>
+			</li>
+			<li class="nav-right-item clickTwo">
+				<a href="../index.html">核心优势</a>
+			</li>
+			<li class="nav-right-item product-container  dropdown">
+				<a class="product dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+					aria-expanded="false">
+					<div class="top">
+						冰鉴产品
+						<span class="caret"></span>
+					</div>
+					<ul class="menu nav-stacked dropdown-menu">
+						<li><a href="../product/page1.html">个人与企业风控产品</a></li>
+						<li><a href="../product/page2.html">银行与新金融风控产品</a></li>
+						<li><a href="../product/page3.html">标准与定制化产品</a></li>
+						<li><a href="../product/page4.html">智能风控平台产品</a></li>
+						<li><a href="../product/page5.html">模型系统产品</a></li>
+					</ul>
+				</a>
+			</li>
+			<li class="nav-right-item product-container  dropdown">
+				<a class="product dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+					aria-expanded="false">
+					<div class="top">
+						关于我们
+						<span class="caret"></span>
+					</div>
+					<ul class="menu nav-stacked dropdown-menu">
+						<li><a href="page1.html">冰鉴简介</a></li>
+						<li><a href="page2.html">管理团队</a></li>
+						<li><a href="page3.html">新闻中心</a></li>
+						<li><a href="page4.html">加入我们</a></li>
+						<li><a href="page5.html">合作通道</a></li>
+						<li><a href="page6.html">联系我们</a></li>
+					</ul>
+				</a>
+			</li>
+
+		</ul>
+		<div class="btn-group  hidden-sm hidden-md hidden-lg">
+			<div class="btn">
+				<span class="animation1"></span>
+				<span></span>
+				<span class="animation2"></span>
+			</div>
+			<ul class="dropdown-select row">
+				<li class="col-xs-12">
+					<div>
+						<span class="iconfont icon-shouye"></span>
+						<div>首页</div>
+					</div>
+				</li>
+				<li class="col-xs-12">
+					<div>
+						<span class="iconfont icon-dilanxianxingiconyihuifu_huabanfuben"></span>
+						<div>核心优势</div>
+					</div>
+				</li>
+				<li class="multiple col-xs-12">
+					<div>
+						<span class="iconfont icon-chanpin"></span>
+						<div>冰鉴产品</div>
+						<b></b>
+					</div>
+					<ul class="row">
+						<li class="col-xs-11 col-xs-push-1 col-sm-11 col-sm-push-1"><a
+								href="../product/page1.html">个人与企业风控产品</a></li>
+						<li class="col-xs-11 col-xs-push-1 col-sm-11 col-sm-push-1"><a
+								href="../product/page2.html">银行与新金融风控产品</a></li>
+						<li class="col-xs-11 col-xs-push-1 col-sm-11 col-sm-push-1"><a
+								href="../product/page3.html">标准与定制化产品</a></li>
+						<li class="col-xs-11 col-xs-push-1 col-sm-11 col-sm-push-1"><a
+								href="../product/page4.html">智能风控平台产品</a></li>
+						<li class="col-xs-11 col-xs-push-1 col-sm-11 col-sm-push-1"><a
+								href="../product/page5.html">模型系统产品</a></li>
+					</ul>
+				</li>
+				<li class="multiple col-xs-12 false">
+					<div>
+						<span class="iconfont icon-ren"></span>
+						<div>关于我们</div>
+						<b></b>
+					</div>
+					<ul class="row">
+						<li class="col-xs-11 col-xs-push-1 col-sm-11 col-sm-push-1"><a
+								href="page1.html">冰鉴简介</a></li>
+						<li class="col-xs-11 col-xs-push-1 col-sm-11 col-sm-push-1"><a
+								href="page2.html">管理团队</a></li>
+						<li class="col-xs-11 col-xs-push-1 col-sm-11 col-sm-push-1"><a
+								href="page3.html">新闻中心</a></li>
+						<li class="col-xs-11 col-xs-push-1 col-sm-11 col-sm-push-1"><a
+								href="page4.html">加入我们</a></li>
+						<li class="col-xs-11 col-xs-push-1 col-sm-11 col-sm-push-1"><a
+								href="page5.html">合作通道</a></li>
+						<li class="col-xs-11 col-xs-push-1 col-sm-11 col-sm-push-1"><a
+								href="page6.html">联系我们</a></li>
+
+					</ul>
+				</li>
+			</ul>
+		</div>
+
+	</Nav>
     <div id="yqq">
         <div class="yqq-join-us">
             <div class="yqq-title">
@@ -29,24 +144,29 @@
             <div class="container">
                 <div class="col-md-12 col-sm-12 col-xs-12 yqq-join-mark">
                     <ul class="yqq-nav-tabs clearfix">
-                        <li ><a href="#" class=" yqq-mark-worldment">社会招聘</a></li>
+                        <li><a href="#" class=" yqq-mark-worldment">社会招聘</a></li>
                         <li><a href="#" class="yqq-mark-schoolment">校园招聘</a></li>
                     </ul>
                     <div class="yqq-mark yqq-community">
-                        <p class="bg-success">如果你想以后的生活被这样的一群人围绕：有情怀有热血的创业团队，融合科技与人文的geek，任性又可爱的伪文艺青年，当然啦，少不了还有油菜花、蛇精病的技术帝、程序猿、设计狮和产品鲸鲤，那么，欢迎加入冰鉴！</p>
-                        <p class="bg-success">如果你对未来的职业想象是这样的：拥有广阔的发展空间，世界那么大，你想去看看；接触国内外前沿的技术技能，与更多聪明的头脑碰撞激情火花；享受透明化、扁平化的管理，你的地盘你做主，那么，欢迎加入冰鉴！</p>
+                        <p class="bg-success">
+                            如果你想以后的生活被这样的一群人围绕：有情怀有热血的创业团队，融合科技与人文的geek，任性又可爱的伪文艺青年，当然啦，少不了还有油菜花、蛇精病的技术帝、程序猿、设计狮和产品鲸鲤，那么，欢迎加入冰鉴！
+                        </p>
+                        <p class="bg-success">
+                            如果你对未来的职业想象是这样的：拥有广阔的发展空间，世界那么大，你想去看看；接触国内外前沿的技术技能，与更多聪明的头脑碰撞激情火花；享受透明化、扁平化的管理，你的地盘你做主，那么，欢迎加入冰鉴！
+                        </p>
                         <p class="bg-success">简历请投递至 <a href="#">talent@icekredit.com</a></p>
                     </div>
                     <!-- 校园招聘内容 -->
                     <div class="yqq-mark yqq-school" style="display:none">
-                        <p class="bg-success">AI增信、AI未来，与你一起共创AI！<br/>冰鉴科技2020春季校园招聘会正式启动！</p>
-                        <p class="bg-success">招聘学校：<br/>
-                            国内：清华大学、北京大学、上海交通大学、复旦大学、中国科技大学、南京大学、浙江大学、东南大学、电子科技大学、西安交通大学、哈尔滨工业大学等知名高校；<br/>
-                            国外：卡内基梅隆大学、芝加哥大学、普渡大学、纽约大学、华盛顿大学等知名高校；<br/>
+                        <p class="bg-success">AI增信、AI未来，与你一起共创AI！<br />冰鉴科技2020春季校园招聘会正式启动！</p>
+                        <p class="bg-success">招聘学校：<br />
+                            国内：清华大学、北京大学、上海交通大学、复旦大学、中国科技大学、南京大学、浙江大学、东南大学、电子科技大学、西安交通大学、哈尔滨工业大学等知名高校；<br />
+                            国外：卡内基梅隆大学、芝加哥大学、普渡大学、纽约大学、华盛顿大学等知名高校；<br />
                         </p>
                         <p class="bg-success">招聘时间：2020.03.09 – 2020.04.20</p>
                         <p class="bg-success">招聘方式：线上招聘会</p>
-                        <p class="bg-success">不管你是深谙互联网思维和金融知识的产品经理，还是虐过TB量级数据的数据科学家和数据分析师，或者是既能处理数据又能沟通客户的商业分析师，抑或是精通编程技术的开发工程师，冰鉴为您提供广阔平台。<br/>
+                        <p class="bg-success">
+                            不管你是深谙互联网思维和金融知识的产品经理，还是虐过TB量级数据的数据科学家和数据分析师，或者是既能处理数据又能沟通客户的商业分析师，抑或是精通编程技术的开发工程师，冰鉴为您提供广阔平台。<br />
                             欢迎对AI感兴趣的你，点击下方职位一键投递简历，或将您独具特色的简历投递至campus@icekredit.com
                         </p>
                     </div>
@@ -58,13 +178,13 @@
                 </div> -->
                 <!-- 校园招聘内容 -->
                 <div class="col-md-12 col-sm-12 col-xs-12 yqq-flowpath yqq-process" style="display:none">
-                    <h2 >
+                    <h2>
                         <span>招聘流程</span>
                     </h2>
                     <img src="./img/campus-01.png" alt="" class="yqq-process-pic">
                 </div>
                 <div class="col-md-12 col-sm-12 col-xs-12 yqq-Jobs yqq-process">
-                    <h2 >
+                    <h2>
                         <span>岗位介绍</span>
                     </h2>
                 </div>
@@ -75,10 +195,12 @@
                                 <span>技术类</span>
                             </h3>
                         </div>
-                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content " data-toggle="modal" data-target=".bs-example-modal-lg">
+                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content " data-toggle="modal"
+                            data-target=".bs-example-modal-lg">
                             <div class="job-show">
                                 <div class="head-pic">
-                                    <p class="yqq-pic-kttx" style="background:url(./img/kttx.png) no-repeat -720px -80px;"></p>
+                                    <p class="yqq-pic-kttx"
+                                        style="background:url(./img/kttx.png) no-repeat -720px -80px;"></p>
                                 </div>
                                 <div class="yqq-jobs-address">
                                     <h3 class="yqq-jobs-address-h3"><span>技术经理</span></h3>
@@ -89,10 +211,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal" data-target=".bs-example-modal-lg">
+                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal"
+                            data-target=".bs-example-modal-lg">
                             <div class="job-show">
                                 <div class="head-pic">
-                                    <p class="yqq-pic-kttx" style="background:url(./img/kttx.png) no-repeat -160px -560px;"></p>
+                                    <p class="yqq-pic-kttx"
+                                        style="background:url(./img/kttx.png) no-repeat -160px -560px;"></p>
                                 </div>
                                 <div class="yqq-jobs-address">
                                     <h3 class="yqq-jobs-address-h3"><span>测试组长</span></h3>
@@ -103,10 +227,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal" data-target=".bs-example-modal-lg">
+                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal"
+                            data-target=".bs-example-modal-lg">
                             <div class="job-show">
                                 <div class="head-pic">
-                                    <p class="yqq-pic-kttx" style="background:url(./img/kttx.png) no-repeat 0px 0px;"></p>
+                                    <p class="yqq-pic-kttx" style="background:url(./img/kttx.png) no-repeat 0px 0px;">
+                                    </p>
                                 </div>
                                 <div class="yqq-jobs-address">
                                     <h3 class="yqq-jobs-address-h3"><span>大数据开发工程师</span></h3>
@@ -117,10 +243,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal" data-target=".bs-example-modal-lg">
+                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal"
+                            data-target=".bs-example-modal-lg">
                             <div class="job-show">
                                 <div class="head-pic">
-                                    <p class="yqq-pic-kttx" style="background:url(./img/kttx.png) no-repeat -400px -640px;"></p>
+                                    <p class="yqq-pic-kttx"
+                                        style="background:url(./img/kttx.png) no-repeat -400px -640px;"></p>
                                 </div>
                                 <div class="yqq-jobs-address">
                                     <h3 class="yqq-jobs-address-h3"><span>Java开发组长</span></h3>
@@ -131,10 +259,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal" data-target=".bs-example-modal-lg">
+                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal"
+                            data-target=".bs-example-modal-lg">
                             <div class="job-show">
                                 <div class="head-pic">
-                                    <p class="yqq-pic-kttx" style="background:url(./img/kttx.png) no-repeat -640px -400px;"></p>
+                                    <p class="yqq-pic-kttx"
+                                        style="background:url(./img/kttx.png) no-repeat -640px -400px;"></p>
                                 </div>
                                 <div class="yqq-jobs-address">
                                     <h3 class="yqq-jobs-address-h3"><span>Java架构师</span></h3>
@@ -145,10 +275,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal" data-target=".bs-example-modal-lg">
+                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal"
+                            data-target=".bs-example-modal-lg">
                             <div class="job-show">
                                 <div class="head-pic">
-                                    <p class="yqq-pic-kttx" style="background:url(./img/kttx.png) no-repeat -480px -320px;"></p>
+                                    <p class="yqq-pic-kttx"
+                                        style="background:url(./img/kttx.png) no-repeat -480px -320px;"></p>
                                 </div>
                                 <div class="yqq-jobs-address">
                                     <h3 class="yqq-jobs-address-h3"><span>高级大数据研发工程师</span></h3>
@@ -159,10 +291,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal" data-target=".bs-example-modal-lg">
+                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal"
+                            data-target=".bs-example-modal-lg">
                             <div class="job-show">
                                 <div class="head-pic">
-                                    <p class="yqq-pic-kttx" style="background:url(./img/kttx.png) no-repeat -560px -640px;"></p>
+                                    <p class="yqq-pic-kttx"
+                                        style="background:url(./img/kttx.png) no-repeat -560px -640px;"></p>
                                 </div>
                                 <div class="yqq-jobs-address">
                                     <h3 class="yqq-jobs-address-h3"><span>高级自动化测试工程师</span></h3>
@@ -173,10 +307,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal" data-target=".bs-example-modal-lg">
+                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal"
+                            data-target=".bs-example-modal-lg">
                             <div class="job-show">
                                 <div class="head-pic">
-                                    <p class="yqq-pic-kttx" style="background:url(./img/kttx.png) no-repeat -0px -400px;"></p>
+                                    <p class="yqq-pic-kttx"
+                                        style="background:url(./img/kttx.png) no-repeat -0px -400px;"></p>
                                 </div>
                                 <div class="yqq-jobs-address">
                                     <h3 class="yqq-jobs-address-h3"><span>自动化测试工程师</span></h3>
@@ -187,10 +323,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal" data-target=".bs-example-modal-lg">
+                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal"
+                            data-target=".bs-example-modal-lg">
                             <div class="job-show">
                                 <div class="head-pic">
-                                    <p class="yqq-pic-kttx" style="background:url(./img/kttx.png) no-repeat -400px -160px;"></p>
+                                    <p class="yqq-pic-kttx"
+                                        style="background:url(./img/kttx.png) no-repeat -400px -160px;"></p>
                                 </div>
                                 <div class="yqq-jobs-address">
                                     <h3 class="yqq-jobs-address-h3"><span>测试工程师</span></h3>
@@ -201,10 +339,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal" data-target=".bs-example-modal-lg">
+                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal"
+                            data-target=".bs-example-modal-lg">
                             <div class="job-show">
                                 <div class="head-pic">
-                                    <p class="yqq-pic-kttx" style="background:url(./img/kttx.png) no-repeat -160px -720px;"></p>
+                                    <p class="yqq-pic-kttx"
+                                        style="background:url(./img/kttx.png) no-repeat -160px -720px;"></p>
                                 </div>
                                 <div class="yqq-jobs-address">
                                     <h3 class="yqq-jobs-address-h3"><span>高级Web开发工程师</span></h3>
@@ -215,10 +355,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal" data-target=".bs-example-modal-lg">
+                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal"
+                            data-target=".bs-example-modal-lg">
                             <div class="job-show">
                                 <div class="head-pic">
-                                    <p class="yqq-pic-kttx" style="background:url(./img/kttx.png) no-repeat -720px -0px;"></p>
+                                    <p class="yqq-pic-kttx"
+                                        style="background:url(./img/kttx.png) no-repeat -720px -0px;"></p>
                                 </div>
                                 <div class="yqq-jobs-address">
                                     <h3 class="yqq-jobs-address-h3"><span>高级大数据研发工程师</span></h3>
@@ -229,10 +371,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal" data-target=".bs-example-modal-lg">
+                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal"
+                            data-target=".bs-example-modal-lg">
                             <div class="job-show">
                                 <div class="head-pic">
-                                    <p class="yqq-pic-kttx" style="background:url(./img/kttx.png) no-repeat -400px -720px;"></p>
+                                    <p class="yqq-pic-kttx"
+                                        style="background:url(./img/kttx.png) no-repeat -400px -720px;"></p>
                                 </div>
                                 <div class="yqq-jobs-address">
                                     <h3 class="yqq-jobs-address-h3"><span>全栈开发工程师</span></h3>
@@ -243,10 +387,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal" data-target=".bs-example-modal-lg">
+                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal"
+                            data-target=".bs-example-modal-lg">
                             <div class="job-show">
                                 <div class="head-pic">
-                                    <p class="yqq-pic-kttx" style="background:url(./img/kttx.png) no-repeat -240px -480px;"></p>
+                                    <p class="yqq-pic-kttx"
+                                        style="background:url(./img/kttx.png) no-repeat -240px -480px;"></p>
                                 </div>
                                 <div class="yqq-jobs-address">
                                     <h3 class="yqq-jobs-address-h3"><span>Web开发架构师</span></h3>
@@ -257,10 +403,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal" data-target=".bs-example-modal-lg">
+                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal"
+                            data-target=".bs-example-modal-lg">
                             <div class="job-show">
                                 <div class="head-pic">
-                                    <p class="yqq-pic-kttx" style="background:url(./img/kttx.png) no-repeat -80px -480px;"></p>
+                                    <p class="yqq-pic-kttx"
+                                        style="background:url(./img/kttx.png) no-repeat -80px -480px;"></p>
                                 </div>
                                 <div class="yqq-jobs-address">
                                     <h3 class="yqq-jobs-address-h3"><span>高级运维工程师</span></h3>
@@ -271,10 +419,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal" data-target=".bs-example-modal-lg">
+                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal"
+                            data-target=".bs-example-modal-lg">
                             <div class="job-show">
                                 <div class="head-pic">
-                                    <p class="yqq-pic-kttx" style="background:url(./img/kttx.png) no-repeat -240px -80px;"></p>
+                                    <p class="yqq-pic-kttx"
+                                        style="background:url(./img/kttx.png) no-repeat -240px -80px;"></p>
                                 </div>
                                 <div class="yqq-jobs-address">
                                     <h3 class="yqq-jobs-address-h3"><span>运维开发工程师</span></h3>
@@ -285,10 +435,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal" data-target=".bs-example-modal-lg">
+                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal"
+                            data-target=".bs-example-modal-lg">
                             <div class="job-show">
                                 <div class="head-pic">
-                                    <p class="yqq-pic-kttx" style="background:url(./img/kttx.png) no-repeat -640px -480px;"></p>
+                                    <p class="yqq-pic-kttx"
+                                        style="background:url(./img/kttx.png) no-repeat -640px -480px;"></p>
                                 </div>
                                 <div class="yqq-jobs-address">
                                     <h3 class="yqq-jobs-address-h3"><span>高级Java工程师</span></h3>
@@ -299,10 +451,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal" data-target=".bs-example-modal-lg">
+                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal"
+                            data-target=".bs-example-modal-lg">
                             <div class="job-show">
                                 <div class="head-pic">
-                                    <p class="yqq-pic-kttx" style="background:url(./img/kttx.png) no-repeat -720px -560px;"></p>
+                                    <p class="yqq-pic-kttx"
+                                        style="background:url(./img/kttx.png) no-repeat -720px -560px;"></p>
                                 </div>
                                 <div class="yqq-jobs-address">
                                     <h3 class="yqq-jobs-address-h3"><span>研究科学家</span></h3>
@@ -313,10 +467,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal" data-target=".bs-example-modal-lg">
+                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal"
+                            data-target=".bs-example-modal-lg">
                             <div class="job-show">
                                 <div class="head-pic">
-                                    <p class="yqq-pic-kttx" style="background:url(./img/kttx.png) no-repeat -480px -480px;"></p>
+                                    <p class="yqq-pic-kttx"
+                                        style="background:url(./img/kttx.png) no-repeat -480px -480px;"></p>
                                 </div>
                                 <div class="yqq-jobs-address">
                                     <h3 class="yqq-jobs-address-h3"><span>数据科学家</span></h3>
@@ -327,10 +483,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal" data-target=".bs-example-modal-lg">
+                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal"
+                            data-target=".bs-example-modal-lg">
                             <div class="job-show">
                                 <div class="head-pic">
-                                    <p class="yqq-pic-kttx" style="background:url(./img/kttx.png) no-repeat -560px -560px;"></p>
+                                    <p class="yqq-pic-kttx"
+                                        style="background:url(./img/kttx.png) no-repeat -560px -560px;"></p>
                                 </div>
                                 <div class="yqq-jobs-address">
                                     <h3 class="yqq-jobs-address-h3"><span>数据分析师/商业分析师</span></h3>
@@ -341,10 +499,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal" data-target=".bs-example-modal-lg">
+                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal"
+                            data-target=".bs-example-modal-lg">
                             <div class="job-show">
                                 <div class="head-pic">
-                                    <p class="yqq-pic-kttx" style="background:url(./img/kttx.png) no-repeat -320px -560px;"></p>
+                                    <p class="yqq-pic-kttx"
+                                        style="background:url(./img/kttx.png) no-repeat -320px -560px;"></p>
                                 </div>
                                 <div class="yqq-jobs-address">
                                     <h3 class="yqq-jobs-address-h3"><span>高级测试工程师</span></h3>
@@ -362,10 +522,12 @@
                                 <span>产品类</span>
                             </h3>
                         </div>
-                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal" data-target=".bs-example-modal-lg">
+                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal"
+                            data-target=".bs-example-modal-lg">
                             <div class="job-show">
                                 <div class="head-pic">
-                                    <p class="yqq-pic-kttx" style="background:url(./img/kttx.png) no-repeat -400px -400px;"></p>
+                                    <p class="yqq-pic-kttx"
+                                        style="background:url(./img/kttx.png) no-repeat -400px -400px;"></p>
                                 </div>
                                 <div class="yqq-jobs-address">
                                     <h3 class="yqq-jobs-address-h3"><span>高级项目经理</span></h3>
@@ -376,10 +538,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal" data-target=".bs-example-modal-lg">
+                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal"
+                            data-target=".bs-example-modal-lg">
                             <div class="job-show">
                                 <div class="head-pic">
-                                    <p class="yqq-pic-kttx" style="background:url(./img/kttx.png) no-repeat -480px -560px;"></p>
+                                    <p class="yqq-pic-kttx"
+                                        style="background:url(./img/kttx.png) no-repeat -480px -560px;"></p>
                                 </div>
                                 <div class="yqq-jobs-address">
                                     <h3 class="yqq-jobs-address-h3"><span>产品经理</span></h3>
@@ -397,10 +561,12 @@
                                 <span>市场及销售类</span>
                             </h3>
                         </div>
-                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal" data-target=".bs-example-modal-lg">
+                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal"
+                            data-target=".bs-example-modal-lg">
                             <div class="job-show">
                                 <div class="head-pic">
-                                    <p class="yqq-pic-kttx" style="background:url(./img/kttx.png) no-repeat -240px -400px;"></p>
+                                    <p class="yqq-pic-kttx"
+                                        style="background:url(./img/kttx.png) no-repeat -240px -400px;"></p>
                                 </div>
                                 <div class="yqq-jobs-address">
                                     <h3 class="yqq-jobs-address-h3"><span>高级销售经理-保险</span></h3>
@@ -411,10 +577,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal" data-target=".bs-example-modal-lg">
+                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal"
+                            data-target=".bs-example-modal-lg">
                             <div class="job-show">
                                 <div class="head-pic">
-                                    <p class="yqq-pic-kttx" style="background:url(./img/kttx.png) no-repeat -160px -720px;"></p>
+                                    <p class="yqq-pic-kttx"
+                                        style="background:url(./img/kttx.png) no-repeat -160px -720px;"></p>
                                 </div>
                                 <div class="yqq-jobs-address">
                                     <h3 class="yqq-jobs-address-h3"><span>高级销售经理-银行</span></h3>
@@ -425,10 +593,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal" data-target=".bs-example-modal-lg">
+                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal"
+                            data-target=".bs-example-modal-lg">
                             <div class="job-show">
                                 <div class="head-pic">
-                                    <p class="yqq-pic-kttx" style="background:url(./img/kttx.png) no-repeat -160px -0px;"></p>
+                                    <p class="yqq-pic-kttx"
+                                        style="background:url(./img/kttx.png) no-repeat -160px -0px;"></p>
                                 </div>
                                 <div class="yqq-jobs-address">
                                     <h3 class="yqq-jobs-address-h3"><span>高级销售经理-新金融</span></h3>
@@ -439,10 +609,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal" data-target=".bs-example-modal-lg">
+                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal"
+                            data-target=".bs-example-modal-lg">
                             <div class="job-show">
                                 <div class="head-pic">
-                                    <p class="yqq-pic-kttx" style="background:url(./img/kttx.png) no-repeat -480px -80px;"></p>
+                                    <p class="yqq-pic-kttx"
+                                        style="background:url(./img/kttx.png) no-repeat -480px -80px;"></p>
                                 </div>
                                 <div class="yqq-jobs-address">
                                     <h3 class="yqq-jobs-address-h3"><span>售前技术支持工程师</span></h3>
@@ -460,10 +632,12 @@
                                 <span>其他</span>
                             </h3>
                         </div>
-                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal" data-target=".bs-example-modal-lg">
+                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal"
+                            data-target=".bs-example-modal-lg">
                             <div class="job-show">
                                 <div class="head-pic">
-                                    <p class="yqq-pic-kttx" style="background:url(./img/kttx.png) no-repeat -240px -240px;"></p>
+                                    <p class="yqq-pic-kttx"
+                                        style="background:url(./img/kttx.png) no-repeat -240px -240px;"></p>
                                 </div>
                                 <div class="yqq-jobs-address">
                                     <h3 class="yqq-jobs-address-h3"><span>项目申报专员</span></h3>
@@ -484,10 +658,12 @@
                                 <span>总裁办</span>
                             </h3>
                         </div>
-                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal" data-target=".bs-example-modal-lg">
+                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal"
+                            data-target=".bs-example-modal-lg">
                             <div class="job-show">
                                 <div class="head-pic">
-                                    <p class="yqq-pic-kttx" style="background:url(./img/kttx.png) no-repeat -80px -80px;"></p>
+                                    <p class="yqq-pic-kttx"
+                                        style="background:url(./img/kttx.png) no-repeat -80px -80px;"></p>
                                 </div>
                                 <div class="yqq-jobs-address">
                                     <h3 class="yqq-jobs-address-h3"><span>管培生</span></h3>
@@ -505,10 +681,12 @@
                                 <span>AI LAB</span>
                             </h3>
                         </div>
-                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal" data-target=".bs-example-modal-lg">
+                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal"
+                            data-target=".bs-example-modal-lg">
                             <div class="job-show">
                                 <div class="head-pic">
-                                    <p class="yqq-pic-kttx" style="background:url(./img/kttx.png) no-repeat -400px -160px;"></p>
+                                    <p class="yqq-pic-kttx"
+                                        style="background:url(./img/kttx.png) no-repeat -400px -160px;"></p>
                                 </div>
                                 <div class="yqq-jobs-address">
                                     <h3 class="yqq-jobs-address-h3"><span>Research Scientist</span></h3>
@@ -526,10 +704,12 @@
                                 <span>研发中心</span>
                             </h3>
                         </div>
-                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal" data-target=".bs-example-modal-lg">
+                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal"
+                            data-target=".bs-example-modal-lg">
                             <div class="job-show">
                                 <div class="head-pic">
-                                    <p class="yqq-pic-kttx" style="background:url(./img/kttx.png) no-repeat -320px -0px;"></p>
+                                    <p class="yqq-pic-kttx"
+                                        style="background:url(./img/kttx.png) no-repeat -320px -0px;"></p>
                                 </div>
                                 <div class="yqq-jobs-address">
                                     <h3 class="yqq-jobs-address-h3"><span>Java开发工程师</span></h3>
@@ -540,10 +720,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal" data-target=".bs-example-modal-lg">
+                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal"
+                            data-target=".bs-example-modal-lg">
                             <div class="job-show">
                                 <div class="head-pic">
-                                    <p class="yqq-pic-kttx" style="background:url(./img/kttx.png) no-repeat -400px -720px;"></p>
+                                    <p class="yqq-pic-kttx"
+                                        style="background:url(./img/kttx.png) no-repeat -400px -720px;"></p>
                                 </div>
                                 <div class="yqq-jobs-address">
                                     <h3 class="yqq-jobs-address-h3"><span>前端开发工程师</span></h3>
@@ -561,10 +743,12 @@
                                 <span>BI&模型</span>
                             </h3>
                         </div>
-                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal" data-target=".bs-example-modal-lg">
+                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal"
+                            data-target=".bs-example-modal-lg">
                             <div class="job-show">
                                 <div class="head-pic">
-                                    <p class="yqq-pic-kttx" style="background:url(./img/kttx.png) no-repeat -640px -480px;"></p>
+                                    <p class="yqq-pic-kttx"
+                                        style="background:url(./img/kttx.png) no-repeat -640px -480px;"></p>
                                 </div>
                                 <div class="yqq-jobs-address">
                                     <h3 class="yqq-jobs-address-h3"><span>NLP工程师</span></h3>
@@ -575,10 +759,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal" data-target=".bs-example-modal-lg">
+                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal"
+                            data-target=".bs-example-modal-lg">
                             <div class="job-show">
                                 <div class="head-pic">
-                                    <p class="yqq-pic-kttx" style="background:url(./img/kttx.png) no-repeat -480px -320px;"></p>
+                                    <p class="yqq-pic-kttx"
+                                        style="background:url(./img/kttx.png) no-repeat -480px -320px;"></p>
                                 </div>
                                 <div class="yqq-jobs-address">
                                     <h3 class="yqq-jobs-address-h3"><span>数据分析师</span></h3>
@@ -589,10 +775,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal" data-target=".bs-example-modal-lg">
+                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal"
+                            data-target=".bs-example-modal-lg">
                             <div class="job-show">
                                 <div class="head-pic">
-                                    <p class="yqq-pic-kttx" style="background:url(./img/kttx.png) no-repeat -640px -720px;"></p>
+                                    <p class="yqq-pic-kttx"
+                                        style="background:url(./img/kttx.png) no-repeat -640px -720px;"></p>
                                 </div>
                                 <div class="yqq-jobs-address">
                                     <h3 class="yqq-jobs-address-h3"><span>数据科学家</span></h3>
@@ -614,7 +802,8 @@
                 <div class="modal-content">
                     <div class="model-header">
                         <h4 class="model-heade-title">岗位介绍</h4>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
                     </div>
                     <div class="model-body">
                         <div class="popover-show-dt">
@@ -628,29 +817,29 @@
                                 <h4>工作职责：</h4>
                                 <p>
                                     1、负责企业征信产品团队的管理与建设，负责跨团队合作事项；
-                                    <br/>
+                                    <br />
                                     2、带领团队完成公司产品开发，对项目进度、交付质量进行有效管理；
-                                    <br/>
+                                    <br />
                                     3、承担系统核心功能的设计、系统架构等核心研发工作；负责核心技术问题的攻关，协助解决项目开发过程中的技术难题；
-                                    <br/>
+                                    <br />
                                     4、积极了解业界发展、互联网相关新技术及趋势，规划产品技术方向；
-                                    <br/>
+                                    <br />
                                     5、带领团队进行产品的设计和研发，培养和指导工程师工作，帮助工程师获得成长。
                                 </p>
                                 <h4>职位要求：</h4>
                                 <p>
                                     1、本科或以上学历，计算机软件或相关专业；五年以上Java开发经验、3年以上团队管理经验；
-                                    <br/>
+                                    <br />
                                     2、精通常用设计模式和主流设计工具，具有java框架自主设计能力，有搭建java框架经验，能承担核心模块和核心功能开发，能根据既定产品和项目的特性进行技术架构设计；
-                                    <br/>
+                                    <br />
                                     3、精通SpringMVC、SpringBoot、SpringCloud、Hibernate、MyBatis等框架（框架提供的特性及其实现原理）；
-                                    <br/>
+                                    <br />
                                     4、熟悉mysql等主流数据库开发，熟悉mongodb，Hbase等NoSQL技术；熟悉数据库设计理论，具备一定的结合应用的数据库调优能力；
-                                    <br/>
+                                    <br />
                                     5、熟悉分布式服务和微服务开发框架，熟悉Redis，Memcached等缓存技术；
-                                    <br/>
+                                    <br />
                                     6、具备良好的文档撰写能力、编写习惯，良好的抽象思维和逻辑思维能力，独立分析问题解决问题的能力；
-                                    <br/>
+                                    <br />
                                     7、有较强逻辑分析和组织协调能力，有在互联网公司担任Scrum Master并有成功实践案例者优先。
                                 </p>
                                 <button class="yqq-apply">
@@ -661,35 +850,50 @@
                     </div>
                 </div>
             </div>
-          </div>
-        
+        </div>
+
     </div>
 </body>
 <script>
-    $(function(){
-        $('.yqq-mark-worldment').css({background:" rgb(37, 205, 235)",color:"#fff"})
-        $('.yqq-mark-schoolment').click(function(){
-            $(this).css({background:" rgb(37, 205, 235)",color:"#fff"})
-            $(this).parent().siblings().find('.yqq-mark-worldment').css({background:"none",color:"#666"})
+    $(function () {
+        $('.yqq-mark-worldment').css({
+            background: " rgb(37, 205, 235)",
+            color: "#fff"
+        })
+        $('.yqq-mark-schoolment').click(function () {
+            $(this).css({
+                background: " rgb(37, 205, 235)",
+                color: "#fff"
+            })
+            $(this).parent().siblings().find('.yqq-mark-worldment').css({
+                background: "none",
+                color: "#666"
+            })
             $(".society-station-two").show()
             $('.yqq-school').show()
             $('.yqq-process').show()
             $('.society-station-one').hide()
             $('.yqq-community').hide()
-            
-        }) 
-        $('.yqq-mark-worldment').click(function(){
-            $(this).css({background:" rgb(37, 205, 235)",color:"#fff"})
-            $(this).parent().siblings().find('.yqq-mark-schoolment').css({background:"none",color:"#666"})
+
+        })
+        $('.yqq-mark-worldment').click(function () {
+            $(this).css({
+                background: " rgb(37, 205, 235)",
+                color: "#fff"
+            })
+            $(this).parent().siblings().find('.yqq-mark-schoolment').css({
+                background: "none",
+                color: "#666"
+            })
             $('.yqq-community').show()
             $('.society-station-one').show()
             $('.yqq-Jobs').show()
             $(".society-station-two").hide()
             $('.yqq-school').hide()
             $('.yqq-flowpath').hide()
-            
-            
-            
+
+
+
         })
 
 
@@ -697,4 +901,5 @@
 
     })
 </script>
+
 </html>

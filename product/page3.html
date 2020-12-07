@@ -6,10 +6,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<link rel="stylesheet" href="../common/normallize.css">
-	<link rel="stylesheet" href="./layui/css/layui.css">
 	<link rel="stylesheet" href="../common/animate.compat.min.css">
 	<link rel="stylesheet" href="../common/bootstrap.min.css">
 	<link rel="stylesheet" href="../common/reset.css">
+	<link rel="stylesheet" href="../styles/index.css">
 </head>
 <style type="text/css">
 	p {
@@ -55,7 +55,7 @@
 		margin-bottom: 30px;
 	}
 
-	.nav {
+	.znp-top .nav {
 		border-bottom: 1px solid #eaeaea;
 		margin-top: 30px;
 		margin-bottom: 30px;
@@ -65,7 +65,7 @@
 		width: 100%;
 	}
 
-	.nav li {
+	.znp-top .nav li {
 		float: left;
 		margin-bottom: -1px;
 		position: relative;
@@ -74,12 +74,12 @@
 	}
 
 	.znp-content::before,
-	.nav::before {
+	.znp-top .nav::before {
 		display: table;
 		content: "";
 	}
 
-	.nav li a {
+	.znp-top .nav li a {
 		position: relative;
 		display: block;
 		color: #666;
@@ -90,7 +90,7 @@
 		transition: all 0.4s;
 	}
 
-	.nav li.active a {
+	.znp-top .nav li.active a {
 		color: #fff;
 		cursor: default;
 		background-color: #00b4ed;
@@ -209,6 +209,118 @@
 </style>
 
 <body>
+	<Nav class="navbar navbar-static-top">
+		<div class="navbar-left">
+			<a href="index.html" class="navbar-brand">
+				<img src="../image/logo.png" alt="">
+			</a>
+		</div>
+		<ul class="navbar-right nav navbar-nav hidden-xs  row">
+			<li class="nav-right-item">
+				<a href="../index.html">首页</a>
+			</li>
+			<li class="nav-right-item">
+				<a href="../index.html">核心优势</a>
+			</li>
+			<li class="nav-right-item product-container  dropdown">
+				<a class="product dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+					aria-expanded="false">
+					<div class="top">
+						冰鉴产品
+						<span class="caret"></span>
+					</div>
+					<ul class="menu nav-stacked dropdown-menu">
+						<li><a href="page1.html">个人与企业风控产品</a></li>
+						<li><a href="page2.html">银行与新金融风控产品</a></li>
+						<li><a href="page3.html">标准与定制化产品</a></li>
+						<li><a href="page4.html">智能风控平台产品</a></li>
+						<li><a href="page5.html">模型系统产品</a></li>
+					</ul>
+				</a>
+			</li>
+			<li class="nav-right-item product-container  dropdown">
+				<a class="product dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+					aria-expanded="false">
+					<div class="top">
+						关于我们
+						<span class="caret"></span>
+					</div>
+					<ul class="menu nav-stacked dropdown-menu">
+						<li><a href="../particulars/page1.html">冰鉴简介</a></li>
+						<li><a href="../particulars/page2.html">管理团队</a></li>
+						<li><a href="../particulars/page3.html">新闻中心</a></li>
+						<li><a href="../particulars/page4.html">加入我们</a></li>
+						<li><a href="../particulars/page5.html">合作通道</a></li>
+						<li><a href="../particulars/page6.html">联系我们</a></li>
+					</ul>
+				</a>
+			</li>
+
+		</ul>
+		<div class="btn-group  hidden-sm hidden-md hidden-lg">
+			<div class="btn">
+				<span class="animation1"></span>
+				<span></span>
+				<span class="animation2"></span>
+			</div>
+			<ul class="dropdown-select row">
+				<li class="col-xs-12">
+					<div>
+						<span class="iconfont icon-shouye"></span>
+						<div>首页</div>
+					</div>
+				</li>
+				<li class="col-xs-12">
+					<div>
+						<span class="iconfont icon-dilanxianxingiconyihuifu_huabanfuben"></span>
+						<div>核心优势</div>
+					</div>
+				</li>
+				<li class="multiple col-xs-12">
+					<div>
+						<span class="iconfont icon-chanpin"></span>
+						<div>冰鉴产品</div>
+						<b></b>
+					</div>
+					<ul class="row">
+						<li class="col-xs-11 col-xs-push-1 col-sm-11 col-sm-push-1"><a
+								href="page1.html">个人与企业风控产品</a></li>
+						<li class="col-xs-11 col-xs-push-1 col-sm-11 col-sm-push-1"><a
+								href="page2.html">银行与新金融风控产品</a></li>
+						<li class="col-xs-11 col-xs-push-1 col-sm-11 col-sm-push-1"><a
+								href="page3.html">标准与定制化产品</a></li>
+						<li class="col-xs-11 col-xs-push-1 col-sm-11 col-sm-push-1"><a
+								href="page4.html">智能风控平台产品</a></li>
+						<li class="col-xs-11 col-xs-push-1 col-sm-11 col-sm-push-1"><a
+								href="page5.html">模型系统产品</a></li>
+					</ul>
+				</li>
+				<li class="multiple col-xs-12 false">
+					<div>
+						<span class="iconfont icon-ren"></span>
+						<div>关于我们</div>
+						<b></b>
+					</div>
+					<ul class="row">
+						<li class="col-xs-11 col-xs-push-1 col-sm-11 col-sm-push-1"><a
+								href="../particulars/page1.html">冰鉴简介</a></li>
+						<li class="col-xs-11 col-xs-push-1 col-sm-11 col-sm-push-1"><a
+								href="../particulars/page2.html">管理团队</a></li>
+						<li class="col-xs-11 col-xs-push-1 col-sm-11 col-sm-push-1"><a
+								href="../particulars/page3.html">新闻中心</a></li>
+						<li class="col-xs-11 col-xs-push-1 col-sm-11 col-sm-push-1"><a
+								href="../particulars/page4.html">加入我们</a></li>
+						<li class="col-xs-11 col-xs-push-1 col-sm-11 col-sm-push-1"><a
+								href="../particulars/page5.html">合作通道</a></li>
+						<li class="col-xs-11 col-xs-push-1 col-sm-11 col-sm-push-1"><a
+								href="../particulars/page6.html">联系我们</a></li>
+
+					</ul>
+				</li>
+			</ul>
+		</div>
+
+	</Nav>
 	<div class="znp-top">
 		<div class="znp-content">
 			<div class="znp-nr">
@@ -423,5 +535,7 @@
 		$('.nav-list div').eq($(this).index()).removeClass('yc').siblings().addClass('yc')
 	})
 </script>
+<script src="../common/bootstrap.min.js"></script>
+<script src="../js/nav.js"></script>
 
 </html>

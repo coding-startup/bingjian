@@ -2,12 +2,15 @@ $(function () {
 	//头部导航条的js
 	$(".nav-right-flex li a").on("mousemove", function () {
 		$(this).addClass("active");
+		console.log("加active1")
 	});
 	$(".nav-right-flex li a").on("touchmove", function () {
 		$(this).addClass("active");
+		console.log("加active2")
 	});
 	$(".nav-right-flex li a").on("touchend", function () {
 		$(this).removeClass("active");
+		console.log("删除active2")
 	});
 });
 //小屏幕下的点击导航条 出现二级菜单
