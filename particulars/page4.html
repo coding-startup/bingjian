@@ -4,17 +4,697 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="common/normallize.css">
-    <link rel="stylesheet" href="./layui/css/layui.css">
-    <link rel="stylesheet" href="common/animate.compat.min.css">
-    <link rel="stylesheet" href="common/bootstrap.min.css">
-    <link rel="stylesheet" href="common/reset.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1696988_6we4fiaqgaj.css">
+    <link rel="stylesheet" href="../common/normallize.css">
+    <link rel="stylesheet" href="../layui/css/layui.css">
+    <link rel="stylesheet" href="../common/animate.compat.min.css">
+    <link rel="stylesheet" href="../common/bootstrap.min.css">
+    <link rel="stylesheet" href="../common/reset.css">
+    <script src="../common/jQuery v3.3.0.js"></script>
+    <script src="../common/bootstrap.min.js"></script>
+    <script src="../layui/layui.js"></script>
+    <script src="js/yqqindex.js"></script>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/footergeneral.css">
 </head>
 <body>
-    
+    <div id="yqq">
+        <div class="yqq-join-us">
+            <div class="yqq-title">
+                <h2>加入我们</h2>
+                <h3>join US</h3>
+            </div>
+        </div>
+        <div class="yqq-employment">
+            <div class="container">
+                <div class="col-md-12 col-sm-12 col-xs-12 yqq-join-mark">
+                    <ul class="yqq-nav-tabs clearfix">
+                        <li ><a href="#" class=" yqq-mark-worldment">社会招聘</a></li>
+                        <li><a href="#" class="yqq-mark-schoolment">校园招聘</a></li>
+                    </ul>
+                    <div class="yqq-mark yqq-community">
+                        <p class="bg-success">如果你想以后的生活被这样的一群人围绕：有情怀有热血的创业团队，融合科技与人文的geek，任性又可爱的伪文艺青年，当然啦，少不了还有油菜花、蛇精病的技术帝、程序猿、设计狮和产品鲸鲤，那么，欢迎加入冰鉴！</p>
+                        <p class="bg-success">如果你对未来的职业想象是这样的：拥有广阔的发展空间，世界那么大，你想去看看；接触国内外前沿的技术技能，与更多聪明的头脑碰撞激情火花；享受透明化、扁平化的管理，你的地盘你做主，那么，欢迎加入冰鉴！</p>
+                        <p class="bg-success">简历请投递至 <a href="#">talent@icekredit.com</a></p>
+                    </div>
+                    <!-- 校园招聘内容 -->
+                    <div class="yqq-mark yqq-school" style="display:none">
+                        <p class="bg-success">AI增信、AI未来，与你一起共创AI！<br/>冰鉴科技2020春季校园招聘会正式启动！</p>
+                        <p class="bg-success">招聘学校：<br/>
+                            国内：清华大学、北京大学、上海交通大学、复旦大学、中国科技大学、南京大学、浙江大学、东南大学、电子科技大学、西安交通大学、哈尔滨工业大学等知名高校；<br/>
+                            国外：卡内基梅隆大学、芝加哥大学、普渡大学、纽约大学、华盛顿大学等知名高校；<br/>
+                        </p>
+                        <p class="bg-success">招聘时间：2020.03.09 – 2020.04.20</p>
+                        <p class="bg-success">招聘方式：线上招聘会</p>
+                        <p class="bg-success">不管你是深谙互联网思维和金融知识的产品经理，还是虐过TB量级数据的数据科学家和数据分析师，或者是既能处理数据又能沟通客户的商业分析师，抑或是精通编程技术的开发工程师，冰鉴为您提供广阔平台。<br/>
+                            欢迎对AI感兴趣的你，点击下方职位一键投递简历，或将您独具特色的简历投递至campus@icekredit.com
+                        </p>
+                    </div>
+                </div>
+                <!-- <div class="col-md-12 col-sm-12 col-xs-12 yqq-Jobs">
+                    <h2 >
+                        <span>岗位介绍</span>
+                    </h2>
+                </div> -->
+                <!-- 校园招聘内容 -->
+                <div class="col-md-12 col-sm-12 col-xs-12 yqq-flowpath yqq-process" style="display:none">
+                    <h2 >
+                        <span>招聘流程</span>
+                    </h2>
+                    <img src="./img/campus-01.png" alt="" class="yqq-process-pic">
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12 yqq-Jobs yqq-process">
+                    <h2 >
+                        <span>岗位介绍</span>
+                    </h2>
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12 society-station society-station-one">
+                    <div class="row yqq-technology">
+                        <div class="row yqq-technology-title">
+                            <h3 class="col-md-12 col-sm-12 col-xs-12">
+                                <span>技术类</span>
+                            </h3>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content " data-toggle="modal" data-target=".bs-example-modal-lg">
+                            <div class="job-show">
+                                <div class="head-pic">
+                                    <p class="yqq-pic-kttx" style="background:url(./img/kttx.png) no-repeat -720px -80px;"></p>
+                                </div>
+                                <div class="yqq-jobs-address">
+                                    <h3 class="yqq-jobs-address-h3"><span>技术经理</span></h3>
+                                    <p class="yqq-intro">
+                                        <i class="iconfont icon-ditu"></i>
+                                        <b>成都</b>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal" data-target=".bs-example-modal-lg">
+                            <div class="job-show">
+                                <div class="head-pic">
+                                    <p class="yqq-pic-kttx" style="background:url(./img/kttx.png) no-repeat -160px -560px;"></p>
+                                </div>
+                                <div class="yqq-jobs-address">
+                                    <h3 class="yqq-jobs-address-h3"><span>测试组长</span></h3>
+                                    <p class="yqq-intro">
+                                        <i class="iconfont icon-ditu"></i>
+                                        <b>成都</b>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal" data-target=".bs-example-modal-lg">
+                            <div class="job-show">
+                                <div class="head-pic">
+                                    <p class="yqq-pic-kttx" style="background:url(./img/kttx.png) no-repeat 0px 0px;"></p>
+                                </div>
+                                <div class="yqq-jobs-address">
+                                    <h3 class="yqq-jobs-address-h3"><span>大数据开发工程师</span></h3>
+                                    <p class="yqq-intro">
+                                        <i class="iconfont icon-ditu"></i>
+                                        <b>南京</b>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal" data-target=".bs-example-modal-lg">
+                            <div class="job-show">
+                                <div class="head-pic">
+                                    <p class="yqq-pic-kttx" style="background:url(./img/kttx.png) no-repeat -400px -640px;"></p>
+                                </div>
+                                <div class="yqq-jobs-address">
+                                    <h3 class="yqq-jobs-address-h3"><span>Java开发组长</span></h3>
+                                    <p class="yqq-intro">
+                                        <i class="iconfont icon-ditu"></i>
+                                        <b>成都</b>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal" data-target=".bs-example-modal-lg">
+                            <div class="job-show">
+                                <div class="head-pic">
+                                    <p class="yqq-pic-kttx" style="background:url(./img/kttx.png) no-repeat -640px -400px;"></p>
+                                </div>
+                                <div class="yqq-jobs-address">
+                                    <h3 class="yqq-jobs-address-h3"><span>Java架构师</span></h3>
+                                    <p class="yqq-intro">
+                                        <i class="iconfont icon-ditu"></i>
+                                        <b>成都 南京</b>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal" data-target=".bs-example-modal-lg">
+                            <div class="job-show">
+                                <div class="head-pic">
+                                    <p class="yqq-pic-kttx" style="background:url(./img/kttx.png) no-repeat -480px -320px;"></p>
+                                </div>
+                                <div class="yqq-jobs-address">
+                                    <h3 class="yqq-jobs-address-h3"><span>高级大数据研发工程师</span></h3>
+                                    <p class="yqq-intro">
+                                        <i class="iconfont icon-ditu"></i>
+                                        <b>成都</b>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal" data-target=".bs-example-modal-lg">
+                            <div class="job-show">
+                                <div class="head-pic">
+                                    <p class="yqq-pic-kttx" style="background:url(./img/kttx.png) no-repeat -560px -640px;"></p>
+                                </div>
+                                <div class="yqq-jobs-address">
+                                    <h3 class="yqq-jobs-address-h3"><span>高级自动化测试工程师</span></h3>
+                                    <p class="yqq-intro">
+                                        <i class="iconfont icon-ditu"></i>
+                                        <b>成都 南京</b>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal" data-target=".bs-example-modal-lg">
+                            <div class="job-show">
+                                <div class="head-pic">
+                                    <p class="yqq-pic-kttx" style="background:url(./img/kttx.png) no-repeat -0px -400px;"></p>
+                                </div>
+                                <div class="yqq-jobs-address">
+                                    <h3 class="yqq-jobs-address-h3"><span>自动化测试工程师</span></h3>
+                                    <p class="yqq-intro">
+                                        <i class="iconfont icon-ditu"></i>
+                                        <b>成都</b>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal" data-target=".bs-example-modal-lg">
+                            <div class="job-show">
+                                <div class="head-pic">
+                                    <p class="yqq-pic-kttx" style="background:url(./img/kttx.png) no-repeat -400px -160px;"></p>
+                                </div>
+                                <div class="yqq-jobs-address">
+                                    <h3 class="yqq-jobs-address-h3"><span>测试工程师</span></h3>
+                                    <p class="yqq-intro">
+                                        <i class="iconfont icon-ditu"></i>
+                                        <b>成都 南京</b>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal" data-target=".bs-example-modal-lg">
+                            <div class="job-show">
+                                <div class="head-pic">
+                                    <p class="yqq-pic-kttx" style="background:url(./img/kttx.png) no-repeat -160px -720px;"></p>
+                                </div>
+                                <div class="yqq-jobs-address">
+                                    <h3 class="yqq-jobs-address-h3"><span>高级Web开发工程师</span></h3>
+                                    <p class="yqq-intro">
+                                        <i class="iconfont icon-ditu"></i>
+                                        <b>成都 南京</b>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal" data-target=".bs-example-modal-lg">
+                            <div class="job-show">
+                                <div class="head-pic">
+                                    <p class="yqq-pic-kttx" style="background:url(./img/kttx.png) no-repeat -720px -0px;"></p>
+                                </div>
+                                <div class="yqq-jobs-address">
+                                    <h3 class="yqq-jobs-address-h3"><span>高级大数据研发工程师</span></h3>
+                                    <p class="yqq-intro">
+                                        <i class="iconfont icon-ditu"></i>
+                                        <b>北京</b>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal" data-target=".bs-example-modal-lg">
+                            <div class="job-show">
+                                <div class="head-pic">
+                                    <p class="yqq-pic-kttx" style="background:url(./img/kttx.png) no-repeat -400px -720px;"></p>
+                                </div>
+                                <div class="yqq-jobs-address">
+                                    <h3 class="yqq-jobs-address-h3"><span>全栈开发工程师</span></h3>
+                                    <p class="yqq-intro">
+                                        <i class="iconfont icon-ditu"></i>
+                                        <b>北京</b>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal" data-target=".bs-example-modal-lg">
+                            <div class="job-show">
+                                <div class="head-pic">
+                                    <p class="yqq-pic-kttx" style="background:url(./img/kttx.png) no-repeat -240px -480px;"></p>
+                                </div>
+                                <div class="yqq-jobs-address">
+                                    <h3 class="yqq-jobs-address-h3"><span>Web开发架构师</span></h3>
+                                    <p class="yqq-intro">
+                                        <i class="iconfont icon-ditu"></i>
+                                        <b>成都</b>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal" data-target=".bs-example-modal-lg">
+                            <div class="job-show">
+                                <div class="head-pic">
+                                    <p class="yqq-pic-kttx" style="background:url(./img/kttx.png) no-repeat -80px -480px;"></p>
+                                </div>
+                                <div class="yqq-jobs-address">
+                                    <h3 class="yqq-jobs-address-h3"><span>高级运维工程师</span></h3>
+                                    <p class="yqq-intro">
+                                        <i class="iconfont icon-ditu"></i>
+                                        <b>成都</b>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal" data-target=".bs-example-modal-lg">
+                            <div class="job-show">
+                                <div class="head-pic">
+                                    <p class="yqq-pic-kttx" style="background:url(./img/kttx.png) no-repeat -240px -80px;"></p>
+                                </div>
+                                <div class="yqq-jobs-address">
+                                    <h3 class="yqq-jobs-address-h3"><span>运维开发工程师</span></h3>
+                                    <p class="yqq-intro">
+                                        <i class="iconfont icon-ditu"></i>
+                                        <b>成都</b>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal" data-target=".bs-example-modal-lg">
+                            <div class="job-show">
+                                <div class="head-pic">
+                                    <p class="yqq-pic-kttx" style="background:url(./img/kttx.png) no-repeat -640px -480px;"></p>
+                                </div>
+                                <div class="yqq-jobs-address">
+                                    <h3 class="yqq-jobs-address-h3"><span>高级Java工程师</span></h3>
+                                    <p class="yqq-intro">
+                                        <i class="iconfont icon-ditu"></i>
+                                        <b>南京 成都</b>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal" data-target=".bs-example-modal-lg">
+                            <div class="job-show">
+                                <div class="head-pic">
+                                    <p class="yqq-pic-kttx" style="background:url(./img/kttx.png) no-repeat -720px -560px;"></p>
+                                </div>
+                                <div class="yqq-jobs-address">
+                                    <h3 class="yqq-jobs-address-h3"><span>研究科学家</span></h3>
+                                    <p class="yqq-intro">
+                                        <i class="iconfont icon-ditu"></i>
+                                        <b>上海 南京</b>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal" data-target=".bs-example-modal-lg">
+                            <div class="job-show">
+                                <div class="head-pic">
+                                    <p class="yqq-pic-kttx" style="background:url(./img/kttx.png) no-repeat -480px -480px;"></p>
+                                </div>
+                                <div class="yqq-jobs-address">
+                                    <h3 class="yqq-jobs-address-h3"><span>数据科学家</span></h3>
+                                    <p class="yqq-intro">
+                                        <i class="iconfont icon-ditu"></i>
+                                        <b>成都 北京 南京 深圳</b>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal" data-target=".bs-example-modal-lg">
+                            <div class="job-show">
+                                <div class="head-pic">
+                                    <p class="yqq-pic-kttx" style="background:url(./img/kttx.png) no-repeat -560px -560px;"></p>
+                                </div>
+                                <div class="yqq-jobs-address">
+                                    <h3 class="yqq-jobs-address-h3"><span>数据分析师/商业分析师</span></h3>
+                                    <p class="yqq-intro">
+                                        <i class="iconfont icon-ditu"></i>
+                                        <b>成都 北京 南京 深圳</b>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal" data-target=".bs-example-modal-lg">
+                            <div class="job-show">
+                                <div class="head-pic">
+                                    <p class="yqq-pic-kttx" style="background:url(./img/kttx.png) no-repeat -320px -560px;"></p>
+                                </div>
+                                <div class="yqq-jobs-address">
+                                    <h3 class="yqq-jobs-address-h3"><span>高级测试工程师</span></h3>
+                                    <p class="yqq-intro">
+                                        <i class="iconfont icon-ditu"></i>
+                                        <b>成都</b>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row yqq-technology">
+                        <div class="row yqq-technology-title">
+                            <h3 class="col-md-12 col-sm-12 col-xs-12">
+                                <span>产品类</span>
+                            </h3>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal" data-target=".bs-example-modal-lg">
+                            <div class="job-show">
+                                <div class="head-pic">
+                                    <p class="yqq-pic-kttx" style="background:url(./img/kttx.png) no-repeat -400px -400px;"></p>
+                                </div>
+                                <div class="yqq-jobs-address">
+                                    <h3 class="yqq-jobs-address-h3"><span>高级项目经理</span></h3>
+                                    <p class="yqq-intro">
+                                        <i class="iconfont icon-ditu"></i>
+                                        <b>成都 南京 北京 深圳</b>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal" data-target=".bs-example-modal-lg">
+                            <div class="job-show">
+                                <div class="head-pic">
+                                    <p class="yqq-pic-kttx" style="background:url(./img/kttx.png) no-repeat -480px -560px;"></p>
+                                </div>
+                                <div class="yqq-jobs-address">
+                                    <h3 class="yqq-jobs-address-h3"><span>产品经理</span></h3>
+                                    <p class="yqq-intro">
+                                        <i class="iconfont icon-ditu"></i>
+                                        <b>成都 南京 北京 深圳</b>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row yqq-technology">
+                        <div class="row yqq-technology-title">
+                            <h3 class="col-md-12 col-sm-12 col-xs-12">
+                                <span>市场及销售类</span>
+                            </h3>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal" data-target=".bs-example-modal-lg">
+                            <div class="job-show">
+                                <div class="head-pic">
+                                    <p class="yqq-pic-kttx" style="background:url(./img/kttx.png) no-repeat -240px -400px;"></p>
+                                </div>
+                                <div class="yqq-jobs-address">
+                                    <h3 class="yqq-jobs-address-h3"><span>高级销售经理-保险</span></h3>
+                                    <p class="yqq-intro">
+                                        <i class="iconfont icon-ditu"></i>
+                                        <b>上海</b>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal" data-target=".bs-example-modal-lg">
+                            <div class="job-show">
+                                <div class="head-pic">
+                                    <p class="yqq-pic-kttx" style="background:url(./img/kttx.png) no-repeat -160px -720px;"></p>
+                                </div>
+                                <div class="yqq-jobs-address">
+                                    <h3 class="yqq-jobs-address-h3"><span>高级销售经理-银行</span></h3>
+                                    <p class="yqq-intro">
+                                        <i class="iconfont icon-ditu"></i>
+                                        <b>深圳 广州</b>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal" data-target=".bs-example-modal-lg">
+                            <div class="job-show">
+                                <div class="head-pic">
+                                    <p class="yqq-pic-kttx" style="background:url(./img/kttx.png) no-repeat -160px -0px;"></p>
+                                </div>
+                                <div class="yqq-jobs-address">
+                                    <h3 class="yqq-jobs-address-h3"><span>高级销售经理-新金融</span></h3>
+                                    <p class="yqq-intro">
+                                        <i class="iconfont icon-ditu"></i>
+                                        <b>北京 上海 杭州 深圳</b>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal" data-target=".bs-example-modal-lg">
+                            <div class="job-show">
+                                <div class="head-pic">
+                                    <p class="yqq-pic-kttx" style="background:url(./img/kttx.png) no-repeat -480px -80px;"></p>
+                                </div>
+                                <div class="yqq-jobs-address">
+                                    <h3 class="yqq-jobs-address-h3"><span>售前技术支持工程师</span></h3>
+                                    <p class="yqq-intro">
+                                        <i class="iconfont icon-ditu"></i>
+                                        <b>深圳 南京</b>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row yqq-technology">
+                        <div class="row yqq-technology-title">
+                            <h3 class="col-md-12 col-sm-12 col-xs-12">
+                                <span>其他</span>
+                            </h3>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal" data-target=".bs-example-modal-lg">
+                            <div class="job-show">
+                                <div class="head-pic">
+                                    <p class="yqq-pic-kttx" style="background:url(./img/kttx.png) no-repeat -240px -240px;"></p>
+                                </div>
+                                <div class="yqq-jobs-address">
+                                    <h3 class="yqq-jobs-address-h3"><span>项目申报专员</span></h3>
+                                    <p class="yqq-intro">
+                                        <i class="iconfont icon-ditu"></i>
+                                        <b>上海</b>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 校园招聘内容 -->
+                <div class="col-md-12 col-sm-12 col-xs-12 society-station society-station-two" style="display:none">
+                    <div class="row yqq-technology">
+                        <div class="row yqq-technology-title">
+                            <h3 class="col-md-12 col-sm-12 col-xs-12">
+                                <span>总裁办</span>
+                            </h3>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal" data-target=".bs-example-modal-lg">
+                            <div class="job-show">
+                                <div class="head-pic">
+                                    <p class="yqq-pic-kttx" style="background:url(./img/kttx.png) no-repeat -80px -80px;"></p>
+                                </div>
+                                <div class="yqq-jobs-address">
+                                    <h3 class="yqq-jobs-address-h3"><span>管培生</span></h3>
+                                    <p class="yqq-intro">
+                                        <i class="iconfont icon-ditu"></i>
+                                        <b>上海</b>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row yqq-technology">
+                        <div class="row yqq-technology-title">
+                            <h3 class="col-md-12 col-sm-12 col-xs-12">
+                                <span>AI LAB</span>
+                            </h3>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal" data-target=".bs-example-modal-lg">
+                            <div class="job-show">
+                                <div class="head-pic">
+                                    <p class="yqq-pic-kttx" style="background:url(./img/kttx.png) no-repeat -400px -160px;"></p>
+                                </div>
+                                <div class="yqq-jobs-address">
+                                    <h3 class="yqq-jobs-address-h3"><span>Research Scientist</span></h3>
+                                    <p class="yqq-intro">
+                                        <i class="iconfont icon-ditu"></i>
+                                        <b>南京</b>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row yqq-technology">
+                        <div class="row yqq-technology-title">
+                            <h3 class="col-md-12 col-sm-12 col-xs-12">
+                                <span>研发中心</span>
+                            </h3>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal" data-target=".bs-example-modal-lg">
+                            <div class="job-show">
+                                <div class="head-pic">
+                                    <p class="yqq-pic-kttx" style="background:url(./img/kttx.png) no-repeat -320px -0px;"></p>
+                                </div>
+                                <div class="yqq-jobs-address">
+                                    <h3 class="yqq-jobs-address-h3"><span>Java开发工程师</span></h3>
+                                    <p class="yqq-intro">
+                                        <i class="iconfont icon-ditu"></i>
+                                        <b>成都 南京</b>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal" data-target=".bs-example-modal-lg">
+                            <div class="job-show">
+                                <div class="head-pic">
+                                    <p class="yqq-pic-kttx" style="background:url(./img/kttx.png) no-repeat -400px -720px;"></p>
+                                </div>
+                                <div class="yqq-jobs-address">
+                                    <h3 class="yqq-jobs-address-h3"><span>前端开发工程师</span></h3>
+                                    <p class="yqq-intro">
+                                        <i class="iconfont icon-ditu"></i>
+                                        <b>南京</b>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row yqq-technology">
+                        <div class="row yqq-technology-title">
+                            <h3 class="col-md-12 col-sm-12 col-xs-12">
+                                <span>BI&模型</span>
+                            </h3>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal" data-target=".bs-example-modal-lg">
+                            <div class="job-show">
+                                <div class="head-pic">
+                                    <p class="yqq-pic-kttx" style="background:url(./img/kttx.png) no-repeat -640px -480px;"></p>
+                                </div>
+                                <div class="yqq-jobs-address">
+                                    <h3 class="yqq-jobs-address-h3"><span>NLP工程师</span></h3>
+                                    <p class="yqq-intro">
+                                        <i class="iconfont icon-ditu"></i>
+                                        <b>南京</b>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal" data-target=".bs-example-modal-lg">
+                            <div class="job-show">
+                                <div class="head-pic">
+                                    <p class="yqq-pic-kttx" style="background:url(./img/kttx.png) no-repeat -480px -320px;"></p>
+                                </div>
+                                <div class="yqq-jobs-address">
+                                    <h3 class="yqq-jobs-address-h3"><span>数据分析师</span></h3>
+                                    <p class="yqq-intro">
+                                        <i class="iconfont icon-ditu"></i>
+                                        <b>北京 上海 南京 深圳</b>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 yqq-technology-content" data-toggle="modal" data-target=".bs-example-modal-lg">
+                            <div class="job-show">
+                                <div class="head-pic">
+                                    <p class="yqq-pic-kttx" style="background:url(./img/kttx.png) no-repeat -640px -720px;"></p>
+                                </div>
+                                <div class="yqq-jobs-address">
+                                    <h3 class="yqq-jobs-address-h3"><span>数据科学家</span></h3>
+                                    <p class="yqq-intro">
+                                        <i class="iconfont icon-ditu"></i>
+                                        <b>北京 上海 南京 深圳</b>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="yqq-footer"></div>
+        <div id="nav-scroll"></div>
+        <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="model-header">
+                        <h4 class="model-heade-title">岗位介绍</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="model-body">
+                        <div class="popover-show-dt">
+                            <h3>
+                                <span class="yqq-popover-post">Java开发组长</span>
+                                <span>
+                                    <b>南京</b>
+                                </span>
+                            </h3>
+                            <div class="popover-jobdt">
+                                <h4>工作职责：</h4>
+                                <p>
+                                    1、负责企业征信产品团队的管理与建设，负责跨团队合作事项；
+                                    <br/>
+                                    2、带领团队完成公司产品开发，对项目进度、交付质量进行有效管理；
+                                    <br/>
+                                    3、承担系统核心功能的设计、系统架构等核心研发工作；负责核心技术问题的攻关，协助解决项目开发过程中的技术难题；
+                                    <br/>
+                                    4、积极了解业界发展、互联网相关新技术及趋势，规划产品技术方向；
+                                    <br/>
+                                    5、带领团队进行产品的设计和研发，培养和指导工程师工作，帮助工程师获得成长。
+                                </p>
+                                <h4>职位要求：</h4>
+                                <p>
+                                    1、本科或以上学历，计算机软件或相关专业；五年以上Java开发经验、3年以上团队管理经验；
+                                    <br/>
+                                    2、精通常用设计模式和主流设计工具，具有java框架自主设计能力，有搭建java框架经验，能承担核心模块和核心功能开发，能根据既定产品和项目的特性进行技术架构设计；
+                                    <br/>
+                                    3、精通SpringMVC、SpringBoot、SpringCloud、Hibernate、MyBatis等框架（框架提供的特性及其实现原理）；
+                                    <br/>
+                                    4、熟悉mysql等主流数据库开发，熟悉mongodb，Hbase等NoSQL技术；熟悉数据库设计理论，具备一定的结合应用的数据库调优能力；
+                                    <br/>
+                                    5、熟悉分布式服务和微服务开发框架，熟悉Redis，Memcached等缓存技术；
+                                    <br/>
+                                    6、具备良好的文档撰写能力、编写习惯，良好的抽象思维和逻辑思维能力，独立分析问题解决问题的能力；
+                                    <br/>
+                                    7、有较强逻辑分析和组织协调能力，有在互联网公司担任Scrum Master并有成功实践案例者优先。
+                                </p>
+                                <button class="yqq-apply">
+                                    <a href="#"><i class="iconfont icon-tianxie"></i>申请此岗位</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        
+    </div>
 </body>
+<script>
+    $(function(){
+        $('.yqq-mark-worldment').css({background:" rgb(37, 205, 235)",color:"#fff"})
+        $('.yqq-mark-schoolment').click(function(){
+            $(this).css({background:" rgb(37, 205, 235)",color:"#fff"})
+            $(this).parent().siblings().find('.yqq-mark-worldment').css({background:"none",color:"#666"})
+            $(".society-station-two").show()
+            $('.yqq-school').show()
+            $('.yqq-process').show()
+            $('.society-station-one').hide()
+            $('.yqq-community').hide()
+            
+        }) 
+        $('.yqq-mark-worldment').click(function(){
+            $(this).css({background:" rgb(37, 205, 235)",color:"#fff"})
+            $(this).parent().siblings().find('.yqq-mark-schoolment').css({background:"none",color:"#666"})
+            $('.yqq-community').show()
+            $('.society-station-one').show()
+            $('.yqq-Jobs').show()
+            $(".society-station-two").hide()
+            $('.yqq-school').hide()
+            $('.yqq-flowpath').hide()
+            
+            
+            
+        })
 
-<script src="common/jQuery v3.3.0.js"></script>
-<script src="common/bootstrap.min.js"></script>
-<script src="layui/layui.js"></script>
+
+
+
+    })
+</script>
 </html>

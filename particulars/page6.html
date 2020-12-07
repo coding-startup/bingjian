@@ -1,60 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="common/normallize.css">
-    <link rel="stylesheet" href="./layui/css/layui.css">
-    <link rel="stylesheet" href="common/animate.compat.min.css">
-    <link rel="stylesheet" href="common/bootstrap.min.css">
-    <link rel="stylesheet" href="common/reset.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="../common/normallize.css">
+	<link rel="stylesheet" href="./layui/css/layui.css">
+	<link rel="stylesheet" href="../common/animate.compat.min.css">
+	<link rel="stylesheet" href="../common/bootstrap.min.css">
+	<link rel="stylesheet" href="../common/reset.css">
+	<link rel="stylesheet" href="./css/index.css">
+	<link rel="stylesheet" href="./css/footergeneral.css">
+	<link rel="stylesheet" href="http://at.alicdn.com/t/font_1696988_6we4fiaqgaj.css">
+	<style>
+		.yqq-header {
+			width: 100%;
+			background: url("./image/bk-contact.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 420px;
+		}
+
+		.yqq-header .yqq-title h2 {
+			color: rgba(255, 255, 255, 0.8);
+		}
+
+		.yqq-header .yqq-title h3 {
+			margin-top: 20px;
+			font-weight: 500;
+			color: rgba(255, 255, 255, 0.4);
+			text-align: center;
+		}
+
+		.yqq-Cooperative {
+			height: 420px;
+		}
+	</style>
 </head>
+
 <style type="text/css">
-	ul,li{
+	ul,
+	li {
 		list-style: none;
 	}
-	a{text-decoration: none;}
-	.znp-top{
+
+	a {
+		text-decoration: none;
+	}
+
+	.znp-top {
 		background-color: #fff;
 		padding-top: 50px;
 		padding-bottom: 100px;
 		width: 100%;
 		min-height: 600px;
+		overflow:hidden;
 	}
-	.znp-content{
+
+	.znp-content {
 		padding-right: 15px;
 		padding-left: 15px;
 		margin-right: auto;
 		margin-left: auto;
 		width: 1170px;
 	}
-	.znp-nr{
+
+	.znp-nr {
 		font-size: 16px;
 		line-height: 28px;
 	}
-	.znp-content::before,.nav::before{
+
+	.znp-content::before,
+	.nav::before {
 		display: table;
 		content: "";
 	}
-	@media (max-width: 768px){
+
+	@media (max-width: 768px) {
 		.znp-content {
 			width: 650px;
 			overflow: hidden;
 		}
-		.znp-box .znp-col-5{
+
+		.znp-box .znp-col-5 {
 			width: 100%;
 		}
+
 		.znp-box .znp-col-7 {
-		    width: 100%;
+			width: 100%;
 			clear: both;
 		}
-		.znp-nr2 .znp-post-50{
+
+		.znp-nr2 .znp-post-50 {
 			clear: both;
 			width: 100%;
 		}
 	}
-	.znp-post-title{
+
+	.znp-post-title {
 		font-size: 26px;
 		color: #666;
 		padding: 10px 30px 0;
@@ -64,32 +111,36 @@
 		text-align: left;
 		margin-top: 10px;
 	}
-	.znp-post-title span{
+
+	.znp-post-title span {
 		display: inline-block;
 		padding-bottom: 10px;
 		margin-bottom: -1px;
 		border-bottom: 1px solid #00b4ed;
 	}
-	.znp-yyy{
-		    display: block;
-		    margin: 10px 0;
-		    padding: 30px 0;
-		    border: 1px solid #fff;
-		    color: #666;
-		    font-size: 16px;
-		    text-decoration: none !important;
-		    background-color: #f4f4f4;
-		    transition: all 0.4s;
+
+	.znp-yyy {
+		display: block;
+		margin: 10px 0;
+		padding: 30px 0;
+		border: 1px solid #fff;
+		color: #666;
+		font-size: 16px;
+		text-decoration: none !important;
+		background-color: #f4f4f4;
+		transition: all 0.4s;
 	}
-	.znp-nr2{
+
+	.znp-nr2 {
 		width: 100%;
 		float: left;
-		position: relative; 
-		min-height: 1px; 
-		padding-right: 15px; 
+		position: relative;
+		min-height: 1px;
+		padding-right: 15px;
 		padding-left: 15px;
 	}
-	.znp-post-50{
+
+	.znp-post-50 {
 		width: 45%;
 		position: relative;
 		min-height: 1px;
@@ -98,29 +149,35 @@
 		float: left;
 		text-align: center;
 	}
-	.znp-yyy span{
+
+	.znp-yyy span {
 		color: #666;
 		font-size: 18px;
 		line-height: 35px;
 		transition: all 0.4s;
 	}
-	.znp-yyy:hover{
-		color:#fff;
-		background-color:#00b4ed;
-		border:1px solid #00b4ed;
+
+	.znp-yyy:hover {
+		color: #fff;
+		background-color: #00b4ed;
+		border: 1px solid #00b4ed;
 	}
-	.znp-yyy:hover span{
-		color:#fff;
+
+	.znp-yyy:hover span {
+		color: #fff;
 	}
-	.znp-nr3{
+
+	.znp-nr3 {
 		float: left;
 		width: 100%;
 	}
-	.znp-nr4{
+
+	.znp-nr4 {
 		width: 100%;
 		float: left;
 	}
-	.znp-nav-tabs{
+
+	.znp-nav-tabs {
 		border-bottom: 1px solid #eaeaea;
 		margin-top: 30px;
 		margin-bottom: 30px;
@@ -130,11 +187,13 @@
 		float: left;
 		width: 100%;
 	}
-	.znp-nav::before{
+
+	.znp-nav::before {
 		display: table;
 		content: " ";
 	}
-	.znp-nav-tabs li{
+
+	.znp-nav-tabs li {
 		float: left;
 		margin-bottom: -1px;
 		width: 98px;
@@ -142,14 +201,16 @@
 		text-align: center;
 		line-height: 55px;
 	}
-	.znp-nav-tabs li a{
+
+	.znp-nav-tabs li a {
 		color: #666;
 		border: none;
 		border-radius: 0;
 		font-size: 18px;
 		transition: all 0.4s;
 	}
-	.znp-nr4 .znp-nav-tabs li.active a{
+
+	.znp-nr4 .znp-nav-tabs li.active a {
 		width: 98px;
 		height: 55px;
 		color: #fff;
@@ -160,81 +221,106 @@
 		border-bottom-color: transparent;
 		font-size: 18px;
 	}
-	.znp-nav-tabs li a:hover{
+
+	.znp-nav-tabs li a:hover {
 		padding: 15px 30px;
 		background-color: #eee;
 	}
-	.znp-nr4 a:hover{
-		color:#00b4ed;
-		background: rgb(238,238,238);
+
+	.znp-nr4 a:hover {
+		color: #00b4ed;
+		background: rgb(238, 238, 238);
 	}
-	.znp-col-5{
+
+	.znp-col-5 {
 		width: 41.66666667%;
 		float: left;
 	}
+
 	.znp-info {
-	    padding: 15px 10px;
-	    margin-bottom: 0;
-	    color: #666;
-	    font-size: 14px;
-	    border-bottom: 1px solid #eaeaea;
+		padding: 15px 10px;
+		margin-bottom: 0;
+		color: #666;
+		font-size: 14px;
+		border-bottom: 1px solid #eaeaea;
 		float: left;
 		width: 100%;
 	}
-	.znp-col-7{
+
+	.znp-col-7 {
 		width: 55%;
 		float: left;
 	}
-	.one .znp-box{
+
+	.one .znp-box {
 		display: none;
 	}
-	.znp-nr4 .one .xs{
+
+	.znp-nr4 .one .xs {
 		display: block;
 	}
-	@media (max-width: 768px){
+
+	@media (max-width: 768px) {
 		.znp-content {
 			width: 100%;
 			overflow: hidden;
 			padding-right: 0;
-			padding-left: 0;	
+			padding-left: 0;
 		}
-		.body-container{
+
+		.body-container {
 			clear: both;
 		}
-		img{
+
+		img {
 			width: 100%;
 		}
 	}
-	@media (max-width: 375px){
-		.znp-top{
-			width:100%;
+
+	@media (max-width: 375px) {
+		.znp-top {
+			width: 100%;
 		}
-		.nav li{
+
+		.nav li {
 			width: 50%;
 		}
-		.nav li.active a{
+
+		.nav li.active a {
 			font-size: 12px;
 		}
-		.nav li a{
+
+		.nav li a {
 			font-size: 12px;
 		}
+
 		.znp-content {
 			width: 100%;
 			margin-left: 0;
 			padding-right: 0;
 			padding-left: 0;
 		}
-		.body-container{
+
+		.body-container {
 			clear: both;
 		}
-		img{
+
+		img {
 			width: 100%;
 		}
 	}
 </style>
+
 <body>
-    <div class="znp-top">
+	<div class="yqq-header">
+		<div class="yqq-title">
+			<h2>联系我们</h2>
+			<h3>Contact Us</h3>
+		</div>
+	</div>
+	<div class="znp-top">
 		<div class="znp-content">
+
 			<div class="znp-nr">
 				<div class="znp-post-title"><span>邮件联系</span></div>
 			</div>
@@ -278,102 +364,112 @@
 					</div> -->
 				</div>
 			</div>
+
 		</div>
+
+
+	</div>
+	<div id="yqq-footer">
+		<!-- 尾部内容 -->
+	</div>
+	<div id="nav-scroll">
+		<!-- 右下角返回顶部 -->
 	</div>
 
-</body>	
+</body>
 
 <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+<script src="./js/yqqindex.js"></script>
 <script type="text/javascript">
-	var znpdl=[
-		{
-			wz:'上海',
-			gs:'上海冰鉴信息科技有限公司',
-			sj:' +86-21-68592015',
-			dq:'上海浦东新区商城路618号良友大厦4楼B207',
-			yb:'200120',
-			api:'https://apis.map.qq.com/tools/poimarker?type=0&marker=coord:31.230165,121.518125;title:上海冰鉴信息科技有限公司;addr:上海浦东新区商城路618号良友大厦4楼B207&key=OB4BZ-D4W3U-B7VVO-4PJWW-6TKDJ-WPB77&referer=myapp'
+	var znpdl = [{
+			wz: '上海',
+			gs: '上海冰鉴信息科技有限公司',
+			sj: ' +86-21-68592015',
+			dq: '上海浦东新区商城路618号良友大厦4楼B207',
+			yb: '200120',
+			api: 'https://apis.map.qq.com/tools/poimarker?type=0&marker=coord:31.230165,121.518125;title:上海冰鉴信息科技有限公司;addr:上海浦东新区商城路618号良友大厦4楼B207&key=OB4BZ-D4W3U-B7VVO-4PJWW-6TKDJ-WPB77&referer=myapp'
 		},
 		{
-			wz:'南京',
-			gs:'南京冰鉴信息科技有限公司',
-			sj:' +86-25-86603591',
-			dq:'南京市鼓楼区中山北路99号11楼1106室',
-			yb:'210009',
-			api:'https://apis.map.qq.com/tools/poimarker?type=0&marker=coord:32.065670,118.775910;title:南京冰鉴信息科技有限公司;addr:南京市鼓楼区中山北路99号11楼1106室&key=OB4BZ-D4W3U-B7VVO-4PJWW-6TKDJ-WPB77&referer=myapp'
+			wz: '南京',
+			gs: '南京冰鉴信息科技有限公司',
+			sj: ' +86-25-86603591',
+			dq: '南京市鼓楼区中山北路99号11楼1106室',
+			yb: '210009',
+			api: 'https://apis.map.qq.com/tools/poimarker?type=0&marker=coord:32.065670,118.775910;title:南京冰鉴信息科技有限公司;addr:南京市鼓楼区中山北路99号11楼1106室&key=OB4BZ-D4W3U-B7VVO-4PJWW-6TKDJ-WPB77&referer=myapp'
 		},
 		{
-			wz:'成都',
-			gs:'成都冰鉴信息科技有限公司',
-			sj:' +86-28-87897210',
-			dq:'成都市高新区天府五街200号菁蓉国际广场3A栋1001号',
-			yb:'610041',
-			api:'https://apis.map.qq.com/tools/poimarker?type=0&marker=coord:30.539420,104.062060;title:成都冰鉴信息科技有限公司;addr:成都市高新区天府五街200号菁蓉国际广场3A栋1001号&key=OB4BZ-D4W3U-B7VVO-4PJWW-6TKDJ-WPB77&referer=myapp'
+			wz: '成都',
+			gs: '成都冰鉴信息科技有限公司',
+			sj: ' +86-28-87897210',
+			dq: '成都市高新区天府五街200号菁蓉国际广场3A栋1001号',
+			yb: '610041',
+			api: 'https://apis.map.qq.com/tools/poimarker?type=0&marker=coord:30.539420,104.062060;title:成都冰鉴信息科技有限公司;addr:成都市高新区天府五街200号菁蓉国际广场3A栋1001号&key=OB4BZ-D4W3U-B7VVO-4PJWW-6TKDJ-WPB77&referer=myapp'
 		},
 		{
-			wz:'北京',
-			gs:'北京冰鉴信息科技有限公司',
-			sj:' +86-10-64639161',
-			dq:'北京市朝阳区东三环北路甲2号京信大厦1346室',
-			yb:'100027',
-			api:'https://apis.map.qq.com/tools/poimarker?type=0&marker=coord:39.954193,116.461168;title:北京冰鉴信息科技有限公司;addr:北京市朝阳区东三环北路甲2号京信大厦1346室&key=OB4BZ-D4W3U-B7VVO-4PJWW-6TKDJ-WPB77&referer=myapp'
+			wz: '北京',
+			gs: '北京冰鉴信息科技有限公司',
+			sj: ' +86-10-64639161',
+			dq: '北京市朝阳区东三环北路甲2号京信大厦1346室',
+			yb: '100027',
+			api: 'https://apis.map.qq.com/tools/poimarker?type=0&marker=coord:39.954193,116.461168;title:北京冰鉴信息科技有限公司;addr:北京市朝阳区东三环北路甲2号京信大厦1346室&key=OB4BZ-D4W3U-B7VVO-4PJWW-6TKDJ-WPB77&referer=myapp'
 		},
 		{
-			wz:'深圳',
-			gs:'上海冰鉴信息科技有限公司深圳分公司',
-			sj:' +86-755-83232765',
-			dq:'深圳市福田区深南大道6005号英龙展业大厦1718室',
-			yb:'518040',
-			api:'https://apis.map.qq.com/tools/poimarker?type=0&marker=coord:22.534732,114.022411;title:上海冰鉴信息科技有限公司深圳分公司;addr:深圳市福田区深南大道6005号英龙展业大厦1718室&key=OB4BZ-D4W3U-B7VVO-4PJWW-6TKDJ-WPB77&referer=myapp'
+			wz: '深圳',
+			gs: '上海冰鉴信息科技有限公司深圳分公司',
+			sj: ' +86-755-83232765',
+			dq: '深圳市福田区深南大道6005号英龙展业大厦1718室',
+			yb: '518040',
+			api: 'https://apis.map.qq.com/tools/poimarker?type=0&marker=coord:22.534732,114.022411;title:上海冰鉴信息科技有限公司深圳分公司;addr:深圳市福田区深南大道6005号英龙展业大厦1718室&key=OB4BZ-D4W3U-B7VVO-4PJWW-6TKDJ-WPB77&referer=myapp'
 		},
 		{
-			wz:'常州',
-			gs:'常州冰鉴信息科技有限公司',
-			sj:' +86-519-86052015',
-			dq:'常州市武进区常武中路18号常州科教城中科创业中心A-1-904室',
-			yb:'213161',
-			api:'https://apis.map.qq.com/tools/poimarker?type=0&marker=coord:31.683633,119.973525;title:常州冰鉴信息科技有限公司;addr:常州市武进区常武中路18号常州科教城中科创业中心A-1-904室&key=OB4BZ-D4W3U-B7VVO-4PJWW-6TKDJ-WPB77&referer=myapp'
+			wz: '常州',
+			gs: '常州冰鉴信息科技有限公司',
+			sj: ' +86-519-86052015',
+			dq: '常州市武进区常武中路18号常州科教城中科创业中心A-1-904室',
+			yb: '213161',
+			api: 'https://apis.map.qq.com/tools/poimarker?type=0&marker=coord:31.683633,119.973525;title:常州冰鉴信息科技有限公司;addr:常州市武进区常武中路18号常州科教城中科创业中心A-1-904室&key=OB4BZ-D4W3U-B7VVO-4PJWW-6TKDJ-WPB77&referer=myapp'
 		}
 	]
-	for (var i=0;i<znpdl.length;i++) {
-		if (i==0) {
+	for (var i = 0; i < znpdl.length; i++) {
+		if (i == 0) {
 			$('.znp-nav-tabs').append(`<li class="active">
-						<a href="javescript:;">`+znpdl[i].wz+`</a>
+						<a href="javescript:;">` + znpdl[i].wz + `</a>
 					</li>`)
 			$('.one').append(`<div class="xs znp-box">
 						<div class="znp-col-5" style="text-align:left;">
-							<p class="znp-info">&nbsp;&nbsp;`+znpdl[i].gs+`</p>
-							<p class="znp-info">&nbsp;&nbsp;`+znpdl[i].sj+`</p>			
-							<p class="znp-info">&nbsp;&nbsp;`+znpdl[i].dq+`</p>
-							<p class="znp-info">&nbsp;&nbsp;邮编：`+znpdl[i].yb+`</p>
+							<p class="znp-info">&nbsp;&nbsp;` + znpdl[i].gs + `</p>
+							<p class="znp-info">&nbsp;&nbsp;` + znpdl[i].sj + `</p>			
+							<p class="znp-info">&nbsp;&nbsp;` + znpdl[i].dq + `</p>
+							<p class="znp-info">&nbsp;&nbsp;邮编：` + znpdl[i].yb + `</p>
 						</div>
 						<div class="znp-col-7">
-								<iframe src="`+znpdl[i].api+`" frameborder="0" style="width:100%;height:400px;">
+								<iframe src="` + znpdl[i].api + `" frameborder="0" style="width:100%;height:400px;">
 								</iframe>
 						</div>
 					</div>`)
-		}else{
+		} else {
 			$('.znp-nav-tabs').append(`<li>
-						<a href="javescript:;">`+znpdl[i].wz+`</a>
+						<a href="javescript:;">` + znpdl[i].wz + `</a>
 					</li>`)
 			$('.one').append(`<div class="znp-box">
 						<div class="znp-col-5" style="text-align:left;">
-							<p class="znp-info">&nbsp;&nbsp;`+znpdl[i].gs+`</p>
-							<p class="znp-info">&nbsp;&nbsp;`+znpdl[i].sj+`</p>			
-							<p class="znp-info">&nbsp;&nbsp;`+znpdl[i].dq+`</p>
-							<p class="znp-info">&nbsp;&nbsp;邮编：`+znpdl[i].yb+`</p>
+							<p class="znp-info">&nbsp;&nbsp;` + znpdl[i].gs + `</p>
+							<p class="znp-info">&nbsp;&nbsp;` + znpdl[i].sj + `</p>			
+							<p class="znp-info">&nbsp;&nbsp;` + znpdl[i].dq + `</p>
+							<p class="znp-info">&nbsp;&nbsp;邮编：` + znpdl[i].yb + `</p>
 						</div>
 						<div class="znp-col-7">
-								<iframe src="`+znpdl[i].api+`" frameborder="0" style="width:100%;height:400px;">
+								<iframe src="` + znpdl[i].api + `" frameborder="0" style="width:100%;height:400px;">
 								</iframe>
 						</div>
 					</div>`)
 		}
-		
+
 	}
-	$('.znp-nav-tabs li').click(function(){
+	$('.znp-nav-tabs li').click(function () {
 		$(this).addClass('active').siblings().removeClass('active')
 		$('.one .znp-box').eq($(this).index()).addClass('xs').siblings().removeClass('xs')
 	})
 </script>
+<link rel="stylesheet" href="./css/footergeneral.css">
 </html>

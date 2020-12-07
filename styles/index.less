@@ -9,7 +9,184 @@ body {
 	height: 100%;
 	overflow: hidden;
 }
-
+.navbar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 0 20px;
+	box-sizing: border-box;
+	.navbar-left {
+		img {
+			background: url(../image/logo-top2c.png) no-repeat 0 0;
+		}
+	}
+	.navbar-right {
+		.nav-right-item {
+			margin: 0 15px;
+			a:hover {
+				background: none;
+			}
+			&.open > a {
+				background: none;
+			}
+			& > a {
+				display: block;
+				position: relative;
+				font-weight: bold;
+				text-align: center;
+				padding-left: 0;
+				padding-right: 0;
+				&::before {
+					content: "";
+					display: block;
+					position: absolute;
+					width: 100%;
+					height: 5px;
+					background: #38d1ff;
+					bottom: 0;
+					left: 0;
+					transform: rotateY(90deg);
+					transition: transform 0.6s;
+					transform-origin: center center;
+				}
+				&:hover {
+					color: #38d1ff;
+					.menu {
+						display: block;
+						position: absolute;
+						bottom: 0;
+						left: 0;
+					}
+				}
+			}
+			&:hover a {
+				&::before {
+					transform: rotateY(0deg);
+				}
+			}
+			.dropdown-menu {
+				background: rgb(1, 10, 15);
+				padding: 0;
+				border: none;
+				li {
+					box-sizing: border-box;
+					padding: 5px 10px;
+					&:hover {
+						background: rgb(0, 180, 237);
+					}
+					a {
+						color: #fff;
+						&:hover {
+							background: none;
+						}
+					}
+				}
+			}
+		}
+		.nav-right-item.show {
+			& > a {
+				&::before {
+					transform: rotateY(0deg);
+				}
+			}
+		}
+	}
+	.btn-group {
+		float: right;
+		position: static;
+		.row {
+			margin: 0;
+		}
+		.btn {
+			background: none;
+			width: 25px;
+			border: none;
+			margin-top: 50%;
+			position:relative;
+			span {
+				display: block;
+				width: 20px;
+				height: 3px;
+				background: #ccc;
+				margin: 2px 0;
+				transform-origin:center center;
+			}
+			//控制动画的
+			&.click{
+				span{
+					position:absolute;
+					top:50%;
+					left:0;
+					&:nth-child(2){
+						display:none;
+					}
+					&.animation1{
+						animation:an1 0.2s linear;
+						animation-fill-mode : forwards;
+					}
+					&.animation2{
+						animation:an2 0.2s  linear;
+						animation-fill-mode : forwards;
+					}
+				}
+			}
+		}
+		.dropdown-select {
+			display: none;
+			position: absolute;
+			top: 100%;
+			left: 0;
+			width: 100%;
+			background: rgb(34, 42, 43);
+			& > li {
+				padding: 0 0.8rem;
+				margin: 1rem 0;
+				&.show>div{
+					&>div{
+						color:rgb(0, 180, 237);
+					}
+				}
+				div {
+					line-height: 30px;
+					display: flex;
+					justify-content: flex-start;
+					span {
+						width: 4%;
+						height: auto;
+						color: #fff;
+						margin:0 5px;
+					}
+					div {
+						color: #fff;
+					}
+					b {
+						width: 0;
+						height: 0;
+						border: 5px solid transparent;
+						border-top-color: #fff;
+						transform: translateY(120%);
+						margin-left: 5px;
+					}
+				}
+				&.false {
+					ul {
+						display: block;
+					}
+				}
+				ul {
+					display: none;
+					li {
+						margin: 0.5rem 0;
+						a{
+							color:#fff;
+						}
+					}
+				}
+			}
+		}
+	}
+}
 .indexContainer {
 	width: 100%;
 	height: 100%;
@@ -26,184 +203,7 @@ body {
 		width: 100%;
 		height: 100%;
 		overflow: hidden;
-		.navbar {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			padding: 0 20px;
-			box-sizing: border-box;
-			.navbar-left {
-				img {
-					background: url(../image/logo-top2c.png) no-repeat 0 0;
-				}
-			}
-			.navbar-right {
-				.nav-right-item {
-					margin: 0 15px;
-					a:hover {
-						background: none;
-					}
-					&.open > a {
-						background: none;
-					}
-					& > a {
-						display: block;
-						position: relative;
-						font-weight: bold;
-						text-align: center;
-						padding-left: 0;
-						padding-right: 0;
-						&::before {
-							content: "";
-							display: block;
-							position: absolute;
-							width: 100%;
-							height: 5px;
-							background: #38d1ff;
-							bottom: 0;
-							left: 0;
-							transform: rotateY(90deg);
-							transition: transform 0.6s;
-							transform-origin: center center;
-						}
-						&:hover {
-							color: #38d1ff;
-							.menu {
-								display: block;
-								position: absolute;
-								bottom: 0;
-								left: 0;
-							}
-						}
-					}
-					&:hover a {
-						&::before {
-							transform: rotateY(0deg);
-						}
-					}
-					.dropdown-menu {
-						background: rgb(1, 10, 15);
-						padding: 0;
-						border: none;
-						li {
-							box-sizing: border-box;
-							padding: 5px 10px;
-							&:hover {
-								background: rgb(0, 180, 237);
-							}
-							a {
-								color: #fff;
-								&:hover {
-									background: none;
-								}
-							}
-						}
-					}
-				}
-				.nav-right-item.show {
-					& > a {
-						&::before {
-							transform: rotateY(0deg);
-						}
-					}
-				}
-			}
-			.btn-group {
-				float: right;
-				position: static;
-				.row {
-					margin: 0;
-				}
-				.btn {
-					background: none;
-					width: 25px;
-					border: none;
-					margin-top: 50%;
-					position:relative;
-					span {
-						display: block;
-						width: 20px;
-						height: 3px;
-						background: #ccc;
-						margin: 2px 0;
-						transform-origin:center center;
-					}
-					//控制动画的
-					&.click{
-						span{
-							position:absolute;
-							top:50%;
-							left:0;
-							&:nth-child(2){
-								display:none;
-							}
-							&.animation1{
-								animation:an1 0.2s linear;
-								animation-fill-mode : forwards;
-							}
-							&.animation2{
-								animation:an2 0.2s  linear;
-								animation-fill-mode : forwards;
-							}
-						}
-					}
-				}
-				.dropdown-select {
-					display: none;
-					position: absolute;
-					top: 100%;
-					left: 0;
-					width: 100%;
-					background: rgb(34, 42, 43);
-					& > li {
-						padding: 0 0.8rem;
-						margin: 1rem 0;
-						&.show>div{
-							&>div{
-								color:rgb(0, 180, 237);
-							}
-						}
-						div {
-							line-height: 30px;
-							display: flex;
-							justify-content: flex-start;
-							span {
-								width: 4%;
-								height: auto;
-								color: #fff;
-								margin:0 5px;
-							}
-							div {
-								color: #fff;
-							}
-							b {
-								width: 0;
-								height: 0;
-								border: 5px solid transparent;
-								border-top-color: #fff;
-								transform: translateY(120%);
-								margin-left: 5px;
-							}
-						}
-						&.false {
-							ul {
-								display: block;
-							}
-						}
-						ul {
-							display: none;
-							li {
-								margin: 0.5rem 0;
-								a{
-									color:#fff;
-								}
-							}
-						}
-					}
-				}
-			}
-		}
+		
 	}
 	//.small小屏幕时候的变化
 	.small {
@@ -534,40 +534,41 @@ body {
 			}
 		}
 	}
-	//整屏 上下切换 奇数时候的变化
-	.odd {
-		& > .navbar .navbar-right .nav-right-item > a:hover {
+	
+	
+}
+//整屏 上下切换 奇数时候的变化
+.odd {
+	& > .navbar .navbar-right .nav-right-item > a:hover {
+		color: #fff;
+	}
+	& > .navbar .navbar-left img {
+		background: url(../image/logo-top2.png) no-repeat 0 0;
+	}
+	& > .navbar .navbar-right .nav-right-item > a::before {
+		background: #fff;
+	}
+	.navbar {
+		a {
 			color: #fff;
 		}
-		& > .navbar .navbar-left img {
-			background: url(../image/logo-top2.png) no-repeat 0 0;
-		}
-		& > .navbar .navbar-right .nav-right-item > a::before {
-			background: #fff;
-		}
-		.navbar {
-			a {
-				color: #fff;
-			}
-			& > .nav-right {
-				& > .nav-right-item {
-					& > a {
-						&:hover {
-							color: #fff;
-						}
+		& > .nav-right {
+			& > .nav-right-item {
+				& > a {
+					&:hover {
+						color: #fff;
 					}
 				}
 			}
 		}
 	}
-	//小屏幕时候的效果
-	.small {
-		& > .navbar .navbar-left img {
-			background-size: 153px 30px;
-		}
+}
+//小屏幕时候的效果
+.small {
+	& > .navbar .navbar-left img {
+		background-size: 153px 30px;
 	}
 }
-
 @keyframes bgBig {
 	0% {
 		transform: scale(1);

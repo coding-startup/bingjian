@@ -1,15 +1,4 @@
-$(function () {
-	//头部导航条的js
-	$(".nav-right-flex li a").on("mousemove", function () {
-		$(this).addClass("active");
-	});
-	$(".nav-right-flex li a").on("touchmove", function () {
-		$(this).addClass("active");
-	});
-	$(".nav-right-flex li a").on("touchend", function () {
-		$(this).removeClass("active");
-	});
-});
+
 //确定宽高
 let fn2 = function () {
 	if ($(window).width() <= 768) {
@@ -132,20 +121,7 @@ $(".swiper-slide.core .graph")[0].ontouchmove = function (e) {
 	$(".swiper-slide.core .graph .imgBg2").width(x);
 };
 
-//小屏幕下的点击导航条 出现二级菜单
-$(".dropdown-select>li").click(function () {
-	$(this)
-		.toggleClass("false")
-		.css({
-			display: "block",
-		})
-		.siblings()
-		.removeClass("false");
-	$(".dropdown-select>li")
-		.removeClass("show")
-		.eq($(this).index())
-		.addClass("show");
-});
+
 //产品的swiper
 new Swiper("#productSwiper", {
 	// 如果需要分页器
@@ -183,59 +159,3 @@ new Swiper("#productSwiper", {
 		},
 	},
 });
-
-//三道杠的点击下拉效果
-$(".navbar .btn-group .btn").click(function () {
-	//获取现在的状态
-
-	let isBlock = $(".navbar .btn-group .dropdown-select").css("display");
-	if (isBlock == "block") {
-		$(this).removeClass("click");
-		$(".navbar .btn-group .dropdown-select").css({
-			display: "none",
-		});
-	} else {
-		$(this).addClass("click");
-		$(".navbar .btn-group .dropdown-select").css({
-			display: "block",
-		});
-	}
-});
-
-//中英文切换效果
-$(".navbar-left").click(function () {
-	translate();
-});
-$(function(){
-	// do something
-	var script=document.createElement("script");
-	script.type="text/javascript";
-	script.src="common/translate.js";
-	document.getElementsByTagName('head')[0].appendChild(script);
-	var value = sessionStorage.getItem("language");
-	document.onreadystatechange = function () {
-	 if (document.readyState == 'complete') {
-	  if(value==="1"){
-	   Microsoft.Translator.Widget.Translate('zh-CHS', 'en', onProgress, onError, onComplete, onRestoreOriginal, 2000);
-	  }
-	 }
-	}
-	function onProgress(value) {
-	}
-	function onError(error) {
-	}
-	function onComplete() {
-	 $("#WidgetFloaterPanels").hide();
-	}
-	function onRestoreOriginal() {
-	}
-   });
-   function translate(){
-	var value = sessionStorage.getItem("language");
-	if(value==="1"){
-	 sessionStorage.setItem("language", "0");
-	}else{
-	 sessionStorage.setItem("language", "1");
-	}
-	window.location.reload();//刷新当前页面.
-   }
