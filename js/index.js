@@ -1,32 +1,10 @@
-
-//确定宽高
-let fn2 = function () {
-	if ($(window).width() <= 768) {
-		$(".container-fluid").addClass("small");
-		let wi = $(".swiper-slide.core .text").width();
-		$(".swiper-slide.core  img").width(wi);
-		$(".swiper-slide.core  img").height(wi * 0.52);
-	} else {
-		$(".swiper-slide.core .graph").height(
-			$(".swiper-slide.core .text").height() > 362
-				? 362 + "px"
-				: $(".swiper-slide.core .text").height()
-		);
-		$(".swiper-slide.core .graph .imgBg2 img").width(
-			$(".swiper-slide.core .graph").width()
-		);
-		$(".container-fluid").removeClass("small");
-	}
-};
-fn2();
-$(window).on("resize", fn2);
-
 // 整屏 竖向的swiper
-let swiper1 = new Swiper("#swiper1", {
+var swiper1 = new Swiper("#swiper1", {
 	// 如果需要分页器
 	direction: "vertical",
 	touchRatio: 0, //停止滑动
 	mousewheel: true, //开启鼠标控制切换
+
 	pagination: {
 		el: ".exterior-pagination",
 		progressbarOpposite: true, //水平方向垂直  垂直方向水平
@@ -41,11 +19,32 @@ let swiper1 = new Swiper("#swiper1", {
 				case 1:
 					fn1();
 					break;
+				case 2:
+					fn3();
+					break;
+				case 3:
+					swiper1.detachEvents();
+					break;
 			}
 		},
 		init: function () {
 			isAdd(this.activeIndex);
-			fn2();
+			if ($(window).width() <= 768) {
+				$(".container-fluid").addClass("small");
+				let wi = $(".swiper-slide.core .text").width();
+				$(".swiper-slide.core  img").width(wi);
+				$(".swiper-slide.core  img").height(wi * 0.52);
+			} else {
+				$(".swiper-slide.core .graph").height(
+					$(".swiper-slide.core .text").height() > 362
+						? 362 + "px"
+						: $(".swiper-slide.core .text").height()
+				);
+				$(".swiper-slide.core .graph .imgBg2 img").width(
+					$(".swiper-slide.core .graph").width()
+				);
+				$(".container-fluid").removeClass("small");
+			}
 		},
 	},
 });
@@ -68,7 +67,12 @@ function fn1() {
 	$(".indexContainer .core .inUp").addClass("animate__fadeInUp");
 	$(".indexContainer .core .inDown").addClass("animate__fadeInDown");
 }
-
+//第三个执行
+function fn3() {
+	$(".product .bgImage").addClass("animate__fadeIn");
+	$(".product .bom").addClass("animate__fadeInDown");
+	$(".product .up").addClass("animate__fadeInUp");
+}
 // 看下标是是不是 0 3 动态添加类型 或者 1 2
 function isAdd(index) {
 	if (index == 0 || index == 3) {
@@ -87,7 +91,7 @@ function isAdd(index) {
 //初始化清除class类名  然后动态添加
 $("#interior .swiper-slide .base").removeClass("animate__fadeIn");
 $("#interior .swiper-slide").eq(0).find(".base").addClass("animate__fadeIn");
-new Swiper("#interior", {
+var swiper2 = new Swiper("#interior", {
 	// 如果需要分页器
 	pagination: {
 		el: ".swiper-pagination",
@@ -121,9 +125,8 @@ $(".swiper-slide.core .graph")[0].ontouchmove = function (e) {
 	$(".swiper-slide.core .graph .imgBg2").width(x);
 };
 
-
 //产品的swiper
-new Swiper("#productSwiper", {
+var swiper3 = new Swiper("#productSwiper", {
 	// 如果需要分页器
 	watchOverflow: true,
 	slidesPerView: 1,
@@ -158,4 +161,35 @@ new Swiper("#productSwiper", {
 			spaceBetween: 30,
 		},
 	},
+	on: {},
 });
+function fn5() {
+	swiper1.update();
+	swiper2.update();
+	swiper3.update();
+}
+//确定宽高
+let fn2 = function () {
+	if ($(window).width() <= 768) {
+		$(".container-fluid").addClass("small");
+		let wi = $(".swiper-slide.core .text").width();
+		$(".swiper-slide.core  img").width(wi);
+		$(".swiper-slide.core  img").height(wi * 0.52);
+	} else {
+		$(".swiper-slide.core .graph").height(
+			$(".swiper-slide.core .text").height() > 362
+				? 362 + "px"
+				: $(".swiper-slide.core .text").height()
+		);
+		$(".swiper-slide.core .graph .imgBg2 img").width(
+			$(".swiper-slide.core .graph").width()
+		);
+		$(".container-fluid").removeClass("small");
+	}
+	if ($(window).width() <= 400) {
+	}
+	fn5();
+	console.log("改变宽高了");
+};
+fn2();
+$(window).on("resize", fn2);

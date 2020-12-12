@@ -43,3 +43,5 @@ $(".navbar .btn-group .btn").click(function () {
 		});
 	}
 });
+
+

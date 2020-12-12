@@ -1,16 +1,26 @@
 html,
 body {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
 }
 Nav.navbar {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   box-sizing: border-box;
   padding-left: 20px;
   padding-right: 20px;
+  border: none;
+}
+Nav.navbar .navbar-left {
+  float: left;
+}
+Nav.navbar .navbar-left a {
+  display: block;
+  padding: 0px;
+  display: flex;
+  align-items: center;
 }
 Nav.navbar .navbar-left img {
   background: url(../image/logo-top2c.png) no-repeat 0 0;
@@ -81,16 +91,21 @@ Nav.navbar .navbar-right .nav-right-item.show > a::before {
 Nav.navbar .btn-group {
   float: right;
   position: static;
+  display: block;
+  height: 100%;
 }
 Nav.navbar .btn-group .row {
   margin: 0;
 }
 Nav.navbar .btn-group .btn {
-  background: none;
   width: 25px;
   border: none;
   margin-top: 50%;
   position: relative;
+  padding: 0;
+  display: block;
+  outline: none;
+  background: none;
 }
 Nav.navbar .btn-group .btn span {
   display: block;
@@ -102,7 +117,7 @@ Nav.navbar .btn-group .btn span {
 }
 Nav.navbar .btn-group .btn.click span {
   position: absolute;
-  top: 50%;
+  top: 100%;
   left: 0;
 }
 Nav.navbar .btn-group .btn.click span:nth-child(2) {
@@ -143,6 +158,9 @@ Nav.navbar .btn-group .dropdown-select > li div span {
   margin: 0 5px;
 }
 Nav.navbar .btn-group .dropdown-select > li div div {
+  color: #fff;
+}
+Nav.navbar .btn-group .dropdown-select > li div div a {
   color: #fff;
 }
 Nav.navbar .btn-group .dropdown-select > li div b {
@@ -400,12 +418,21 @@ Nav.navbar .btn-group .dropdown-select > li ul li a {
   height: 100%;
   background: url(../image/bk-hp5.jpg) no-repeat 0 0;
   background-size: 100% 100%;
+  opacity: 0;
 }
 .indexContainer #swiper1 .product h2 {
   margin: 5rem 0;
 }
 .indexContainer #swiper1 .product h2 + p {
   margin: 3rem 0;
+}
+.indexContainer #swiper1 .product .text-align-center.bom,
+.indexContainer #swiper1 .product .up {
+  opacity: 0;
+}
+.indexContainer #swiper1 .product svg {
+  width: 5rem;
+  height: 5rem;
 }
 .indexContainer #swiper1 .product .productSwiper-pagination .swiper-pagination-bullet-active {
   width: 30px;
@@ -426,7 +453,7 @@ Nav.navbar .btn-group .dropdown-select > li ul li a {
   margin: 0;
 }
 .indexContainer #swiper1 .us .contentContainer {
-  margin-top: 10%;
+  padding-top: 10rem;
 }
 .indexContainer #swiper1 .us .contentContainer h2 {
   margin: 5rem 0;
@@ -515,7 +542,40 @@ Nav.navbar .btn-group .dropdown-select > li ul li a {
     transform: scale(1.5);
   }
 }
+@media screen and (max-width: 400px) {
+  .small > .navbar .navbar-left img {
+    background-size: 189px 37px;
+  }
+  #swiper1 .swiper-slide.us {
+    overflow: scroll ;
+  }
+  #swiper1 .swiper-slide.us .container {
+    width: 100%;
+    height: 100%;
+    overflow: scroll !important;
+  }
+  .indexContainer #swiper1 .product .contentWrapper {
+    padding-top: 10rem;
+  }
+  .indexContainer #swiper1 .product .contentWrapper h2 {
+    margin: 15px 0;
+  }
+}
 @media screen and (max-width: 768px) {
+  .odd > .navbar .navbar-left img {
+    background: url(../image/logo-top2c.png) no-repeat 0 0;
+    background-size: 153px 30px;
+  }
+  .indexContainer #swiper1 .swiper-container .menu3 .content {
+    margin-top: 0;
+  }
+  .indexContainer #swiper1 .swiper-container .menu3 .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 6;
+  }
   .indexContainer .container-fluid .navbar {
     background: #2e2e2e;
   }
