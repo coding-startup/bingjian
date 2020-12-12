@@ -37,7 +37,27 @@
 .popover-introduce .popover-model .model-content {
   padding: 30px;
 }
-
+aaa .yqq-header {
+  width: 100%;
+  background: url("../img/bk-about.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+aaa .yqq-header .yqq-title h2 {
+  color: rgba(255, 255, 255, 0.8);
+}
+aaa .yqq-header .yqq-title h3 {
+  margin-top: 20px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.4);
+  text-align: center;
+}
+aaa .yqq-Cooperative {
+  height: 420px;
+}
 .yqq-Cooperative h2 {
   font-size: 42px;
 }
@@ -302,7 +322,7 @@
 }
 #yqq .yqq-content-member .team-scale:hover .img {
   transform: scale(1.1);
-  transition: 1s;
+  transition: all 1s;
 }
 #yqq .yqq-content-member .icekreditceo {
   border-bottom: 1px solid #ddd;
@@ -348,6 +368,12 @@
 #yqq .yqq-new-content {
   margin: 100px 0 50px 0;
 }
+#yqq .yqq-new-content .yqq-new-container .porent-content .proent-item .yqq-laypage-image {
+  overflow: hidden;
+}
+#yqq .yqq-new-content .yqq-new-container .porent-content .proent-item .yqq-laypage-image:hover .laypage-pic {
+  transform: scale(1.2);
+}
 #yqq .yqq-new-content .yqq-new-container .porent-content .proent-item .yqq-laypage:hover {
   border: 1px solid #65dff5;
 }
@@ -375,6 +401,7 @@
 #yqq .yqq-new-content .yqq-new-container .porent-content .proent-item .yqq-laypage .laypage-pic {
   max-width: 100%;
   height: auto;
+  transition: all 0.8s;
 }
 #yqq .yqq-new-content .pagination {
   margin-left: 50%;

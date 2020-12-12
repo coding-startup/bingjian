@@ -366,9 +366,8 @@ aaa
 		}
 		.team-scale:hover .img {
 			transform: scale(1.1);
-			transition: 1s;
+			transition:all 1s;
 		}
-
 		padding: 50px 0 100px 0;
 		.icekreditceo {
 			border-bottom: 1px solid #ddd;
@@ -425,9 +424,21 @@ aaa
 		.yqq-new-container {
 			.porent-content {
 				.proent-item {
+					
+					.yqq-laypage-image{
+						// width:200px;
+						// height:140px;
+						overflow: hidden;
+						
+					}
+					.yqq-laypage-image:hover .laypage-pic{
+						transform:scale(1.2);	
+
+					}
 					.yqq-laypage:hover {
 						border: 1px solid #65dff5;
 					}
+					
 					.yqq-laypage {
 						display: inline-block;
 						padding: 10px;
@@ -453,6 +464,8 @@ aaa
 						.laypage-pic {
 							max-width: 100%;
 							height: auto;
+							transition: all .8s;
+							
 						}
 					}
 				}
