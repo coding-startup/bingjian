@@ -50,7 +50,7 @@ $(function(){
                         </div>
                     </div> `;
     //右边返回顶部和二维码
-    var $navScroll = `<div class="back-top">
+    var $navScroll = `<div class="back-top" style="display:none">
                         <i class="iconfont icon-fanhuidingbu yqqicon"></i>
                     </div>
                     <div class="right-wechat">
@@ -72,12 +72,16 @@ $(function(){
         // console.log(1111)
         $('html,body').animate({scrollTop:0})
     });
+    $(window).scroll(function(){
+        var scroH = $(document.documentElement)[0].scrollTop;   //滚动高度
+        console.log(scroH)
+        if(scroH >200 ){
+            $('.back-top').css('display','block')
+        }else{
+            $('.back-top').css('display','none')
+        }
 
-
-
-
-
-
-
+        
+    })
 
 });

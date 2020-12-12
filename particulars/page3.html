@@ -381,8 +381,6 @@
             })
         })
 
-
-
         function render(res) {
             $('.yqq-new-container').html("")
             let yqqdifficulty = "";
@@ -392,7 +390,7 @@
                 yqqdifficulty += `<div class="col-md-12 col-sm-12 col-xs-12 porent-content" >
                                 <div class="col-md-6 col-sm-6 col-xs-12 proent-item">
                                     <a href="#" target="_blank" class="yqq-laypage">
-                                        <div class="col-md-5 col-sm-12 col-xs-12">
+                                        <div class="col-md-5 col-sm-12 col-xs-12 yqq-laypage-image" >
                                             <img src="${res[i*2].img}" alt="" class="laypage-pic">
                                         </div>
                                         <div class="col-md-7 col-sm-12 col-xs-12 yqq-laypage-recommend">
@@ -407,7 +405,7 @@
                                 </div>
                                 <div class="col-md-6 col-sm-6 col-xs-12 proent-item">
                                     <a href="#" target="_blank" class="yqq-laypage">
-                                        <div class="col-md-5 col-sm-12 col-xs-12">
+                                        <div class="col-md-5 col-sm-12 col-xs-12 yqq-laypage-image">
                                             <img src="${res[i*2+1].img}" alt="" class="laypage-pic">
                                         </div>
                                         <div class="col-md-7 col-sm-12 col-xs-12 yqq-laypage-recommend">
@@ -423,8 +421,11 @@
                             </div>`
             }
             $(".yqq-new-container").append(yqqdifficulty)
-
         }
+       
+       
+        
+        
 
 
     });
